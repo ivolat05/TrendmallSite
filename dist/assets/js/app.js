@@ -101,7 +101,31 @@ function dataMenuHidden() {
     })
 };
 
+
+// product like
+
+function productLike() {
+    let productLike = document.querySelectorAll('.product-like');
+    productLike.forEach((item) => {
+        item.addEventListener('click', function () {
+            item.classList.toggle('product-like-active');
+        })
+    })
+}
+// product size active
+function productSize() {
+    let productSizeColl = document.querySelectorAll('.product-size-coll');
+    productSizeColl.forEach((item) => {
+        item.addEventListener('click', function () {
+            item.classList.toggle('product-size-coll--active');
+        })
+    })
+}
+
+
 select();
 showPassword();
 tabs();
 dataMenuHidden();
+productLike();
+productSize();

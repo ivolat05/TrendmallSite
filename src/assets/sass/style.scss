@@ -45,6 +45,33 @@ ul {
     }
 }
 
+.btn {
+    background: #000;
+    color: #fff;
+    border-radius: 2px;
+    transition: 0.4s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    &:hover {
+        background: #2c2c31;
+    }
+}
+
+.button {
+    border: 1px solid #6f6e6e;
+    border-radius: 2px;
+    color: #2c2c31;
+    transition: 0.4s;
+    cursor: pointer;
+    background: none;
+    &:hover {
+        background: #2c2c31;
+        border: 1px solid #2c2c31;
+        color: #fff;
+    }
+}
+
 @import "../sass/blocks/cabinet.scss";
 @import "../sass/blocks/cabinet__tab.scss";
 @import "../sass/blocks/cabinet__tab-home.scss";
@@ -53,3 +80,5 @@ ul {
 @import "../sass/blocks/header.scss";
 @import "../sass/blocks/footer.scss";
 @import "../sass/blocks/copyright.scss";
+@import "../sass/blocks/cabinet__tab-wish.scss";
+@import "../sass/blocks/navigation.scss";
