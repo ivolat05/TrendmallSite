@@ -1,0 +1,54 @@
+.select {
+    width: 100%;
+    position: relative;
+}
+
+.select.is-active .select__body {
+    display: block;
+}
+
+.select__header {
+    width: 100%;
+
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    background: url("../../assets/img/select-arrow.svg") no-repeat center right 16px;
+}
+
+.select__body {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    z-index: 1;
+
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    box-shadow: 2px 6px 16px rgba(174, 182, 202, 0.31);
+    border-radius: 2px;
+}
+
+.select__item {
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 15px;
+    color: #000000;
+    transition: 0.4s;
+    &:hover {
+        background: #f4f4f4;
+    }
+}
+
+.cabinet-select {
+    .select__header {
+        padding: 15px;
+        height: 48px;
+        border: 1px solid #dbdbdb;
+        border-radius: 4px;
+        margin-bottom: 14px;
+    }
+}

@@ -1,72 +1,160 @@
-<div id='tab_2' class="cabinet__tab cabinet__tab-active">
-    <div class="cabinet__tab-title cabinet__tab-title-data">
+<div id='tab_2' class="cabinet__tab">
+    <div class="cabinet__tab-title ">
         Мои данные
     </div>
     <div class="cabinet__tab-wrapp">
-        <div class="cabinet__tab-data">
-            <div class="cabinet__data-row">
-                <div class="cabinet__data-col">
-                    Фото профіля
+
+        <div class="cabinet__tab-data ">
+            <div class="cabinet__data-inner">
+                <div class="cabinet__data-row">
+                    <div class="cabinet__data-col">
+                        Фото профіля
+                    </div>
+                    <div class="cabinet__data-col">
+                        <div class="cabinet__avatar">
+                            ВТ
+                        </div>
+                    </div>
                 </div>
-                <div class="cabinet__data-col">
-                    <div class="cabinet__avatar">
-                        ВТ
+                <div class="cabinet__data-row">
+                    <div class="cabinet__data-col ">
+                        Имя
+                    </div>
+                    <div class="cabinet__data-col cabinet-name">
+                        Виталий
+                    </div>
+                </div>
+                <div class="cabinet__data-row">
+                    <div class="cabinet__data-col">
+                        Фамилия
+                    </div>
+                    <div class="cabinet__data-col cabinet-surname">
+                        Тюльпанов
+                    </div>
+                </div>
+                <div class="cabinet__data-row">
+                    <div class="cabinet__data-col">
+                        Пол
+                    </div>
+                    <div class="cabinet__data-col cabinet-floor">
+                        Мужской
+                    </div>
+                </div>
+                <div class="cabinet__data-row">
+                    <div class="cabinet__data-col">
+                        Дата Рождения
+                    </div>
+                    <div class="cabinet__data-col cabinet-brithday">
+                        20. 07. 1964
+                    </div>
+                </div>
+                <div class="cabinet__data-row">
+                    <div class="cabinet__data-col">
+                        Email
+                    </div>
+                    <div class="cabinet__data-col cabinet-email">
+                        demo@example.com
+                    </div>
+                </div>
+                <div class="cabinet__data-row">
+                    <div class="cabinet__data-col">
+                        Телефон
+                    </div>
+                    <div class="cabinet__data-col cabinet-tell">
+                        095 53 17 456
                     </div>
                 </div>
             </div>
-            <div class="cabinet__data-row">
-                <div class="cabinet__data-col ">
-                    Имя
+
+            <div class="cabinet__data-box  cabinet__tab-data--hidden">
+                <div class="cabinet__foto-title">
+                    Фото профіля
                 </div>
-                <div class="cabinet__data-col cabinet-name">
-                    Виталий
+                <div class="cabinet__foto-change">
+                    <div class="cabinet__avatar">
+                        ВТ
+                    </div>
+                    <button class='cabinet__foto-btn'>
+                        Изменить
+                    </button>
                 </div>
-            </div>
-            <div class="cabinet__data-row">
-                <div class="cabinet__data-col">
-                    Фамилия
+                <div class="cabinet__data-box-title">
+                    Имя*
                 </div>
-                <div class="cabinet__data-col cabinet-surname">
-                    Тюльпанов
+                <input class='cabinet-input' type="text">
+                <div class="cabinet__data-box-title">
+                    Фамилия*
                 </div>
-            </div>
-            <div class="cabinet__data-row">
-                <div class="cabinet__data-col">
-                    Пол
+                <input class='cabinet-input' type="text">
+                <div class="cabinet__data-box-title">
+                    Пол*
                 </div>
-                <div class="cabinet__data-col cabinet-floor">
-                    Мужской
+
+                <div class="select cabinet-select">
+                    <div class="select__header">
+                        <span class="select__current">
+                        </span>
+                    </div>
+                    <div class="select__body">
+                        <div class="select__item">мужской</div>
+                        <div class="select__item">женский</div>
+                    </div>
                 </div>
-            </div>
-            <div class="cabinet__data-row">
-                <div class="cabinet__data-col">
+
+
+                <div class="cabinet__data-box-title">
                     Дата Рождения
                 </div>
-                <div class="cabinet__data-col cabinet-brithday">
-                    20. 07. 1964
-                </div>
-            </div>
-            <div class="cabinet__data-row">
-                <div class="cabinet__data-col">
+                <input class='cabinet-input' type="text">
+
+                <div class="cabinet__data-box-title">
                     Email
                 </div>
-                <div class="cabinet__data-col cabinet-email">
-                    demo@example.com
-                </div>
-            </div>
-            <div class="cabinet__data-row">
-                <div class="cabinet__data-col">
+                <input class='cabinet-input' type="text">
+
+                <div class="cabinet__data-box-title">
                     Телефон
                 </div>
-                <div class="cabinet__data-col cabinet-tell">
-                    095 53 17 456
+                <input class='cabinet-input' type="text">
+                <div class="cabinet__data-box-title">
+                    Пароль*
                 </div>
+                <div class="cabinet__box-password">
+                    <input id='input__password-1' class='cabinet-input cabinet-input-password' type="password">
+                    <button class="cabinet__password-btn" data-password='#input__password-1'>
+                        <img src="./assets/img/eye.svg" alt="">
+                    </button>
+                </div>
+                <div class="cabinet__data-box-title">
+                    Новый Пароль*
+                </div>
+                <div class="cabinet__box-password">
+                    <input id='input__password-2' class='cabinet-input cabinet-input-password' type="password">
+                    <button class="cabinet__password-btn" data-password='#input__password-2'>
+                        <img src="./assets/img/eye.svg" alt="">
+                    </button>
+                </div>
+                <div class="cabinet__data-box-title">
+                    Повторите Пароль*
+                </div>
+                <div class="cabinet__box-password">
+                    <input id='input__password-3' class='cabinet-input cabinet-input-password' type="password">
+                    <button class="cabinet__password-btn" data-password='#input__password-3'>
+                        <img src="./assets/img/eye.svg" alt="">
+                    </button>
+                </div>
+
+                <button class='cabinet__btn-save'>
+                    Сохранить
+                </button>
             </div>
+
+
+
         </div>
 
-        <div class="cabinet__tab-data cabinet__tab--hidden">
-
-        </div>
-
+        <button class="cabinet__btn-change">
+            Редактировать
+        </button>
     </div>
 </div>
