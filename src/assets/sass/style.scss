@@ -72,6 +72,34 @@ ul {
     }
 }
 
+.label {
+    position: relative;
+}
+
+.label__span {
+    position: relative;
+    cursor: pointer;
+}
+.label__span::before {
+    content: url("../../assets/img/Checkbox.svg");
+    transform: scale(1.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.label__checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.label__checkbox:checked + .label__span::before {
+    content: url("../../assets/img/Checkbox-active.png");
+    transform: scale(1);
+    left: -3px;
+}
+
 @import "../sass/blocks/cabinet.scss";
 @import "../sass/blocks/cabinet__tab.scss";
 @import "../sass/blocks/cabinet__tab-home.scss";
@@ -82,3 +110,4 @@ ul {
 @import "../sass/blocks/copyright.scss";
 @import "../sass/blocks/cabinet__tab-wish.scss";
 @import "../sass/blocks/navigation.scss";
+@import "../sass/blocks/cabinet__tab-sellers.scss";
