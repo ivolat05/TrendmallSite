@@ -64,12 +64,21 @@
     font-size: 12px;
     line-height: 12px;
     color: #16192c;
+
+    transition: 0.4s;
+    &:hover {
+        background: #2c2c31;
+        color: #fff;
+    }
     &::before {
         content: url("../../assets/img/pen.svg");
         position: absolute;
         left: 20px;
         top: 50%;
         transform: translateY(-50%);
+    }
+    &:hover::before {
+        content: url("../../assets/img/pen-active.svg");
     }
 }
 
@@ -81,13 +90,17 @@
     font-size: 12px;
     line-height: 15px;
     color: #ffffff;
-    background: #2c2c31;
+    background: #000;
     border-radius: 2px;
     padding: 15px 70px;
     margin-left: auto;
     margin-right: 6px;
     margin-top: 12px;
     display: block;
+    transition: 0.4s;
+    &:hover {
+        background: #2c2c31;
+    }
 }
 
 .cabinet__data-box {
@@ -154,11 +167,17 @@
 
 .cabinet__password-btn {
     position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-70%);
+    right: 15px;
+    top: 30%;
+    width: 19px;
+    height: 19px;
+    transform: translateY(-20%);
     cursor: pointer;
     border: none;
     outline: none;
-    background: none;
+    background: url("../../assets/img/eye.svg") no-repeat center center;
+}
+
+.cabinet__password-btn--active {
+    background: url("../../assets/img/eye-active.svg") no-repeat center center;
 }

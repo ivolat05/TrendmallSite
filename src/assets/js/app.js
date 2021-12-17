@@ -1,3 +1,10 @@
+//= components/jquery.maskedinput.min.js
+$(function () {
+    $("#telForm").mask("+3(999) 999-99-99");
+
+});
+
+
 // select
 let select = function () {
     let selectHeader = document.querySelectorAll('.select__header');
@@ -35,7 +42,7 @@ function showPassword() {
         item.addEventListener('click', function () {
             let passwordId = item.getAttribute('data-password');
             let showPassword = document.querySelector(passwordId);
-
+            item.classList.toggle('cabinet__password-btn--active')
             if (showPassword.getAttribute('type') === 'password') {
                 showPassword.type = 'text';
             } else {

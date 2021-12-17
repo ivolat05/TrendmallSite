@@ -1,0 +1,273 @@
+.top-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+}
+.top-panel p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    margin-right: 17px;
+    /* black */
+
+    color: #2c2c31;
+}
+.top-panel a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    /* white */
+
+    color: #ffffff;
+    background: #2c2c31;
+    padding: 1px 14px;
+    margin-left: 6px;
+    border-radius: 2px;
+}
+.black-panel {
+    background: #2c2c31;
+    display: flex;
+    justify-content: center;
+}
+.black-panel .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    padding-left: 41px;
+    padding-right: 0;
+}
+.black-panel .container .selects div > p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+
+    /* white */
+
+    color: #ffffff;
+}
+.black-panel .container .selects div.panel {
+    display: none;
+    position: absolute;
+}
+.black-panel .container .selects {
+    display: flex;
+    align-items: center;
+}
+.black-panel .container .selects > div > p {
+    background: url("../../assets/img/panel_hed_triangle.svg") no-repeat;
+    background-position: right center;
+    padding-right: 18px;
+    margin-right: 27px;
+}
+.black-panel .container .right-panel {
+    display: flex;
+    align-items: center;
+}
+.black-panel .container .right-panel p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(0.43deg, #894fcf -18.98%, #efbdd4 113.48%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.black-panel .container .right-panel a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    text-transform: uppercase;
+
+    /* white */
+
+    color: #ffffff;
+    background: linear-gradient(94.43deg, #894fcf -18.98%, #efbdd4 113.48%);
+    padding: 14px 36px;
+    margin-left: 38px;
+    &:hover {
+        animation: gradient 2s ease infinite;
+        background-size: 150% 150%;
+    }
+}
+.header .navigation {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    padding-left: 41px;
+    padding-right: 0;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 11px;
+}
+.header .navigation .links a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    /* silverDark */
+    margin-right: 35px;
+    color: #6f6e6e;
+    position: relative;
+    transition: 0.4s;
+}
+
+.header .navigation .links .active {
+    color: #2c2c31;
+    position: relative;
+}
+.header .navigation .links .active::after {
+    content: "";
+    width: 100%;
+    display: block;
+    height: 1px;
+    background: #2c2c31;
+    position: absolute;
+    bottom: -2px;
+}
+
+.header .navigation .links a:hover::after {
+    content: "";
+    width: 100%;
+    display: block;
+    height: 1px;
+    background: #2c2c31;
+    position: absolute;
+    bottom: -2px;
+}
+
+.header .navigation .links {
+    display: flex;
+}
+.header .navigation .account a {
+    margin-right: 6px;
+    margin-left: 21px;
+}
+.header .navigation .account .account {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+    margin-top: -4px;
+
+    /* black */
+    align-items: center;
+    color: #2c2c31;
+}
+.header .navigation .account .account::after {
+    content: url("../../assets/img/Login.svg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(94.43deg, rgba(164, 100, 241, 0.2) -18.98%, rgba(239, 189, 212, 0.2) 113.48%);
+    border-radius: 35px;
+    margin-right: -9px;
+    margin-left: 10px;
+}
+.header .navigation .account {
+    display: flex;
+    align-items: center;
+    width: 287px;
+    justify-content: flex-end;
+}
+.header .navbar {
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+}
+.header .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    padding-left: 41px;
+    padding-right: 0;
+    width: 100%;
+}
+.header .navbar .container ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.header .navbar .container ul a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+
+    /* black */
+
+    color: #2c2c31;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.header .navbar .container ul li {
+    margin-right: 28px;
+}
+.header .navbar .container ul li.personal a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(4.43deg, #630bcd -18.98%, #e54991 113.48%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.header .navbar .container ul li.sale a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(4.43deg, #ea469a -18.98%, #ed7f67 113.48%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.header .navbar .container .form input[type="text"] {
+    background: #ffffff;
+    border: 1px solid #fbfbfb;
+    height: 36px;
+    margin: 7px 0;
+    width: 344px;
+}
+.header .navbar .container .form input[type="submit"] {
+    background: url("../../assets/img/search_ico.svg") no-repeat;
+    background-position: center;
+    color: transparent;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: none;
+    margin-left: -31px;
+    margin-top: 17px;
+}

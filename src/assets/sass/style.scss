@@ -23,9 +23,25 @@ ul {
     padding-left: 0;
     padding-right: 0;
 }
+
 @media (min-width: 1400px) {
     .container {
         max-width: 1400px;
+    }
+}
+.gradient-btn:hover {
+    animation: gradient 2s ease infinite;
+    background-size: 150% 150%;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
     }
 }
 
@@ -34,3 +50,6 @@ ul {
 @import "../sass/blocks/cabinet__tab-home.scss";
 @import "../sass/blocks/cabinet__tab-data.scss";
 @import "../sass/blocks/select.scss";
+@import "../sass/blocks/header.scss";
+@import "../sass/blocks/footer.scss";
+@import "../sass/blocks/copyright.scss";

@@ -52,3 +52,44 @@
         margin-bottom: 14px;
     }
 }
+
+.language-select {
+    width: 46px;
+    margin-right: 38px;
+    .select__header {
+        background: url("../../assets/img/header-arrow.svg") no-repeat center right 0;
+    }
+    cursor: pointer;
+    .select__current {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        color: #ffffff;
+    }
+    .select__item {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        padding: 5px;
+    }
+}
+
+.city-select {
+    width: 91px;
+    cursor: pointer;
+    .select__header {
+        background: url("../../assets/img/header-arrow.svg") no-repeat center right 0;
+    }
+    .select__current {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        color: #ffffff;
+    }
+    .select__item {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        padding: 5px;
+    }
+}

@@ -112,4 +112,9 @@
     font-size: 12px;
     line-height: 12px;
     color: #ffffff;
+    transition: 0.4s;
+    &:hover {
+        background: #2c2c31;
+        border: 1px solid #2c2c31;
+    }
 }

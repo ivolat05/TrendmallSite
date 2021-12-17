@@ -1,0 +1,119 @@
+footer {
+    background: #2b2b2d;
+}
+footer .container {
+    max-width: 1240px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 51px;
+    padding-bottom: 40px;
+}
+footer .container .column {
+    max-width: 25%;
+    flex: 1;
+    padding-top: 21px;
+}
+
+footer .container .column:nth-child(1) {
+    max-width: 25%;
+    flex: 1;
+    padding-top: 0;
+}
+
+footer .container .column:nth-last-child(1) {
+    max-width: 20%;
+}
+
+footer .container .column p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 151.4%;
+    /* or 21px */
+
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+footer .container .column a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+
+    color: #ffffff;
+    display: block;
+    opacity: 0.8;
+}
+footer .container .column .social {
+    display: flex;
+    margin-top: 9px;
+    margin-bottom: 10px;
+}
+footer .container .column small {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 0.64);
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 21px;
+}
+footer .container .column a:hover {
+    text-decoration: underline;
+}
+
+footer .container .column .sotrudn {
+    background: linear-gradient(94.43deg, #a464f1 -18.98%, #efbdd4 113.48%);
+    border-radius: 2px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    display: block;
+    text-align: center;
+    padding: 12px;
+    color: #ffffff;
+    width: 271px;
+    margin-top: 70px;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        animation: gradient 2s ease infinite;
+        background-size: 150% 150%;
+    }
+}
+.gradient-btn:hover {
+    animation: gradient 2s ease infinite;
+    background-size: 150% 150%;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+footer .container .column .tel {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #ffffff;
+}
+footer .container .column .social a {
+    margin-right: 9px;
+}
+
+.footer-img {
+    margin-bottom: 23px;
+}
