@@ -1,0 +1,33 @@
+.cabinet__tab-title-data {
+    margin-top: 42px;
+}
+.cabinet__tab-data {
+    max-width: 500px;
+    background: #ffffff;
+    border: 1px solid #eaf0f8;
+    border-radius: 8px;
+    padding: 34px 31px;
+}
+
+.cabinet__data-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 28px;
+    .cabinet__data-col:nth-child(2) {
+        text-align: left;
+    }
+}
+
+.cabinet__data-col {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6f6e6e;
+    .cabinet__avatar {
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+        line-height: 18px;
+    }
+}

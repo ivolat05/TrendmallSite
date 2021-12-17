@@ -1,0 +1,115 @@
+.cabinet__tab-banner {
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.cabinet__banner-coll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 125px;
+}
+
+.cabinet__coll-img {
+    width: 112px;
+    height: 38px;
+    margin-bottom: 20px;
+}
+.cabinet__banner-img {
+    width: 536px;
+    height: 248px;
+}
+
+.cabiner__banner-discount {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 62px;
+    text-transform: uppercase;
+    color: #f44e51;
+}
+
+.cabiner__banner-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: lowercase;
+    color: #000000;
+}
+
+.cabinet__home-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 136.02%;
+    color: #2c2c31;
+    padding-bottom: 11px;
+}
+
+.cabinet__home-score {
+    max-width: 368px;
+
+    box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.25);
+    background: linear-gradient(
+            94.43deg,
+            #02dcff -18.98%,
+            #45a2f3 24.48%,
+            #8f61e7 63.81%,
+            #c136df 86.57%,
+            #fb04d5 113.48%,
+            #fb04d5 113.48%
+        ),
+        linear-gradient(94.43deg, #a464f1 -18.98%, #efbdd4 113.48%);
+    border-radius: 20px;
+    padding: 34px 18px 24px 18px;
+}
+
+.cabinet__score-title {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    position: relative;
+    padding-left: 51px;
+    padding-bottom: 40px;
+
+    &::before {
+        content: url("../../assets/img/discount-2.svg");
+        position: absolute;
+        padding: 8px;
+        border: 1px solid #ffffff;
+        border-radius: 6px;
+        left: 0;
+        top: 0;
+        width: 19px;
+        height: 19px;
+        transform: translateY(-31%);
+    }
+}
+
+.cabinet__score-content {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 35px;
+    color: #ffffff;
+    padding-bottom: 33px;
+}
+
+.cabinet__score-btn {
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: 1px solid #edf2f7;
+    border-radius: 6px;
+    padding: 12px 20px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    color: #ffffff;
+}
