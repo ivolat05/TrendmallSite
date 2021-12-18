@@ -8,6 +8,10 @@
     height: 219px;
     position: relative;
     margin: 7px;
+    overflow: hidden;
+    &:hover {
+        overflow: visible;
+    }
 }
 .cabinet__sellers-box {
     position: relative;
@@ -17,11 +21,12 @@
     border-radius: 12px;
     transition: 0.4s;
     width: 289px;
+    min-height: 100%;
     cursor: pointer;
     padding: 19px;
-
     &:hover {
         z-index: 2;
+        position: absolute;
         box-shadow: 0px 100px 309px rgba(210, 208, 225, 0.24), 0px 22.3363px 69.0192px rgba(210, 208, 225, 0.143066),
             0px 12.5216px 38.6916px rgba(210, 208, 225, 0.12), 0px 6.6501px 20.5488px rgba(210, 208, 225, 0.0969343),
             0px 2.76726px 8.55082px rgba(210, 208, 225, 0.0674749);
@@ -58,6 +63,9 @@
 }
 
 .sellers-dell {
+    position: absolute;
+    right: 19px;
+    bottom: 17px;
     border: none;
     outline: none;
     cursor: pointer;
