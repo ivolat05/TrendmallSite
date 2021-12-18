@@ -1,0 +1,62 @@
+.cabinet__tab-product {
+    padding-top: 23px;
+    padding-left: 24px;
+}
+
+.cabinet__product-col-row {
+    display: flex;
+    justify-content: space-between;
+    .sellers-dell {
+        position: relative;
+        bottom: 0;
+        right: 0;
+    }
+    .product__row-coll {
+        display: flex;
+        justify-content: start;
+    }
+    .product__name-title {
+        font-weight: normal;
+    }
+}
+
+.cabinet__product-size {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #2c2c31;
+}
+
+.cabinet__product-row {
+    max-width: 620px;
+    display: flex;
+    justify-content: start;
+    padding: 21px 32px 16px 18px;
+    background: #ffffff;
+    border: 1px solid #eaf0f8;
+    border-radius: 8px;
+    margin-bottom: 6px;
+}
+
+.cabinet__product-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cabinet__product-col:nth-child(1) {
+    width: 30px;
+}
+
+.cabinet__product-col:nth-child(2) {
+    width: 70px;
+    margin-right: 12px;
+    img {
+        width: 68px;
+        height: 97px;
+    }
+}
+
+.cabinet__product-col:nth-child(3) {
+    width: 80%;
+}
