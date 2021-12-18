@@ -1,0 +1,99 @@
+.cabinet__tab-notifications {
+    padding-top: 38px;
+    padding-left: 33px;
+}
+
+.notifications-title {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 136.02%;
+    color: #6f6e6e;
+    padding-bottom: 10px;
+}
+
+.notifications-box {
+    width: 424px;
+    background: #ffffff;
+    box-shadow: 0px 6.6501px 20.5488px rgba(210, 208, 225, 0.0969343),
+        0px 2.76726px 8.55082px rgba(210, 208, 225, 0.0674749);
+    border-radius: 12px;
+    padding: 26px 25px 13px 25px;
+    margin-bottom: 15px;
+    margin-right: 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.notifications-box-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 136.9%;
+    color: #2c2c31;
+    padding-bottom: 26px;
+}
+
+.notifications__box-wrapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notifications-btn {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #ffffff;
+    padding: 12px 35px 15px 40px;
+    margin-right: 7px;
+    margin-top: 19px;
+    margin-left: auto;
+    display: block;
+}
+
+.notifications-wrapp {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.notifications-info {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 136.9%;
+    color: #2c2c31;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 30px;
+    &::before {
+        content: url("../../assets/img/icon-12.svg");
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.notifications-button {
+    width: 93px;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 10px;
+    color: #16192c;
+    padding: 12px 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 5px;
+}
+
+.subscriptions__active {
+    margin-bottom: 77px;
+}
+
+.notifications__box-wrapp {
+    .notifications-box-title {
+        padding-bottom: 0;
+    }
+}

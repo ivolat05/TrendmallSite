@@ -1,5 +1,6 @@
 @import "../sass/vendor/font.scss";
 @import "../sass/vendor/reset.scss";
+@import "../sass/vendor/magnific-popup.scss";
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "../../../node_modules/bootstrap/scss/variables";
 @import "../../../node_modules/bootstrap/scss/mixins";
@@ -115,3 +116,5 @@ ul {
 @import "../sass/blocks/cabinet__tab-order.scss";
 @import "../sass/blocks/cabinet__tab-reviews.scss";
 @import "../sass/blocks/cabinet__tab-reviews-correspondence.scss";
+@import "../sass/blocks/cabinet__tab-notifications.scss";
+@import "../sass/blocks/popup.scss";

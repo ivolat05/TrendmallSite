@@ -1902,6 +1902,74 @@
                 
                     </div>
                 
+                </div>            <div id='tab_11' class="cabinet__tab">
+                    <div class="cabinet__tab-title">
+                        Подписки и уведомления
+                    </div>
+                    <div class="cabinet__tab-notifications">
+                        <div class="subscriptions__active">
+                            <div class="notifications-title">
+                                Мои активные подписки
+                            </div>
+                            <div class="notifications-wrapp">
+                                <div class="notifications-box">
+                                    <div class="notifications-box-title">
+                                        Распродажи и акции<br> для женщин и мужчин
+                                    </div>
+                                    <div class="notifications-info">
+                                        Ежедневно на почту katyavalko925@gmail.com
+                                    </div>
+                                    <div class="notifications-info">
+                                        по Viber
+                                    </div>
+                                    <a href="#popup-subscriptions" class="button notifications-button popup-content">
+                                        Изменить
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="subscriptions__recommendation">
+                            <div class="notifications-title">
+                                Рекомендованные подписки
+                            </div>
+                            <div class="notifications-wrapp">
+                
+                                <div class="notifications-box">
+                                    <div class="notifications__box-wrapp">
+                                        <div class="notifications-box-title">
+                                            Модная рассылка<br>
+                                            раз в неделю
+                                        </div>
+                                        <div class="notifications-avatar">
+                                            <img class='notifications-avatar-img' src="./assets/img/im-1.svg    " alt="">
+                                        </div>
+                                    </div>
+                                    <button class="btn notifications-btn">
+                                        Подписаться
+                                    </button>
+                                </div>
+                
+                                <div class="notifications-box">
+                                    <div class="notifications__box-wrapp">
+                                        <div class="notifications-box-title">
+                                            Акции от<br>
+                                            избранных магазинов
+                                        </div>
+                                        <div class="notifications-avatar">
+                                            <img class='notifications-avatar-img' src="./assets/img/sale.svg    " alt="">
+                                        </div>
+                                    </div>
+                                    <button class="btn notifications-btn">
+                                        Подписаться
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                
+                
+                    </div>
+                
                 </div>
             </div>
         </div>
@@ -2039,6 +2107,97 @@
                 </div>
             </div>
         </div>
+    </div><div id='popup-subscriptions' class="popup popup-subscriptions mfp-hide">
+        <div class="popup-title">
+            Распродажи и акции для женщин
+            и мужчин
+        </div>
+        <button class="popup-close" onClick="closePopup();">
+            <img src="./assets/img/close.svg" alt="">
+        </button>
+        <div class="popup-row">
+            <div class="popup-label">
+                <label class="label">
+                    <input type="checkbox" class="label__checkbox">
+                    <span class="label__span"></span>
+                </label>
+            </div>
+            <div class="popup-row-text">
+                <img class="popup__row-img" src="./assets/img/tell.svg" alt="">
+                Подписаться на наш Телеграм канал
+            </div>
+        </div>
+        <div class="popup-row">
+            <div class="popup-label">
+                <label class="label">
+                    <input type="checkbox" class="label__checkbox" checked>
+                    <span class="label__span"></span>
+                </label>
+            </div>
+            <div class="popup-row-text">
+                <img class="popup__row-img" src="./assets/img/Viber-Logo.png" alt="">
+                Через Viber
+            </div>
+        </div>
+        <div class="popup-row">
+            <div class="popup-label">
+                <label class="label">
+                    <input type="checkbox" class="label__checkbox" checked>
+                    <span class="label__span"></span>
+                </label>
+            </div>
+            <div class="popup-row-text">
+                SMS
+            </div>
+        </div>
+        <div class="popup-row">
+            <div class="popup-label">
+                <label class="label">
+                    <input type="checkbox" class="label__checkbox">
+                    <span class="label__span"></span>
+                </label>
+            </div>
+            <div class="popup-row-text">
+                ПО email
+            </div>
+        </div>
+        <div class="select popup-select">
+            <div class="select__header">
+                <span class="select__current">
+                    Раз в неделю
+                </span>
+            </div>
+            <div class="select__body">
+                <div class="select__item">Раз в неделю</div>
+                <div class="select__item">Раз в неделю</div>
+            </div>
+        </div>
+        <div class="popup-box-btn">
+            <a href="#popup-confirmation" class="button popup-button popup-content">
+                Отписаться
+            </a>
+            <button class="btn popup-btn" onClick="closePopup();">
+                Сохранить
+            </button>
+        </div>
+    
+    </div><div id='popup-confirmation' class="popup popup-confirmation mfp-hide">
+        <div class="popup-title popup-confirmation-title">
+            Вы уверенны, что хотите описаться от рассылки
+        </div>
+        <button class="popup-close" onClick="closePopup();">
+            <img src="./assets/img/close.svg" alt="">
+        </button>
+    
+        <div class="popup-box-btn">
+            <button class="button popup-button" onClick="closePopup();">
+                Отписаться
+            </button>
+            <button class="btn popup-btn" onClick="closePopup();">
+                Сохранить
+            </button>
+        </div>
+    
     </div>    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/js/app.min.js"></script>
 </body>

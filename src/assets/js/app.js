@@ -1,8 +1,19 @@
 //= components/jquery.maskedinput.min.js
+//= components/jquery.magnific-popup.js
 $(function () {
     $("#telForm").mask("+3(999) 999-99-99");
+    $('.popup-content').magnificPopup({
+        type: 'inline',
+        mainClass: 'mfp-fade'
+    });
+
+    // popup close
+
 
 });
+function closePopup() {
+    $.magnificPopup.close();
+}
 
 
 // select

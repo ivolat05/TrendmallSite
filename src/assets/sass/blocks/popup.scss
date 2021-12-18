@@ -1,0 +1,150 @@
+.popup {
+    max-width: 596px;
+    margin: 0 auto;
+    padding: 33px 45px 62px 45px;
+    background: #ffffff;
+    box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.21);
+    position: relative;
+}
+
+.popup-close {
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    position: absolute;
+    top: 36px;
+    right: 33px;
+    cursor: pointer;
+}
+
+.popup-title {
+    width: 263px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 136.9%;
+    color: #2c2c31;
+    margin-bottom: 47px;
+}
+
+.popup-row-text {
+    display: flex;
+    align-items: center;
+}
+
+.popup__row-img {
+    margin-right: 11px;
+}
+
+.popup-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.popup-label {
+    width: 20px;
+    height: 20px;
+    margin-right: 14px;
+    .label__span:before {
+        transform: scale(1.1);
+    }
+    .label__checkbox:checked + .label__span:before {
+        transform: scale(0.8);
+        left: -3px;
+    }
+}
+
+.popup-row-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2c2c31;
+}
+
+.popup-select {
+    margin-top: 43px;
+    margin-bottom: 53px;
+    padding: 14px 20px;
+    border: 1px solid #dbdbdb;
+
+    border-radius: 4px;
+    .select__header {
+        background: url("../../assets/img/select-arrow.svg") no-repeat center right -1px;
+    }
+}
+
+.popup-btn {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    padding: 12px 82px;
+}
+
+.popup-button {
+    display: block;
+    width: 248px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 13px 82px 16px 75px;
+}
+
+.popup-box-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-confirmation-title {
+    padding-top: 57px;
+    padding-bottom: 49px;
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 136.9%;
+}
+.popup-confirmation .popup-close {
+    top: 25px;
+}
+
+.mfp-fade.mfp-bg {
+    opacity: 0;
+
+    -webkit-transition: all 0.35s ease-out;
+    -moz-transition: all 0.35s ease-out;
+    transition: all 0.35s ease-out;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+    opacity: 0.8;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+    opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+    opacity: 0;
+
+    -webkit-transition: all 0.35s ease-out;
+    -moz-transition: all 0.35s ease-out;
+    transition: all 0.35s ease-out;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+    opacity: 1;
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+    opacity: 0;
+}
+
+.mfp-close-btn-in .mfp-close {
+    display: none;
+}
