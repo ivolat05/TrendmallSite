@@ -1,0 +1,51 @@
+.cabinet__sales-name {
+    font-weight: bold;
+}
+
+.cabinet__sales-box-btn {
+    .cabinet__btn-1::before {
+        content: url("../../assets/img/sales-1.svg");
+    }
+
+    .cabinet__btn-2::before {
+        content: url("../../assets/img/sales-2.svg");
+    }
+
+    .cabinet__btn-3::before {
+        content: url("../../assets/img/sales-3.svg");
+    }
+    .cabinet__btn-4::before {
+        content: url("../../assets/img/sales-4.svg");
+    }
+    .cabinet__btn-5::before {
+        content: url("../../assets/img/sales-5.svg");
+    }
+    .cabinet__btn-6::before {
+        content: url("../../assets/img/sales-6.svg");
+    }
+    .cabinet__btn-7::before {
+        content: url("../../assets/img/sales-7.svg");
+    }
+    .cabinet__btn-8::before {
+        content: url("../../assets/img/sales-8.svg");
+    }
+    .cabinet__btn-9::before {
+        content: url("../../assets/img/sales-9.svg");
+    }
+    .cabinet__btn-10::before {
+        content: url("../../assets/img/sales-10.svg");
+    }
+    .cabinet__btn-11::before {
+        content: url("../../assets/img/sales-11.svg");
+    }
+    .cabinet__btn-12::before {
+        content: url("../../assets/img/sales-12.svg");
+    }
+    .cabinet__btn-13::before {
+        content: url("../../assets/img/sales-13.svg");
+    }
+}
+
+.cabinet-red {
+    color: #f44e51;
+}
