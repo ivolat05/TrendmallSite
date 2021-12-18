@@ -1,0 +1,54 @@
+.corr__wrapp {
+    max-width: 855px;
+    margin-bottom: 11px;
+    .cabinet__reviews-box {
+        margin-bottom: 0;
+        border: none;
+    }
+    .sellers-dell {
+        bottom: 11px;
+    }
+    border: 1px solid #eaf0f8;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+.corr__wrapp-inner {
+    margin-top: 16px;
+    padding: 20px 0 21px 0;
+    border-top: 1px solid #edf2f7;
+    display: flex;
+    justify-content: start;
+    margin-left: 104px;
+    margin-right: 39px;
+}
+
+.corr-avatar {
+    margin-right: 12px;
+}
+
+.corr-name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 141.9%;
+
+    color: #2c2c31;
+    padding-top: 8px;
+}
+
+.corr-date {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 25px;
+    color: #6f6e6e;
+    padding-bottom: 14px;
+
+    opacity: 0.7;
+}
+
+.corr-text {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 146.4%;
+    color: #2c2c31;
+}
