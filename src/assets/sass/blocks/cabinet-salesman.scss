@@ -2,7 +2,12 @@
     font-weight: bold;
 }
 
+.cabinet__sales-box {
+    padding-bottom: 35px;
+}
+
 .cabinet__sales-box-btn {
+    margin-bottom: 0;
     .cabinet__btn-1::before {
         content: url("../../assets/img/sales-1.svg");
     }
