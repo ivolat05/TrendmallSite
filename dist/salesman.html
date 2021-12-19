@@ -116,12 +116,12 @@
                     <defs>
                         <linearGradient id="paint0_linear_1326:35548" x1="0" y1="2.46387" x2="148.11" y2="-2.48374"
                             gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#00DDFF" />
+                            <stop offset="0" stop-color="#00DDFF" />
                             <stop offset="1" stop-color="#FF00D4" />
                         </linearGradient>
                         <linearGradient id="paint1_linear_1326:35548" x1="0" y1="31" x2="148.11" y2="26.0524"
                             gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#00DDFF" />
+                            <stop offset="0" stop-color="#00DDFF" />
                             <stop offset="1" stop-color="#FF00D4" />
                         </linearGradient>
                     </defs>
@@ -156,7 +156,7 @@
         </div>
     
         <!-- Navbar -->
-        <nav class="navbar" role="navigation">
+        <nav class="navbar">
             <div class="container">
                 <ul>
                     <li><a href="#">Новинки</a></li>
@@ -347,7 +347,7 @@
                                         Email
                                     </div>
                                     <div class="cabinet__data-col">
-                                        <a href="mailto: demo@example.com">
+                                        <a href="mailto:demo@example.com">
                                             demo@example.com
                                         </a>
                                     </div>
@@ -369,62 +369,254 @@
                             </div>
                 
                             <div class="cabinet__data-box  cabinet__tab-data--hidden">
-                                <div class="cabinet__foto-title">
-                                    Фото профіля
-                                </div>
-                                <div class="cabinet__foto-change">
-                                    <div class="cabinet__avatar">
-                                        ВТ
+                
+                                <div class="my__data-row">
+                                    <div class="my__data-row-box">
+                                        <div class="my__data-row-title">
+                                            Логотип*
+                                        </div>
+                                        <div class="my__data-row-subtitle">
+                                            не более 3 мб
+                                        </div>
+                                        <div class="my__datw-row-box-img">
+                                            <img src="./assets/img/default1.png" alt="">
+                                        </div>
+                                        <label class="btn my__data-btn">
+                                            <input class='cabinet__label-input' type="file">
+                                            Изменить
+                                        </label>
                                     </div>
-                                    <button class='cabinet__foto-btn'>
-                                        Изменить
-                                    </button>
+                                    <div class="my__data-row-box">
+                                        <div class="my__data-row-title">
+                                            Обложка профиля*
+                
+                                        </div>
+                                        <div class="my__data-row-subtitle">
+                                            638 px /368 px,не более 3 мб
+                                        </div>
+                                        <div class="my__datw-row-box-img">
+                                            <img src="./assets/img/RTLAAH424101_14131859_1_v1.png" alt="">
+                                        </div>
+                                        <label class="btn my__data-btn">
+                                            <input class='cabinet__label-input' type="file">
+                                            Изменить
+                                        </label>
+                                    </div>
+                
                                 </div>
                                 <div class="cabinet__data-box-title">
-                                    Имя*
+                                    название бренда/магазина*
                                 </div>
-                                <input class='cabinet-input' type="text">
+                                <input class='cabinet-input my__data-label-input' type="text">
                                 <div class="cabinet__data-box-title">
-                                    Фамилия*
+                                    Описание (не более 300 символов)
                                 </div>
-                                <input class='cabinet-input' type="text">
+                                <textarea class='cabinet__data-textarea'></textarea>
+                
+                                <div class="my__data-delivery">
+                                    <div class="my__data-delivery-title">
+                                        Способы доставки
+                                    </div>
+                                    <div class="my__data-delivery-row">
+                                        <div class="my__data-delivery-box">
+                                            <label class="label">
+                                                <input type="checkbox" class="label__checkbox" checked>
+                                                <span class="label__span"></span>
+                                            </label>
+                                        </div>
+                                        Нова Пошта
+                                    </div>
+                                    <div class="my__data-delivery-row">
+                                        <div class="my__data-delivery-box">
+                                            <label class="label">
+                                                <input type="checkbox" class="label__checkbox">
+                                                <span class="label__span"></span>
+                                            </label>
+                                        </div>
+                                        Укрпошта
+                                    </div>
+                                    <div class="my__data-delivery-row">
+                                        <div class="my__data-delivery-box">
+                                            <label class="label">
+                                                <input type="checkbox" class="label__checkbox">
+                                                <span class="label__span"></span>
+                                            </label>
+                                        </div>
+                                        Justin
+                                    </div>
+                                    <div class="my__data-delivery-row">
+                                        <div class="my__data-delivery-box">
+                                            <label class="label">
+                                                <input type="checkbox" class="label__checkbox" checked>
+                                                <span class="label__span"></span>
+                                            </label>
+                                        </div>
+                                        Cамовывоз
+                                    </div>
+                                </div>
                                 <div class="cabinet__data-box-title">
-                                    Пол*
+                                    Город*
+                                    <div class="my__data-box-subtitle">
+                                        (Город, из которого будет осуществляться доставка товара - для расчета доставки)
+                                    </div>
                                 </div>
                 
-                                <div class="select cabinet-select">
+                                <div class="select cabinet-select my__data-select">
                                     <div class="select__header">
                                         <span class="select__current">
+                                            г. Харьков
                                         </span>
                                     </div>
                                     <div class="select__body">
-                                        <div class="select__item">мужской</div>
-                                        <div class="select__item">женский</div>
+                                        <div class="select__item">г. Харьков</div>
+                                        <div class="select__item">г. Харьков</div>
+                                        <div class="select__item">г. Харьков</div>
+                                    </div>
+                                </div>
+                                <div class="cabinet__data-box-title">
+                                    Добавить адрес точки выдачи заказа
+                                </div>
+                
+                                <input class='cabinet-input' type="text">
+                
+                                <div class='my__data-insert'>
+                
+                                </div>
+                                <button class="my__data-insert-btn">
+                                    Добавить точку выдачи
+                                </button>
+                
+                
+                                <div class="my__data-delivery my__data-delivery-2">
+                                    <div class="my__data-delivery-title">
+                                        Добавить способы оплаты
+                                    </div>
+                                    <div class="my__data-delivery-row">
+                                        <div class="my__data-delivery-box">
+                                            <label class="label">
+                                                <input type="checkbox" class="label__checkbox" checked>
+                                                <span class="label__span"></span>
+                                            </label>
+                                        </div>
+                                        полная оплата на карту
+                                    </div>
+                                    <div class="my__data-delivery-row">
+                                        <div class="my__data-delivery-box">
+                                            <label class="label">
+                                                <input type="checkbox" class="label__checkbox">
+                                                <span class="label__span"></span>
+                                            </label>
+                                        </div>
+                                        предоплата
+                                    </div>
+                                    <div class="my__data-delivery-row">
+                                        <div class="my__data-delivery-box">
+                                            <label class="label">
+                                                <input type="checkbox" class="label__checkbox">
+                                                <span class="label__span"></span>
+                                            </label>
+                                        </div>
+                                        оплата при получении
+                                    </div>
+                                    <div class="my__data-delivery-row">
+                                        <div class="my__data-delivery-box">
+                                            <label class="label">
+                                                <input type="checkbox" class="label__checkbox" checked>
+                                                <span class="label__span"></span>
+                                            </label>
+                                        </div>
+                                        оплата наличными при самовывозе
                                     </div>
                                 </div>
                 
+                                <div class="cabinet__data-box-title my__data-box--600">
+                                    Ссылка на сайт
+                                </div>
+                                <input class='cabinet-input my__data--bottom-input' type="text">
+                                <div class="my__date-survey">
+                                    <div class="my__date-survey-title">
+                                        Personal Stylist (опросник)
+                                    </div>
+                                    <button class="gradient-btn my__date-survey-btn">
+                                        Пройти опрос
+                                    </button>
+                                </div>
                 
+                
+                                <div class="cabinet__data-box-title my__data-box--600 my__data--bottom-title">
+                                    Ваши личные данные
+                                </div>
+                                <div class="my__data-wrapp">
+                                    <div class="my__input-box">
+                                        <div class="cabinet__data-box-title">
+                                            Имя*
+                                        </div>
+                                        <input class='cabinet-input' type="text">
+                                    </div>
+                                    <div class="my__input-box">
+                                        <div class="cabinet__data-box-title">
+                                            Фамилия*
+                                        </div>
+                                        <input class='cabinet-input' type="text">
+                                    </div>
+                
+                                </div>
                                 <div class="cabinet__data-box-title">
-                                    Дата Рождения
+                                    ФЛП с которой заключается договор*
                                 </div>
                                 <input class='cabinet-input' type="text">
+                                <div class="my__data-document">
+                                    <label class="my__document-add my__data-btn">
+                                        <input class='cabinet__label-input' type="file">
+                                        Добавить документы
+                                    </label>
+                                    <div class="my__document-box">
+                                        <div id='document_1' class="my__document">
+                                            <div class="file-dowland">
+                                                <label class='cabinet__data-label'>
+                                                    <input class='cabinet__label-input' type="file">
+                                                    Договор ФЛП.docx
+                                                </label>
+                                                <div class='file-size'>1.46MB</div>
+                                            </div>
+                                            <button class='my__document-dell' data-document='#document_1'></button>
+                                        </div>
+                                        <div id='document_2' class="my__document">
+                                            <div class="file-dowland">
+                                                <label class='cabinet__data-label'>
+                                                    <input class='cabinet__label-input' type="file">
+                                                    Договор ФЛП.docx
+                                                </label>
+                                                <div class='file-size'>1.46MB</div>
+                                            </div>
+                                            <button class='my__document-dell' data-document='#document_2'></button>
+                                        </div>
+                                    </div>
                 
-                                <div class="cabinet__data-box-title">
-                                    Email
                                 </div>
-                                <input class='cabinet-input' type="text">
                 
-                                <div class="cabinet__data-box-title">
-                                    Телефон
+                                <div class="my__data-wrapp ">
+                                    <div class="my__input-box">
+                                        <div class="cabinet__data-box-title">
+                                            Email
+                                        </div>
+                                        <input class='cabinet-input' type="email" required>
+                                    </div>
+                                    <div class="my__input-box">
+                                        <div class="cabinet__data-box-title">
+                                            Телефон
+                                        </div>
+                                        <input class='cabinet-input telForm-2' type="tel">
+                                    </div>
+                
                                 </div>
-                                <input id='telForm' class='cabinet-input telForm' type="tel">
+                
                                 <div class="cabinet__data-box-title">
                                     Пароль*
                                 </div>
                                 <div class="cabinet__box-password">
                                     <input id='input__password-1' class='cabinet-input cabinet-input-password' type="password">
                                     <button class="cabinet__password-btn" data-password='#input__password-1'>
-                
                                     </button>
                                 </div>
                                 <div class="cabinet__data-box-title">
@@ -433,7 +625,6 @@
                                 <div class="cabinet__box-password">
                                     <input id='input__password-2' class='cabinet-input cabinet-input-password' type="password">
                                     <button class="cabinet__password-btn" data-password='#input__password-2'>
-                
                                     </button>
                                 </div>
                                 <div class="cabinet__data-box-title">
@@ -442,7 +633,6 @@
                                 <div class="cabinet__box-password">
                                     <input id='input__password-3' class='cabinet-input cabinet-input-password' type="password">
                                     <button class="cabinet__password-btn" data-password='#input__password-3'>
-                
                                     </button>
                                 </div>
                 

@@ -1,6 +1,7 @@
 .select {
     width: 100%;
     position: relative;
+    cursor: pointer;
 }
 
 .select.is-active .select__body {

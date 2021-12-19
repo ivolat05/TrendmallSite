@@ -2,6 +2,7 @@
 //= components/jquery.magnific-popup.js
 $(function () {
     $("#telForm").mask("+3(999) 999-99-99");
+    $(".telForm-2").mask("+3(999) 999-99-99");
     $('.popup-content').magnificPopup({
         type: 'inline',
         mainClass: 'mfp-fade'
@@ -127,6 +128,30 @@ function productSize() {
     })
 }
 
+// добовлние  точки выдочи заказа
+function myDataInsert() {
+    let myDataInsertBtn = document.querySelector('.my__data-insert-btn');
+    let myDataInsert = document.querySelector('.my__data-insert');
+    myDataInsertBtn.addEventListener('click', () => {
+        let cabinetInputContainer = document.createElement('span');
+        cabinetInputContainer.innerHTML = '<input class="cabinet-input" type="text">'
+        myDataInsert.appendChild(cabinetInputContainer);
+
+    })
+}
+
+// delite document
+
+function fileDell() {
+    const myDocumentDell = document.querySelectorAll('.my__document-dell');
+    myDocumentDell.forEach((item) => {
+        item.addEventListener('click', function () {
+            let tabId = item.getAttribute('data-document');
+            let myDocument = document.querySelector(tabId);
+            myDocument.remove();
+        });
+    });
+}
 
 select();
 showPassword();
@@ -134,3 +159,5 @@ tabs();
 dataMenuHidden();
 productLike();
 productSize();
+myDataInsert();
+fileDell();
