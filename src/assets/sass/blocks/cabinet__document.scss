@@ -1,0 +1,28 @@
+.cabinet__document {
+    max-width: 1010px;
+    background: #ffffff;
+    border: 1px solid #eaf0f8;
+    border-radius: 8px;
+    margin-top: 39px;
+    margin-left: 34px;
+    height: 934px;
+    margin-bottom: 62px;
+    .file-dowland {
+        margin-top: 11px;
+    }
+
+    .my__document-add {
+        width: 190px;
+        margin-left: auto;
+        margin-right: 0;
+        margin-top: 30px;
+        display: block;
+        padding-right: 0;
+    }
+}
+
+.cabinet__document-wrapp {
+    max-width: 737px;
+    padding-top: 22px;
+    padding-left: 29px;
+}
