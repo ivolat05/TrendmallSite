@@ -62,3 +62,16 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: "Inter";
+    src: url("../../assets/font/Inter-Regular.eot");
+    src: url("../../assets/font/Inter-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../../assets/font/Inter-Regular.woff2") format("woff2"),
+        url("../../assets/font/Inter-Regular.woff") format("woff"),
+        url("../../assets/font/Inter-Regular.ttf") format("truetype"),
+        url("../../assets/font/Inter-Regular.svg#Inter-Regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,5 +1,7 @@
+//= components/jquery.mCustomScrollbar.js
 //= components/jquery.maskedinput.min.js
 //= components/jquery.magnific-popup.js
+
 $(function () {
     $("#telForm").mask("+3(999) 999-99-99");
     $(".telForm-2").mask("+3(999) 999-99-99");
@@ -12,6 +14,14 @@ $(function () {
 
 
 });
+$(window).on("load", function () {
+    $(".chat__message-box").mCustomScrollbar({
+    });
+    $(".chat__user-box").mCustomScrollbar({
+    });
+});
+
+
 function closePopup() {
     $.magnificPopup.close();
 }

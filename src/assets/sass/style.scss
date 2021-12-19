@@ -5,7 +5,7 @@
 @import "../../../node_modules/bootstrap/scss/variables";
 @import "../../../node_modules/bootstrap/scss/mixins";
 @import "../../../node_modules/bootstrap/scss/_containers";
-
+@import "../sass/vendor/jquery.mCustomScrollbar.scss";
 * {
     box-sizing: border-box;
     font-family: "Montserrat";
@@ -121,3 +121,5 @@ ul {
 @import "../sass/blocks/cabinet-salesman.scss";
 @import "../sass/blocks/cabinet__my-data.scss";
 @import "../sass/blocks/cabinet__document.scss";
+@import "../sass/blocks/cabinet__chat.scss";
+@import "../sass/blocks/scroll.scss";
