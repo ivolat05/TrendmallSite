@@ -1,0 +1,35 @@
+.product__publish-btn {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ffffff;
+    padding: 13px 36px;
+    display: block;
+}
+
+.product__creation-wrapp {
+    max-width: 1000px;
+    min-height: 1060px;
+    background: #ffffff;
+    border: 1px solid #eaf0f8;
+    border-radius: 8px;
+
+    margin-top: 25px;
+    margin-left: 36px;
+    padding-left: 42px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 105px;
+    margin-bottom: 24px;
+
+    .select {
+        width: 66%;
+        margin-bottom: 16px;
+    }
+    .cabinet-input {
+        width: 66%;
+    }
+    .accordion-wrapp {
+        margin-top: 37px;
+    }
+}

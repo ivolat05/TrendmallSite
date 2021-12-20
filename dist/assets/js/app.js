@@ -2484,6 +2484,8 @@ $(window).on("load", function () {
     });
     $(".chat__user-box").mCustomScrollbar({
     });
+    $(".select-checkbox").mCustomScrollbar({
+    });
 });
 
 
@@ -2617,17 +2619,117 @@ function myDataInsert() {
 
 // delite document
 
-function fileDell() {
-    const myDocumentDell = document.querySelectorAll('.my__document-dell');
+function fileDell(buttonDell, dataAtr) {
+    const myDocumentDell = document.querySelectorAll(buttonDell);
     myDocumentDell.forEach((item) => {
         item.addEventListener('click', function () {
-            let tabId = item.getAttribute('data-document');
+            let tabId = item.getAttribute(dataAtr);
             let myDocument = document.querySelector(tabId);
             myDocument.remove();
         });
     });
 }
 
+// btn создания товара
+
+function productCreation() {
+    let productCreationBtn = document.querySelector('.product__creation-btn');
+    let productPublishBtn = document.querySelector('.product__publish-btn');
+    let productCreation = document.querySelector('.product__creation');
+    let product__management = document.querySelector('.product__management');
+
+    productCreationBtn.addEventListener('click', function () {
+        productCreation.classList.remove('product__creation-hidden');
+        product__management.classList.add('product__creation-hidden');
+    });
+
+    productPublishBtn.addEventListener('click', function () {
+        productCreation.classList.add('product__creation-hidden');
+        product__management.classList.remove('product__creation-hidden');
+    });
+};
+
+// accardion
+
+function accardion() {
+    let accordionBtn = document.querySelectorAll('.accordion-btn');
+    accordionBtn.forEach((item) => {
+        item.addEventListener('click', function () {
+            item.classList.toggle('accordion-btn-active');
+        })
+    })
+};
+
+// checboc select
+function selectChecbox(inputChecbox, listHtml) {
+    let selectChoiseLabel = document.querySelectorAll('.select__choise-label');
+    let selectChoiseCheckbox = document.querySelectorAll(inputChecbox)
+    selectChoiseLabel.forEach((item) => {
+        item.addEventListener('click', function () {
+            let choise__list = '';
+            for (let i = 0; i < selectChoiseCheckbox.length; i++) {
+                if (selectChoiseCheckbox[i].checked == true) {
+
+                    choise__list += selectChoiseCheckbox[i].value;
+                    choise__list += ', ';
+
+                }
+            }
+            document.querySelector(listHtml).innerHTML = choise__list.slice(0, -2)
+
+        })
+    })
+}
+
+
+
+
+function selectCheckboxActive() {
+    let selectCheckboxHeader = document.querySelectorAll('.select-checkbox-header');
+    let selectCheckboxBtn = document.querySelectorAll('.select-checkbox-btn');
+    selectCheckboxHeader.forEach((item) => {
+        item.addEventListener('click', selectToggle)
+    })
+    function selectToggle() {
+        this.parentElement.classList.toggle('--active');
+    }
+    selectCheckboxBtn.forEach((item) => {
+        item.addEventListener('click', selectClose)
+    })
+    function selectClose() {
+        this.parentElement.parentElement.classList.toggle('--active');
+    }
+
+}
+
+// удаление добовление placholder creation__textarea
+
+function creationPlacholer() {
+    let creationDescriptionTextarea = document.querySelectorAll('.creation__description-textarea');
+
+    creationDescriptionTextarea.forEach((item) => {
+        item.addEventListener('click', function () {
+            item.classList.add('placholder-del');
+
+        })
+
+        document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
+            creationDescriptionTextarea.forEach((item) => {
+
+                if (!$(item).is(":focus") && item.value == '') {
+                    item.classList.remove('placholder-del');
+                }
+            });
+        });
+
+    });
+
+}
+
+
+selectCheckboxActive();
+selectChecbox('.select__choise-size', '.select__output-size');
+selectChecbox('.select__checkbox-color', '.select__output-color');
 select();
 showPassword();
 tabs();
@@ -2635,4 +2737,8 @@ dataMenuHidden();
 productLike();
 productSize();
 myDataInsert();
-fileDell();
+fileDell('.my__document-dell', 'data-document');
+fileDell('.foto-dell', 'data-foto');
+productCreation();
+accardion();
+creationPlacholer();

@@ -1,0 +1,19 @@
+.product__creation-btn {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ffffff;
+    padding: 13px 36px;
+    display: block;
+}
+
+.product__tab-title {
+    padding-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product__creation-hidden {
+    display: none;
+}

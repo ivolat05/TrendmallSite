@@ -61,10 +61,15 @@
     display: flex;
     justify-content: start;
 }
-.procuct__name-score {
-    font-weight: normal;
+
+.product .procuct__name-score {
     font-size: 13px;
     line-height: 16px;
+}
+.procuct__name-score {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
 
     color: #2c2c31;
     &::after {

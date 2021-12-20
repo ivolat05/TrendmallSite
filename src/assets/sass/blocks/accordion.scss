@@ -1,0 +1,35 @@
+.accordion-box-creation {
+    border-top: 1px solid #edf2f7;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.accordion-btn {
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: left;
+    background: url("../../assets/img/arrow-bottom.svg") no-repeat center right 10px;
+}
+
+.accordion-conteiner {
+    display: none;
+}
+
+.accordion-btn-active {
+    background: url("../../assets/img/arrow-top.svg") no-repeat center right 10px;
+}
+
+.accordion-btn-active + .accordion-conteiner {
+    display: block;
+}
+
+.product__creation-accordion {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2c2c31;
+
+    padding-top: 19px;
+    padding-bottom: 23px;
+}

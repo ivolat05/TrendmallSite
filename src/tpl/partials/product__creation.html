@@ -1,0 +1,88 @@
+<div class="cabinet__tab-title product__tab-title">
+    Создать товар
+    <button class="btn product__publish-btn">
+        Опубликовать
+    </button>
+</div>
+<div class="product__creation-wrapp">
+    <div class="cabinet__data-box-title">
+        Название товара
+    </div>
+    <input class='cabinet-input' type="text">
+    <div class="cabinet__data-box-title">
+        Категория товара*
+    </div>
+    <div class="select cabinet-select ">
+        <div class="select__header">
+            <span class="select__current">
+                Женская одежда
+            </span>
+        </div>
+        <div class="select__body">
+            <div class="select__item">Женская одежда</div>
+            <div class="select__item">Женская одежда</div>
+            <div class="select__item">Женская одежда</div>
+        </div>
+    </div>
+    <div class="select cabinet-select ">
+        <div class="select__header">
+            <span class="select__current">
+                Верхняя одежда
+            </span>
+        </div>
+        <div class="select__body">
+            <div class="select__item">верхняя одежда </div>
+            <div class="select__item">верхняя одежда </div>
+            <div class="select__item">верхняя одежда </div>
+        </div>
+    </div>
+    <div class="select cabinet-select ">
+        <div class="select__header">
+            <span class="select__current">
+                Зимнее пальто
+            </span>
+        </div>
+        <div class="select__body">
+            <div class="select__item">зимнее пальто</div>
+            <div class="select__item">зимнее пальто</div>
+            <div class="select__item">зимнее пальто</div>
+        </div>
+    </div>
+    <div class="accordion-wrapp">
+        <div class="accordion-box accordion-box-creation">
+            <button class="accordion-btn product__creation-accordion">
+                Фото / видео товара
+            </button>
+            <div class="accordion-conteiner">
+                {{>creation__foto}}
+
+            </div>
+        </div>
+
+
+        <div class="accordion-box accordion-box-creation">
+            <button class="accordion-btn product__creation-accordion">
+                Цена
+            </button>
+            <div class="accordion-conteiner">
+                {{>creation__price}}
+            </div>
+        </div>
+        <div class="accordion-box accordion-box-creation">
+            <button class="accordion-btn product__creation-accordion">
+                Характеристики
+            </button>
+            <div class="accordion-conteiner">
+                {{>creation__specifications}}
+            </div>
+        </div>
+        <div class="accordion-box accordion-box-creation">
+            <button class="accordion-btn product__creation-accordion">
+                Описание
+            </button>
+            <div class="accordion-conteiner">
+                {{>creation__description}}
+            </div>
+        </div>
+    </div>
+</div>
