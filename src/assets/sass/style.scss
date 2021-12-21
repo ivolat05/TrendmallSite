@@ -101,6 +101,10 @@ ul {
     left: -3px;
 }
 
+.page {
+    overflow: hidden;
+}
+
 @import "../sass/blocks/cabinet.scss";
 @import "../sass/blocks/cabinet__tab.scss";
 @import "../sass/blocks/cabinet__tab-home.scss";
@@ -136,3 +140,5 @@ ul {
 @import "../sass/blocks/product__management-tabel.scss";
 @import "../sass/blocks/product__promotion.scss";
 @import "../sass/blocks/salesman__product-reviews.scss";
+@import "../sass/blocks/salesman__salesman-tarif.scss";
+@import "../sass/blocks/salesman__salesman-import.scss";

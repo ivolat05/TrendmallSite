@@ -1,0 +1,157 @@
+.salesman__import-wrapp {
+    background: #ffffff;
+    border: 1px solid #eaf0f8;
+    border-radius: 8px;
+    margin-top: 35px;
+    margin-left: 27px;
+    max-width: 1000px;
+    padding: 33px 27px 101px 27px;
+}
+.salesman__import-body {
+    width: 66%;
+}
+.salesman__import-head {
+    position: relative;
+    padding-bottom: 23px;
+    margin-bottom: 30px;
+    &::before {
+        content: "";
+        width: 75%;
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: #edf2f7;
+    }
+}
+.import__head-title {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #2c2c31;
+    padding-bottom: 4px;
+}
+
+.import__head-box {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 31px;
+}
+
+.import__head-btn {
+    padding: 14px 25px 15px 41px;
+    &::before {
+        content: url("../../assets/img/234.svg");
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 17px;
+    }
+}
+.import__head-input {
+    margin-right: 12px;
+    width: 481px;
+    height: 48px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    outline: none;
+    padding: 12px;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #6f6e6e;
+}
+
+.salesman__import-checkbox {
+    margin-bottom: 15px;
+    .choise__label-span {
+        font-weight: 500;
+    }
+}
+
+.salesman__import-btn {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ffffff;
+    width: 215px;
+    padding: 14px;
+    margin-top: 17px;
+    margin-bottom: 43px;
+}
+
+.salesman__import-info-box {
+    background: rgba(196, 196, 196, 0.06);
+    border-radius: 8px;
+    padding: 26px 29px 2px 29px;
+    margin-bottom: 49px;
+}
+
+.import-info-text {
+    max-width: 350px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6f6e6e;
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+}
+
+.import-info-span {
+    width: 100px;
+    font-weight: 500;
+    text-align: left;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.salesman__import-button {
+    font-weight: normal;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 8px;
+}
+
+.salesman__import-specification {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+
+    color: #000000;
+    padding: 0;
+    cursor: pointer;
+    transition: 0.4s;
+    padding-right: 20px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+    &::before {
+        content: url("../../assets/img/Vector3.svg");
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.salesman__import-text {
+    w95%
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #6f6e6e;
+}
+
+.salesman__import-button-box {
+    margin-bottom: 28px;
+}
+
+.salesman__import-specification {
+    margin-bottom: 9px;
+}

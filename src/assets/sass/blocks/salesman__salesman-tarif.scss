@@ -1,0 +1,17 @@
+.salesman__tarif-wrapp {
+    padding-top: 33px;
+    .promotion__tarif-box {
+        background: #55b7b1;
+        margin-right: 20px;
+    }
+    .promotion__tarif-box--premium {
+        background: linear-gradient(180deg, #575959 0%, #181818 100%);
+    }
+    .promotion__tarif-subtitle,
+    .promotion__tarif-title,
+    .promotion__tarif-inner,
+    .promotion__tarif-price,
+    .promotion__tarif-price span {
+        color: #fff;
+    }
+}

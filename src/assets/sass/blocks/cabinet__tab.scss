@@ -6,16 +6,19 @@
     display: block;
 }
 .cabinet__tab-title {
-    width: 100%;
+    max-width: 1072px;
     padding: 35px;
     padding-top: 30px;
-    background: #ffffff;
-    border-bottom: 1px solid #edf2f7;
-
     font-weight: 600;
     font-size: 20px;
     line-height: 136.02%;
     color: #2c2c31;
+}
+
+.cabinet__tab-fon {
+    width: 100vw;
+    border-bottom: 1px solid #edf2f7;
+    background: #fff;
 }
 
 .cabinet__tab-wrapp {
