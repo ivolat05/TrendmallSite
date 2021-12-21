@@ -261,6 +261,27 @@ function creationPlacholer() {
 
 }
 
+// open and close product__promotion 
+
+function openPromotion() {
+    let managementRowBtn = document.querySelectorAll('.management__row-btn');
+    let productManagement = document.querySelector('.product__management');
+    let productPromotion = document.querySelector('.product__promotion');
+    let productPromotionBtn = document.querySelector('.product__promotion-btn');
+
+    managementRowBtn.forEach((item) => {
+        item.addEventListener('click', () => {
+            productManagement.classList.add('product__creation-hidden');
+            productPromotion.classList.remove('product__creation-hidden');
+        })
+    })
+
+    productPromotionBtn.addEventListener('click', () => {
+        productManagement.classList.remove('product__creation-hidden');
+        productPromotion.classList.add('product__creation-hidden');
+    })
+
+};
 
 selectCheckboxActive();
 selectChecbox('.select__choise-size', '.select__output-size');
@@ -277,3 +298,4 @@ fileDell('.foto-dell', 'data-foto');
 productCreation();
 accardion();
 creationPlacholer();
+openPromotion();

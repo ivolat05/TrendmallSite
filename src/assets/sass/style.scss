@@ -119,11 +119,11 @@ ul {
 @import "../sass/blocks/cabinet__tab-notifications.scss";
 @import "../sass/blocks/popup.scss";
 @import "../sass/blocks/cabinet-salesman.scss";
-@import "../sass/blocks/cabinet__my-data.scss";
-@import "../sass/blocks/cabinet__document.scss";
-@import "../sass/blocks/cabinet__chat.scss";
+@import "../sass/blocks/salesman__my-data.scss";
+@import "../sass/blocks/salesman__document.scss";
+@import "../sass/blocks/salesman__chat.scss";
 @import "../sass/blocks/scroll.scss";
-@import "../sass/blocks/cabinet__product-management.scss";
+@import "../sass/blocks/salesman__product-management.scss";
 @import "../sass/blocks/product__creation.scss";
 @import "../sass/blocks/accordion.scss";
 @import "../sass/blocks/creation__foto.scss";
@@ -134,3 +134,5 @@ ul {
 @import "../sass/blocks/product__creation-popup.scss";
 @import "../sass/blocks/product__management.scss";
 @import "../sass/blocks/product__management-tabel.scss";
+@import "../sass/blocks/product__promotion.scss";
+@import "../sass/blocks/salesman__product-reviews.scss";

@@ -1,0 +1,136 @@
+.product__promotion-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.4s;
+    background: none;
+    position: relative;
+
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #2c2c31;
+
+    margin-top: 26px;
+    margin-left: 31px;
+    margin-bottom: 16px;
+    &:hover {
+        text-decoration: underline;
+    }
+    &::before {
+        content: url("../../assets/img/arrow-left.svg");
+        padding-right: 10px;
+    }
+}
+
+.promotion__product {
+    background: #ffffff;
+    border: 1px solid #eaf0f8;
+    border-radius: 8px;
+    padding: 19px 20px 10px 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    margin-right: 35px;
+    margin-left: 37px;
+    margin-bottom: 24px;
+}
+
+.promotion__product-img {
+    margin-right: 15px;
+    img {
+        width: 72px;
+        height: 102px;
+    }
+}
+
+.promotion__product-name {
+    padding-top: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2c2c31;
+}
+
+.promotion__product-code {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6f6e6e;
+}
+
+.product__promotion-wrapp {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-left: 39px;
+}
+
+.promotion__tarif-box {
+    padding: 23px;
+    max-width: 364px;
+    margin-right: 12px;
+    background: linear-gradient(180deg, #fdffff 0%, #f5f5f5 100%);
+    border-radius: 16px;
+    box-shadow: 2px 2px 4px rgba(135, 135, 135, 0.31);
+}
+
+.promotion__tarif-box--premium {
+    background: linear-gradient(180deg, #fdffff 0%, #f5f5f5 100%);
+    border: 1px solid #313234;
+    border-radius: 16px;
+}
+
+.promotion__tarif-subtitle {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #2c2c31;
+}
+
+.promotion__tarif-title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    color: #2c2c31;
+    padding-bottom: 33px;
+}
+
+.promotion__tarif-inner {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #2c2c31;
+    padding-bottom: 7px;
+}
+
+.promotion__tarif-list {
+    padding-bottom: 30px;
+}
+
+.promotion__tarif-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.promotion__tarif-price {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #2c2c31;
+    span {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6f6e6e;
+    }
+}
+
+.promotion__tarif-btn {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ffffff;
+    padding: 12px 38px 12px 37px;
+}

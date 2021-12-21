@@ -1,0 +1,35 @@
+.corr__wrapp-inner {
+    position: relative;
+
+    .sellers-dell {
+        bottom: 26px;
+        right: -13px;
+    }
+}
+.salesman__reviews-container {
+    max-width: 882px;
+}
+.salesman__reviews-wrapp {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    padding-top: 19px;
+    padding-left: 27px;
+}
+
+.salesman__reives-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #ffffff;
+    padding: 12px 50px 14px;
+    margin-top: 29px;
+}
