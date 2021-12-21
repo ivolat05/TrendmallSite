@@ -140,17 +140,6 @@ function productSize() {
     })
 }
 
-// добовлние  точки выдочи заказа
-function myDataInsert() {
-    let myDataInsertBtn = document.querySelector('.my__data-insert-btn');
-    let myDataInsert = document.querySelector('.my__data-insert');
-    myDataInsertBtn.addEventListener('click', () => {
-        let cabinetInputContainer = document.createElement('span');
-        cabinetInputContainer.innerHTML = '<input class="cabinet-input" type="text">'
-        myDataInsert.appendChild(cabinetInputContainer);
-
-    })
-}
 
 // delite document
 
@@ -266,8 +255,6 @@ function creationPlacholer() {
 //windowHide блок который скрывается
 // hideWindow скрытое окно 
 // retrunBtn возврощение в первоночальное состояние
-openPromotion('.management__row-btn', '.product__management', '.product__promotion', '.product__promotion-btn');
-openPromotion('.salwsman__order-open', '.salesman__order-container', '.selesman__order-window ', '.order__return-btn');
 
 function openPromotion(btnOpenWindow, windowHide, hideWindow, retrunBtn) {
     let managementRowBtn = document.querySelectorAll(btnOpenWindow);
@@ -289,6 +276,42 @@ function openPromotion(btnOpenWindow, windowHide, hideWindow, retrunBtn) {
     })
 
 };
+// добовлние  точки выдочи заказа
+function myDataInsert() {
+    let myDataInsertBtn = document.querySelector('.my__data-insert-btn');
+    let myDataInsert = document.querySelector('.my__data-insert');
+    myDataInsertBtn.addEventListener('click', () => {
+        let cabinetInputContainer = document.createElement('span');
+        cabinetInputContainer.innerHTML = '<input class="cabinet-input" type="text">'
+        myDataInsert.appendChild(cabinetInputContainer);
+
+    })
+}
+
+
+// sale tabs 
+function saleTabs() {
+    const cabinetBtn = document.querySelectorAll('.sale__tab-btn');
+    const cabinetTab = document.querySelectorAll('.sale__tab-wrapp');
+
+    cabinetBtn.forEach((item) => {
+        item.addEventListener('click', function () {
+            let tabId = item.getAttribute('data-sale');
+            let currentTab = document.querySelector(tabId);
+
+            cabinetBtn.forEach(function (item) {
+                item.classList.remove('sale__btn-acive')
+            })
+
+            cabinetTab.forEach(function (item) {
+                item.classList.remove('sale__tab-active')
+            })
+            item.classList.add('sale__btn-acive');
+            currentTab.classList.add('sale__tab-active');
+        });
+    });
+
+}
 
 
 selectCheckboxActive();
@@ -306,3 +329,6 @@ fileDell('.foto-dell', 'data-foto');
 productCreation();
 accardion();
 creationPlacholer();
+saleTabs(); openPromotion('.management__row-btn', '.product__management', '.product__promotion', '.product__promotion-btn');
+openPromotion('.salwsman__order-open', '.salesman__order-container', '.selesman__order-window ', '.order__return-btn');
+openPromotion('.salesman__sale-btn', '.salesman__sale', '.add__share', '.add__share-btn');

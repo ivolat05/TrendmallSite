@@ -1,0 +1,361 @@
+.salesman__sale-btn {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 12px 20px;
+}
+
+.sale__tab-wrapp {
+    display: none;
+    margin-left: 34px;
+}
+
+.sale__tab-active {
+    display: block;
+}
+
+.sale__tab-btn {
+    cursor: pointer;
+    background: none;
+    outline: none;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 136.02%;
+    color: #6f6e6e;
+    border: none;
+    transition: 0.4s;
+    width: 205px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    &:hover {
+        background: #ffffff;
+        box-shadow: 0px 4px 11px rgba(211, 219, 240, 0.35);
+        border-radius: 40px;
+    }
+    position: relative;
+    z-index: 1;
+}
+.sale__btn-acive {
+    background: #ffffff;
+    box-shadow: 0px 4px 11px rgba(211, 219, 240, 0.35);
+    border-radius: 40px;
+}
+
+.sale__box-btn {
+    max-width: 410px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    border-radius: 40px;
+    position: relative;
+
+    margin-left: 37px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+.sale__box-btn-fon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #e6e6e6;
+    border-radius: 40px;
+}
+
+.sale__row {
+    padding-top: 16px;
+    padding-bottom: 15px;
+    max-width: 840px;
+    background: #ffffff;
+    border: 1px solid #eaf0f8;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sale__row-wrapp {
+    display: flex;
+}
+
+.sale__row-box {
+    display: flex;
+    position: relative;
+}
+
+.sale__img-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 6px;
+    line-height: 7px;
+    color: #ffffff;
+    padding: 2px 3px 2px 6px;
+    background: #e85858;
+}
+
+.sale__row-box-img {
+    margin-right: 12px;
+}
+
+.sale__row-img {
+    width: 68px;
+    height: 97px;
+}
+
+.sale__row-col-1 {
+    width: 56px;
+}
+
+.sale__row-container {
+    .procuct__name-score {
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 16px;
+        color: #2c2c31;
+        padding-bottom: 15px;
+    }
+    .procuct__name-product {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #2c2c31;
+        opacity: 0.4;
+    }
+    .order__head-data-row {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        color: #2c2c31;
+        span {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            color: #2c2c31;
+        }
+    }
+}
+
+.sale__row-title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #6f6e6e;
+    padding-bottom: 9px;
+}
+
+.sale__row-prace {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2c2c31;
+    border: 1px solid #dbdbdb;
+    width: 133px;
+    height: 42px;
+    border-radius: 4px;
+    padding: 11px 14px;
+}
+
+.slalw__prace-new {
+    color: #f44e51;
+}
+
+.sale__row-inner {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.sale__row-btn {
+    width: 16px;
+    height: 16px;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    display: block;
+    margin-right: 35px;
+    margin-left: 7px;
+    img {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.sale__row-col {
+    label {
+        display: block;
+
+        margin-left: 19px;
+    }
+}
+
+.sale__tab-box {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.sale__tab-chan {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    color: #ffffff;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+
+    margin-right: 15px;
+    &::before {
+        content: url("../../assets/img/pen-active.svg");
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+        position: absolute;
+    }
+}
+
+.sale__tab-dell {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    color: #16192c;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 12px 20px 12px 40px;
+    transition: 0.4s;
+    position: relative;
+    &::before {
+        content: url("../../assets/img/img-1-active.svg");
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 9px;
+    }
+    &:hover::before {
+        content: url("../../assets/img/img-1.svg");
+    }
+}
+
+.sale__wrapper-row {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.sale__wrapper-img {
+    position: relative;
+    img {
+        width: 360px;
+        height: 308px;
+    }
+}
+
+.sale__wrapper-img-inner {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 4px 25px;
+    background: linear-gradient(94.43deg, #a464f1 -18.98%, #efbdd4 113.48%);
+    border-radius: 2px;
+    display: inline-block;
+    position: absolute;
+    bottom: 12px;
+    left: 26px;
+}
+
+.sale__wrapper-inner {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.sale__wrapper-inner-title {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 62px;
+    color: #f44e51;
+}
+
+.sale__wrapper-inner-subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.sale__coll-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2c2c31;
+}
+
+.sale__coll-text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #2c2c31;
+}
+
+.sale__time-text {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    text-transform: lowercase;
+    text-align: right;
+    color: #f44e51;
+}
+
+.sale__time-info {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #f44e51;
+}
+
+.sale__wrapper-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sale__wrapper {
+    width: 60%;
+    background: #ffffff;
+    padding-bottom: 19px;
+}
+
+.sale__tab-box {
+    margin-left: 9px;
+    margin-top: 43px;
+    margin-bottom: 14px;
+}
+
+.sale__wrapper-row-coll {
+    margin-left: 30px;
+}
+
+.sale__time-text {
+    margin-right: 26px;
+}
