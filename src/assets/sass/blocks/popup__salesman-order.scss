@@ -1,0 +1,72 @@
+.popup__salesman-order-title {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6f6e6e;
+    padding-bottom: 11px;
+}
+
+.popup__salesman-order-avatar {
+    width: 41px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 19px;
+    color: #fff;
+    background: #69d9c6;
+    border-radius: 36px;
+    overflow: hidden;
+    margin-right: 15px;
+    img {
+        width: 41px;
+        height: 41px;
+    }
+}
+
+.popup__salesman-order-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2c2c31;
+}
+
+.popup__salesman-order-box {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 40px;
+}
+
+.popup__salesman-order-textarea {
+    width: 100%;
+    resize: none;
+    outline: none;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    height: 155px;
+    margin-bottom: 24px;
+
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 15px;
+    color: #2c2c31;
+}
+
+.popup__salesman-order {
+    padding-left: 31px;
+    padding-right: 31px;
+    .popup-title {
+        margin-bottom: 27px;
+    }
+
+    .popup-btn {
+        margin-left: auto;
+        margin-right: 0;
+        display: block;
+        padding: 15px 63px;
+    }
+}
