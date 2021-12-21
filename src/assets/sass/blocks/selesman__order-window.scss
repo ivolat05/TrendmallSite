@@ -1,0 +1,213 @@
+.order__window-title,
+.order__window-tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order__window-btn {
+    position: relative;
+    border: none;
+    outline: none;
+    border: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    color: #16192c;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #edf2f7;
+    border-radius: 6px;
+    &::before {
+        content: url("../../assets/img/pen.svg");
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+    }
+}
+
+.order__window-btn:hover::before {
+    content: url("../../assets/img/pen-active.svg");
+}
+
+.order__window-wrapp {
+    background: #ffffff;
+    border: 1px solid #eaf0f8;
+    border-radius: 8px;
+}
+
+.order__window-box {
+    border: 1px solid #f1f1f1;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.order__window-wrapp {
+    max-width: 1008px;
+    margin-top: 8px;
+    margin-left: 33px;
+    margin-bottom: 34px;
+    padding: 40px 24px 40px 29px;
+    .--green {
+        color: #27ae60;
+    }
+    .--yellow {
+        color: #f2c94c;
+    }
+    .--red {
+        color: #f44e51;
+    }
+    .--yellow::after {
+        background: #f2c94c;
+    }
+    .--grey {
+        color: #b1b1b1;
+    }
+    .order__window-title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+    }
+    .management__row-satus {
+        font-weight: 500;
+    }
+}
+
+.order__return-btn {
+    margin-top: 7px;
+}
+
+.order__box-head {
+    display: flex;
+    justify-content: start;
+}
+
+.order__head-img {
+    margin-right: 32px;
+    img {
+        width: 225px;
+        height: 315px;
+    }
+}
+
+.order__head-col {
+    .procuct__name-score,
+    .procuct__name-product {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: #2c2c31;
+        opacity: 1;
+    }
+    .product__name {
+        margin-bottom: 39px;
+    }
+}
+
+.order__head-data-row {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #2c2c31;
+    padding-bottom: 10px;
+    span {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: #2c2c31;
+    }
+}
+
+.order__head-table {
+    margin-top: 33px;
+}
+
+.order__head-row-header {
+    padding: 17px 0;
+    background: rgba(196, 196, 196, 0.11);
+    .order__header-col {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: #2c2c31;
+        text-align: center;
+    }
+}
+.order__head-row-body {
+    padding: 17px 0;
+    .order__header-col {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #2c2c31;
+    }
+}
+
+.order__head-row-body,
+.order__head-row-header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.order__head-table {
+    width: 379px;
+    border: 1px solid #e9e9e9;
+}
+
+.order__header-col {
+    width: 33%;
+}
+
+.order__window-row {
+    width: 81%;
+    display: flex;
+    align-items: baseline;
+    justify-content: start;
+    margin-bottom: 26px;
+}
+
+.order__window-paragraph {
+    width: 120px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #6f6e6e;
+}
+
+.order__window-comment,
+.order__window-row-info {
+    width: 70%;
+}
+.order__window-row-info {
+    width: 70%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.order__window-comment {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #2c2c31;
+}
+.order__window-box {
+    padding: 19px 11px 36px 11px;
+}
+
+.order__window-title {
+    margin-bottom: 11px;
+}
+
+.order__window-title-2 {
+    margin-bottom: 22px;
+}
+
+.order__window-box-2 {
+    min-height: 544px;
+    padding: 22px 19px 36px;
+}

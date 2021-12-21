@@ -189,9 +189,16 @@
     .salesman__order-row {
         padding-bottom: 6px;
         padding-top: 9px;
+        cursor: pointer;
     }
 }
 
 .salesman__order-table {
     margin-bottom: 31px;
+}
+
+.salwsman__order-open {
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }

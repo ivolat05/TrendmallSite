@@ -2727,12 +2727,19 @@ function creationPlacholer() {
 }
 
 // open and close product__promotion 
+//btnOpenWindow кнопка открытия скрытого первоночально элемента
+//windowHide блок который скрывается
+// hideWindow скрытое окно 
+// retrunBtn возврощение в первоночальное состояние
+openPromotion('.management__row-btn', '.product__management', '.product__promotion', '.product__promotion-btn');
+openPromotion('.salwsman__order-open', '.salesman__order-container', '.selesman__order-window ', '.order__return-btn');
 
-function openPromotion() {
-    let managementRowBtn = document.querySelectorAll('.management__row-btn');
-    let productManagement = document.querySelector('.product__management');
-    let productPromotion = document.querySelector('.product__promotion');
-    let productPromotionBtn = document.querySelector('.product__promotion-btn');
+function openPromotion(btnOpenWindow, windowHide, hideWindow, retrunBtn) {
+    let managementRowBtn = document.querySelectorAll(btnOpenWindow);
+    let productManagement = document.querySelector(windowHide);
+    let productPromotion = document.querySelector(hideWindow);
+    let productPromotionBtn = document.querySelector(retrunBtn);
+
 
     managementRowBtn.forEach((item) => {
         item.addEventListener('click', () => {
@@ -2747,6 +2754,7 @@ function openPromotion() {
     })
 
 };
+
 
 selectCheckboxActive();
 selectChecbox('.select__choise-size', '.select__output-size');
@@ -2763,4 +2771,3 @@ fileDell('.foto-dell', 'data-foto');
 productCreation();
 accardion();
 creationPlacholer();
-openPromotion();
