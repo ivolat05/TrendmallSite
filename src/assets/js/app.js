@@ -1,6 +1,18 @@
 //= components/jquery.mCustomScrollbar.js
 //= components/jquery.maskedinput.min.js
 //= components/jquery.magnific-popup.js
+//= components/datepicker.min.js
+//= components/jquery.timepicker.min.js
+
+$('.add__share-time').timepicker({
+    timeFormat: 'H:mm',
+    interval: 10,
+    minTime: '0',
+    maxTime: '23:59',
+    startTime: '00:00',
+});
+
+$('.add__share-date').datepicker();
 
 $(function () {
     $("#telForm").mask("+3(999) 999-99-99");
@@ -308,6 +320,7 @@ function saleTabs() {
             })
             item.classList.add('sale__btn-acive');
             currentTab.classList.add('sale__tab-active');
+            this.parentElement.parentElement.classList.toggle('--sale__tab-title-hide');
         });
     });
 
@@ -329,6 +342,7 @@ fileDell('.foto-dell', 'data-foto');
 productCreation();
 accardion();
 creationPlacholer();
-saleTabs(); openPromotion('.management__row-btn', '.product__management', '.product__promotion', '.product__promotion-btn');
+saleTabs();
+openPromotion('.management__row-btn', '.product__management', '.product__promotion', '.product__promotion-btn');
 openPromotion('.salwsman__order-open', '.salesman__order-container', '.selesman__order-window ', '.order__return-btn');
 openPromotion('.salesman__sale-btn', '.salesman__sale', '.add__share', '.add__share-btn');

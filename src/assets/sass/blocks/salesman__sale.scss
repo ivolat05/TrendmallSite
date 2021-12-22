@@ -359,3 +359,23 @@
 .sale__time-text {
     margin-right: 26px;
 }
+
+.--sale__tab-title-hide {
+    .sale__hidden {
+        display: none;
+    }
+    .sale__hidden + .sale__hidden-2 {
+        display: block;
+    }
+}
+
+.sale__hidden-2 {
+    display: none;
+}
+.sale__hidden-2,
+.sale__hidden {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 136.02%;
+    color: #2c2c31;
+}

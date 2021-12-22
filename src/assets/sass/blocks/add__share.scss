@@ -1,0 +1,141 @@
+.add__share-btn {
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    color: #ffffff;
+}
+
+.add__share-wrapp {
+    max-width: 1003px;
+    background: #ffffff;
+    border: 1px solid #eaf0f8;
+    border-radius: 8px;
+    padding: 33px 35px;
+    margin-top: 41px;
+    margin-left: 37px;
+    margin-bottom: 20px;
+}
+
+.add__share-title {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #2c2c31;
+    padding-bottom: 6px;
+}
+
+.add__share-input {
+    margin-bottom: 21px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-transform: uppercase;
+    color: #000000;
+    padding: 15px 17px;
+    outline: none;
+}
+
+.add__share-textarea {
+    resize: none;
+    height: 132px;
+    padding: 15px 17px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: lowercase;
+
+    color: #000000;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 28px;
+}
+
+.add__share-row {
+    width: 44%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 26px;
+}
+
+.add__share-coll-box,
+.add__share-date {
+    position: relative;
+    width: 190px;
+    height: 48px;
+}
+
+.add__share-time-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6f6e6e;
+}
+
+.add__share-time {
+    width: 100%;
+}
+
+.add__share-date,
+.add__share-time {
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    padding: 15px 17px;
+    outline: none;
+    cursor: pointer;
+}
+
+.add__share-time {
+    text-align: center;
+}
+
+.add__share-select,
+.add__share-textarea,
+.add__share-input {
+    width: 60%;
+}
+
+.add__share-open {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #ffffff;
+    padding: 12px 45px;
+    margin-bottom: 100px;
+}
+
+.add__share-banner {
+    width: 189px;
+    height: 141px;
+    display: flex;
+    padding: 9px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    img {
+        width: 173px;
+        height: 95px;
+        object-fit: contain;
+    }
+}
+
+.add__share-select {
+    margin-bottom: 54px;
+}
