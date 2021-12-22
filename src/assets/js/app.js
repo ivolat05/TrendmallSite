@@ -326,6 +326,29 @@ function saleTabs() {
 
 }
 
+// add__share-change tabs 
+function saleTabs() {
+    const cabinetBtn = document.querySelectorAll('.add__share-change-btn');
+    const cabinetTab = document.querySelectorAll('.share-change-tab');
+
+    cabinetBtn.forEach((item) => {
+        item.addEventListener('click', function () {
+            let tabId = item.getAttribute('data-block');
+            let currentTab = document.querySelector(tabId);
+
+
+
+            cabinetTab.forEach(function (item) {
+                item.classList.remove('share-change-tab--active')
+            })
+
+            currentTab.classList.add('share-change-tab--active');
+
+        });
+    });
+
+}
+
 
 selectCheckboxActive();
 selectChecbox('.select__choise-size', '.select__output-size');
@@ -346,3 +369,4 @@ saleTabs();
 openPromotion('.management__row-btn', '.product__management', '.product__promotion', '.product__promotion-btn');
 openPromotion('.salwsman__order-open', '.salesman__order-container', '.selesman__order-window ', '.order__return-btn');
 openPromotion('.salesman__sale-btn', '.salesman__sale', '.add__share', '.add__share-btn');
+openPromotion('.salesman__sale-btn-2', '.salesman__sale', '.add__share-2', '.add__share-btn-2');

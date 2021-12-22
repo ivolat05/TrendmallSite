@@ -1,4 +1,5 @@
-.salesman__sale-btn {
+.salesman__sale-btn,
+.salesman__sale-btn-2 {
     font-weight: 600;
     font-size: 12px;
     line-height: 12px;
@@ -361,15 +362,18 @@
 }
 
 .--sale__tab-title-hide {
-    .sale__hidden {
+    .sale__hidden,
+    .salesman__sale-btn-2 {
         display: none;
     }
-    .sale__hidden + .sale__hidden-2 {
+    .sale__hidden + .sale__hidden-2,
+    .salesman__sale-btn-2 + .salesman__sale-btn {
         display: block;
     }
 }
 
-.sale__hidden-2 {
+.sale__hidden-2,
+.salesman__sale-btn {
     display: none;
 }
 .sale__hidden-2,

@@ -1,0 +1,62 @@
+.share-change-tab {
+    display: none;
+}
+
+.share-change-tab--active {
+    display: block;
+    margin-bottom: 15px;
+    .select {
+        margin-top: 53px;
+        .select__current {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+        }
+    }
+    .add__share-input {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+    }
+}
+
+.add__share-select-2 {
+    .select__current {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+    }
+}
+
+.add__share-change-box-img {
+    margin-bottom: 15px;
+    img {
+        width: 72px;
+        height: 103px;
+    }
+    .foto-dell {
+        width: 16px;
+        height: 16px;
+        bottom: 8px;
+        right: 20px;
+
+        span {
+            display: none;
+        }
+    }
+}
+
+.add__share-select-2 {
+    margin-bottom: 28px;
+}
+
+.add__share-open {
+    padding: 18px 100px;
+    margin-bottom: 82px;
+}
