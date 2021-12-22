@@ -349,7 +349,7 @@ function saleTabs() {
 
 }
 
-
+accardion();
 selectCheckboxActive();
 selectChecbox('.select__choise-size', '.select__output-size');
 selectChecbox('.select__checkbox-color', '.select__output-color');
@@ -363,7 +363,7 @@ myDataInsert();
 fileDell('.my__document-dell', 'data-document');
 fileDell('.foto-dell', 'data-foto');
 productCreation();
-accardion();
+
 creationPlacholer();
 saleTabs();
 openPromotion('.management__row-btn', '.product__management', '.product__promotion', '.product__promotion-btn');

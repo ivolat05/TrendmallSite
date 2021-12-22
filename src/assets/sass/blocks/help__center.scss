@@ -1,0 +1,76 @@
+.help__wrapp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.help__container-wrapp {
+    margin: 0 auto;
+    max-width: 1220px;
+    margin-bottom: 20px;
+}
+
+.help-accordion-btn {
+    background: url("../../assets/img/hellp-btn.svg") no-repeat center right 30px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #2c2c31;
+    position: relative;
+}
+
+.help-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 136.02%;
+    color: #2c2c31;
+    padding-bottom: 47px;
+    padding-top: 31px;
+}
+
+.help__col-1 {
+    width: 28%;
+    border-right: 1px solid #ededed;
+}
+.help__col-2 {
+    width: 67%;
+    padding-bottom: 200px;
+}
+.help-accordion-btn {
+    width: 100%;
+    padding-right: 51px;
+    padding-left: 2px;
+}
+.help-btn {
+    background: none;
+    margin: 0;
+    padding: 0;
+
+    padding-top: 15px;
+    padding-left: 17px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 136.02%;
+    color: #337ab7;
+    &::before {
+        content: "";
+    }
+}
+
+.help__accordion {
+    padding-bottom: 35px;
+}
+
+.help-accordion-btn-line {
+    &::before {
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 28px;
+        right: 0;
+        top: 0;
+        background: #000000;
+        border-radius: 3px;
+    }
+}
