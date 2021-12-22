@@ -1,0 +1,25 @@
+ul.breadcrumb__list {
+}
+
+ul.breadcrumb__list li {
+    display: inline;
+    font-size: 11px;
+    line-height: 13px;
+    color: #6f6e6e;
+}
+
+ul.breadcrumb__list li + li:before {
+    color: #6f6e6e;
+    content: "/\00a0";
+}
+
+ul.breadcrumb__list li a {
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    color: #6f6e6e;
+}
+
+ul.breadcrumb__list li a:hover {
+    text-decoration: underline;
+}

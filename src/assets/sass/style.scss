@@ -106,6 +106,12 @@ ul {
 
 .page {
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+footer {
+    margin-top: auto;
 }
 
 @import "../sass/blocks/cabinet.scss";
@@ -154,3 +160,4 @@ ul {
 @import "../sass/blocks/add__share-change.scss";
 @import "../sass/blocks/help__center.scss";
 @import "../sass/blocks/help__document-text.scss";
+@import "../sass/blocks/breadcrumb.scss";
