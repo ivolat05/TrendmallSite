@@ -25,6 +25,7 @@ $('.add__share-date').datepicker();
 $(function () {
     $("#telForm").mask("+3(999) 999-99-99");
     $(".telForm-2").mask("+3(999) 999-99-99");
+    $(".order__tell").mask("+3(999) 999-99-99");
     $('.popup-content').magnificPopup({
         type: 'inline',
         mainClass: 'mfp-fade'
@@ -594,6 +595,42 @@ function saleTabs() {
 
 }
 
+function postoffice() {
+    let newPostoffice = document.querySelector('.new-postoffice');
+    let justinPostoffice = document.querySelector('.justin-postoffice');
+    let ykrPostoffice = document.querySelector('.ykr-postoffice');
+    let orderPickup = document.querySelector('.orderpickup');
+    let labelOrderCheckbox = document.querySelectorAll('.postoffice-check');
+    let orderRegistrationRow = document.querySelectorAll('.order__registration-row');
+
+    labelOrderCheckbox.forEach((item) => {
+        item.addEventListener('click', () => {
+            for (let i = 0; i < labelOrderCheckbox.length; i++) {
+                labelOrderCheckbox[i].checked = false;
+            }
+            item.checked = true;
+            for (let i = 0; i < orderRegistrationRow.length; i++) {
+                if (orderRegistrationRow[i].classList.contains('order__plasholder-active')) {
+                    orderRegistrationRow[i].classList.remove('order__plasholder-active');
+                }
+
+            }
+
+
+
+            if (newPostoffice.checked) {
+                document.querySelector('.new-postoffice-block').classList.add('order__plasholder-active');
+            } else if (justinPostoffice.checked) {
+                document.querySelector('.justin-postoffice-block').classList.add('order__plasholder-active');
+            } else if (ykrPostoffice.checked) {
+                document.querySelector('.ykr-postoffice-block').classList.add('order__plasholder-active');
+            } else if (orderPickup.checked) {
+                document.querySelector('.orderpickup-block').classList.add('order__plasholder-active');
+            }
+        })
+
+    })
+};
 
 // accardion();
 // tabs();

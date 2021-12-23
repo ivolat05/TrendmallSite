@@ -177,7 +177,514 @@
                 </div>
             </nav>
             <!-- Navbar -->
-        </header>    <footer>
+        </header>    <div class="order">
+            <div class="container">
+                <div class="order__wrapp">
+                    <div class="order__registration">
+                        <div class="order__registration-title">
+                            Оформление заказа
+                        </div>
+                        <div class="order__registration-body">
+                            <div class="order__registration-box">
+                                <div class="order__registration-row">
+                                    <div class="order__registration-col">
+                                        <div class="order-form-title">
+                                            Имя
+                                        </div>
+                                        <input type="text" class="order__input" pattern=".+@globex\.com" required>
+                                    </div>
+                                    <div class="order__registration-col">
+                                        <div class="order-form-title">
+                                            Фамилия
+                                        </div>
+                                        <input type="text" class="order__input">
+                                    </div>
+                                </div>
+                                <div class="order__registration-row">
+                                    <div class="order__registration-col">
+                                        <div class="order-form-title">
+                                            Email*
+        
+                                        </div>
+                                        <input type="email" class="order__input order__mail" pattern=".+@globex\.com" required>
+                                    </div>
+                                    <div class="order__registration-col">
+                                        <div class="order-form-title">
+                                            Телефон*
+        
+                                        </div>
+                                        <input type="tel" class="order__input order__tell">
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="order__registration-subtitle">
+                                Способ доставки
+                            </div>
+                            <div class="order__registration-box order-postoffice">
+                                <div class="order__registration-row">
+                                    <div class="order__registration-col">
+                                        <label class="order-label ">
+                                            <input class="postoffice-check label__order-checkbox new-postoffice" type="checkbox"
+                                                checked>
+                                            <span class="order__label-span">
+                                                <img class='postoffice-img' src="./assets/img/postoffice-img-1.png" alt="">
+                                                Нова Пошта
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="order__registration-col">
+                                        <label class="order-label">
+                                            <input class="postoffice-check label__order-checkbox justin-postoffice"
+                                                type="checkbox">
+                                            <span class="order__label-span ">
+                                                <img class='postoffice-img' src="./assets/img/postoffice-img-2.png" alt="">
+                                                Justin
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="order__registration-row">
+                                    <div class="order__registration-col">
+                                        <label class="order-label">
+                                            <input class="postoffice-check label__order-checkbox ykr-postoffice"
+                                                type="checkbox">
+                                            <span class="order__label-span ">
+                                                <img class='postoffice-img' src="./assets/img/postoffice-img-3.png" alt="">
+                                                Укрпошта
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="order__registration-col">
+                                        <label class="order-label ">
+                                            <input class="postoffice-check label__order-checkbox orderpickup" type="checkbox">
+                                            <span class="order__label-span">
+                                                самовывоз
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+        
+        
+                                <div class="order__registration-row justin-postoffice-block">
+                                    <div class="order__registration-col">
+                                        <div class="order-form-title">
+                                            Город*
+                                        </div>
+                                        <div class="select cabinet-select order-select">
+                                            <div class="select__header">
+                                                <span class="select__current">
+        
+                                                </span>
+                                            </div>
+                                            <div class="select__body">
+                                                <div class="select__item">г. Харьков</div>
+                                                <div class="select__item">г. Харьков</div>
+                                                <div class="select__item">г. Харьков</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order__registration-col">
+                                        <div class="order-form-title">
+                                            № отделения "Justin"
+                                        </div>
+                                        <div class="select cabinet-select order-select ">
+                                            <div class="select__header">
+                                                <span class="select__current">
+                                                    <span class="order__select-plasholder">
+                                                        № отделения "Justin"
+                                                    </span>
+        
+                                                </span>
+                                            </div>
+                                            <div class="select__body">
+                                                <div class="select__item">№ отделения "Justin" </div>
+                                                <div class="select__item">№ отделения "Justin" </div>
+                                                <div class="select__item">№ отделения "Justin" </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="order__registration-row ykr-postoffice-block">
+                                    <div class="order__registration-col">
+                                        <div class="order-form-title">
+                                            Город*
+                                        </div>
+                                        <div class="select cabinet-select order-select">
+                                            <div class="select__header">
+                                                <span class="select__current">
+        
+                                                </span>
+                                            </div>
+                                            <div class="select__body">
+                                                <div class="select__item">г. Харьков</div>
+                                                <div class="select__item">г. Харьков</div>
+                                                <div class="select__item">г. Харьков</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order__registration-col">
+                                        <div class="order-form-title">
+                                            № отделения "Укрпошта"
+                                        </div>
+                                        <div class="select cabinet-select order-select ">
+                                            <div class="select__header">
+                                                <span class="select__current">
+                                                    <span class="order__select-plasholder">
+                                                        № отделения "Укрпошта"
+                                                    </span>
+        
+                                                </span>
+                                            </div>
+                                            <div class="select__body">
+                                                <div class="select__item">№ отделения "Укрпошта" </div>
+                                                <div class="select__item">№ отделения "Укрпошта" </div>
+                                                <div class="select__item">№ отделения "Укрпошта" </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="order__registration-row orderpickup-block">
+                                    <div class="order__registration-col">
+                                        <div class="order-form-title">
+                                            Город*
+                                        </div>
+                                        <div class="select cabinet-select  order-select">
+                                            <div class="select__header">
+                                                <span class="select__current">
+        
+                                                </span>
+                                            </div>
+                                            <div class="select__body">
+                                                <div class="select__item">г. Харьков</div>
+                                                <div class="select__item">г. Харьков</div>
+                                                <div class="select__item">г. Харьков</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order__registration-col">
+                                        <div class="order-form-title">
+                                            Cамовывоз
+                                        </div>
+                                        <div class="select cabinet-select order-select ">
+                                            <div class="select__header">
+                                                <span class="select__current">
+                                                    <span class="order__select-plasholder">
+                                                        Cамовывоз
+                                                    </span>
+        
+                                                </span>
+                                            </div>
+                                            <div class="select__body">
+                                                <div class="select__item">Cамовывоз </div>
+                                                <div class="select__item">Cамовывоз </div>
+                                                <div class="select__item">Cамовывоз </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="order__registration-row new-postoffice-block order__plasholder-active">
+                                    <div class="order__registration-col">
+                                        <div class="order-form-title">
+                                            Город*
+                                        </div>
+                                        <div class="select cabinet-select order-select">
+                                            <div class="select__header">
+                                                <span class="select__current">
+        
+                                                </span>
+                                            </div>
+                                            <div class="select__body">
+                                                <div class="select__item">г. Харьков</div>
+                                                <div class="select__item">г. Харьков</div>
+                                                <div class="select__item">г. Харьков</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order__registration-col">
+                                        <div class="order-form-title">
+                                            № отделения "Новая Почта"
+                                        </div>
+                                        <div class="select cabinet-select order-select ">
+                                            <div class="select__header">
+                                                <span class="select__current">
+                                                    <span class="order__select-plasholder">
+                                                        № отделения "Новая Почта"
+                                                    </span>
+        
+                                                </span>
+                                            </div>
+                                            <div class="select__body">
+                                                <div class="select__item">№ отделения "Новая Почта" </div>
+                                                <div class="select__item">№ отделения "Новая Почта" </div>
+                                                <div class="select__item">№ отделения "Новая Почта" </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+        
+                            <div class="order__registration-subtitle">
+                                Способ оплаты
+                            </div>
+                            <div class="order__registration-box">
+                                <div class="order__registration-row order__row-buy">
+                                    <div class="order__registration-col">
+                                        <label class="order-label">
+                                            <input class="label__order-checkbox" type="checkbox">
+                                            <span class="order__label-span">
+                                                Предоплата
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="order__registration-col">
+                                        <label class="order-label">
+                                            <input class="label__order-checkbox" type="checkbox">
+                                            <span class="order__label-span">
+                                                Оплата при получении
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="order__textarea-tile">
+                                Добавить комментарий к заказу
+                            </div>
+                            <textarea class='order__textarea'></textarea>
+                            <div class="order__registration-text">
+                                Администратором персональных данных является TRENDMALL.com. О том, как мы обрабатываем Ваши
+                                персональные данные Вы можете прочесть ЗДЕСЬ. Вернуть товар Вы можете в течении 14 дней. Более
+                                подробно здесь. Подтверждая заказ, я принимаю условия пользовательского соглашения
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="order__basket">
+                        <div class="order__basdet-title">
+                            в корзине
+                        </div>
+                        <div class="order__basket-body">
+        
+        
+        
+                            <div class="order__basket-box">
+                                <div class="basket__box-title">
+                                    Заказ №1
+                                </div>
+                                <div class="basket__row">
+        
+                                    <div class="basket__row-col">
+                                        <div class="basket__box-img">
+                                            <img class="baskket__img" src="./assets/img/order-1.jpg" alt="">
+                                        </div>
+                                        <div class="basket__wrapp">
+                                            <div class="basket__wrapp-row">
+                                                <div class="basket__wrapp-row-inner">
+                                                    <div class="basket__wrapp-col-1">
+                                                        <div class="basket__wrapp-name-title">
+                                                            Suzie
+                                                        </div>
+                                                        <div class="basket__wrapp-name-product">
+                                                            Летнее платье
+                                                        </div>
+                                                        <div class="basket__wrapp-size">
+                                                            Размер: UK (6)
+                                                        </div>
+                                                    </div>
+                                                    <div class="basket__wrapp-col-2">
+                                                        <div class="basket__btn-box">
+                                                            <button class='basket__btn-product'>
+                                                                <img src="./assets/img/minus.svg" alt=""
+                                                                    class="basket__btn-img">
+                                                            </button>
+                                                            <div class="basket__btn-info">
+                                                                1 шт
+                                                            </div>
+                                                            <button class='basket__btn-product'>
+                                                                <img src="./assets/img/plus.svg" alt="" class="basket__btn-img">
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="basket__wrapp-col-3">
+                                                    <div class="basket-old-price old-price">
+                                                        4399 грн
+        
+                                                    </div>
+                                                    <div class="basket-discoutn-price">
+                                                        2799 грн
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="basket__row-col-bottom">
+                                                <div class="basket-name-score">
+                                                    Магазин:
+                                                    <span class='basket-name-score-span'>
+                                                        Suzie
+                                                    </span>
+                                                </div>
+        
+                                            </div>
+                                        </div>
+                                        <button class='sellers-dell basket-dell'>
+                                            <span>Удалить</span>
+                                        </button>
+                                    </div>
+        
+                                    <div class="basket__row-col">
+                                        <div class="basket__box-img">
+                                            <img class="baskket__img" src="./assets/img/MP002XW06IDQ_13894.jpg" alt="">
+                                        </div>
+                                        <div class="basket__wrapp">
+                                            <div class="basket__wrapp-row">
+                                                <div class="basket__wrapp-row-inner">
+                                                    <div class="basket__wrapp-col-1">
+                                                        <div class="basket__wrapp-name-title">
+                                                            Suzie
+                                                        </div>
+                                                        <div class="basket__wrapp-name-product">
+                                                            Летнее платье
+                                                        </div>
+                                                        <div class="basket__wrapp-size">
+                                                            Размер: UK (6)
+                                                        </div>
+                                                    </div>
+                                                    <div class="basket__wrapp-col-2">
+                                                        <div class="basket__btn-box">
+                                                            <button class='basket__btn-product'>
+                                                                <img src="./assets/img/minus.svg" alt=""
+                                                                    class="basket__btn-img">
+                                                            </button>
+                                                            <div class="basket__btn-info">
+                                                                1 шт
+                                                            </div>
+                                                            <button class='basket__btn-product'>
+                                                                <img src="./assets/img/plus.svg" alt="" class="basket__btn-img">
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="basket__wrapp-col-3">
+                                                    <div class="basket-old-price">
+                                                        4399 грн
+        
+                                                    </div>
+        
+                                                </div>
+                                            </div>
+                                            <div class="basket__row-col-bottom">
+                                                <div class="basket-name-score">
+                                                    Магазин:
+                                                    <span class='basket-name-score-span'>
+                                                        Suzie
+                                                    </span>
+                                                </div>
+        
+                                            </div>
+                                        </div>
+                                        <button class='sellers-dell basket-dell'>
+                                            <span>Удалить</span>
+                                        </button>
+                                    </div>
+        
+                                </div>
+        
+                            </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                            <div class="order__basket-box">
+                                <div class="basket__box-title">
+                                    Заказ №2
+                                </div>
+                                <div class="basket__row">
+        
+                                    <div class="basket__row-col">
+                                        <div class="basket__box-img">
+                                            <img class="baskket__img" src="./assets/img/order-1.jpg" alt="">
+                                        </div>
+                                        <div class="basket__wrapp">
+                                            <div class="basket__wrapp-row">
+                                                <div class="basket__wrapp-row-inner">
+                                                    <div class="basket__wrapp-col-1">
+                                                        <div class="basket__wrapp-name-title">
+                                                            Suzie
+                                                        </div>
+                                                        <div class="basket__wrapp-name-product">
+                                                            Летнее платье
+                                                        </div>
+                                                        <div class="basket__wrapp-size">
+                                                            Размер: UK (6)
+                                                        </div>
+                                                    </div>
+                                                    <div class="basket__wrapp-col-2">
+                                                        <div class="basket__btn-box">
+                                                            <button class='basket__btn-product'>
+                                                                <img src="./assets/img/minus.svg" alt=""
+                                                                    class="basket__btn-img">
+                                                            </button>
+                                                            <div class="basket__btn-info">
+                                                                1 шт
+                                                            </div>
+                                                            <button class='basket__btn-product'>
+                                                                <img src="./assets/img/plus.svg" alt="" class="basket__btn-img">
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="basket__wrapp-col-3">
+                                                    <div class="basket-old-price old-price">
+                                                        4399 грн
+        
+                                                    </div>
+                                                    <div class="basket-ball-price">
+                                                        54 балла
+                                                    </div>
+                                                    <div class="basket-discoutn-price">
+                                                        2799 грн
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="basket__row-col-bottom">
+                                                <div class="basket-name-score">
+                                                    Магазин:
+                                                    <span class='basket-name-score-span'>
+                                                        Suzie
+                                                    </span>
+                                                </div>
+                                                <div class="basket-balls">
+                                                    Доступно 54 бонусных балла
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class='sellers-dell basket-dell'>
+                                            <span>Удалить</span>
+                                        </button>
+                                    </div>
+        
+                                </div>
+        
+                            </div>
+        
+        
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    <footer>
             <div class="container">
                 <div class="column">
                     <img class="footer-img" src="./assets/img/footer-img.svg" alt="">
@@ -317,8 +824,8 @@
     <script src="assets/js/app.min.js"></script>
     <script>
         window.onload = function () {
-            filterChecbox(".select__choise-checkbox", '.filter__list', '.select__choise-size-title');
     
+            postoffice();
             accardion();
             tabs();
             selectCheckboxActive();
@@ -330,17 +837,14 @@
     
             productLike();
             productSize();
-            myDataInsert();
+    
             fileDell('.my__document-dell', 'data-document');
             fileDell('.foto-dell', 'data-foto');
-            productCreation();
+    
     
             creationPlacholer();
             saleTabs();
-            openPromotion('.management__row-btn', '.product__management', '.product__promotion', '.product__promotion-btn');
-            openPromotion('.salwsman__order-open', '.salesman__order-container', '.selesman__order-window ', '.order__return-btn');
-            openPromotion('.salesman__sale-btn', '.salesman__sale', '.add__share', '.add__share-btn');
-            openPromotion('.salesman__sale-btn-2', '.salesman__sale', '.add__share-2', '.add__share-btn-2');
+    
     
         }
     
