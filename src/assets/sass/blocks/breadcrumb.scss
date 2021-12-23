@@ -1,6 +1,10 @@
 ul.breadcrumb__list {
 }
 
+.breadcrumb__wrapp {
+    max-width: 1200px;
+    margin: 10px auto 20px;
+}
 ul.breadcrumb__list li {
     display: inline;
     font-size: 11px;

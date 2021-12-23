@@ -1,0 +1,21 @@
+.title__wrapp {
+    max-width: 1200px;
+    display: flex;
+    align-items: baseline;
+    margin: 10px auto 22px;
+    justify-content: start;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #2c2c31;
+}
+
+.title-span {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: lowercase;
+    color: #6f6e6e;
+    padding-left: 8px;
+}

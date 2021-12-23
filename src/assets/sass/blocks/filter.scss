@@ -1,0 +1,149 @@
+.filter {
+    padding-top: 16px;
+    padding-bottom: 19px;
+    background: #f3f3f3;
+    margin-bottom: 33px;
+}
+
+.filter__wrapp {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+.filter__list {
+    position: relative;
+}
+.filter__list div {
+    display: none;
+}
+
+.filter__wrapp-rows {
+    display: flex;
+    flex-wrap: wrap;
+}
+.filter--active {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+}
+.filter--active div {
+    background: #e8e8e8;
+    border-radius: 2px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 233.4%;
+    letter-spacing: 0.01em;
+    color: #6f6e6e;
+    display: block;
+    position: relative;
+    margin: 4px;
+    padding-right: 32px;
+    padding-left: 8px;
+    padding-top: 2px;
+}
+.filter__btn-dell {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.01em;
+    color: #2c2c31;
+    border: 1px solid #2c2c31;
+    display: none;
+    border-radius: 2px;
+    width: 145px;
+    height: 25px;
+    text-align: center;
+}
+
+.filter__wrapp-rows {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.filter--active + .filter__btn-dell {
+    display: block;
+}
+
+.filtr__list-close {
+    width: 10px;
+    height: 10px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    background: none;
+    right: 10px;
+    top: 30%;
+    transform: translateY(-50%);
+    &::before {
+        content: url("../../assets/img/btn__close.svg");
+    }
+}
+.filter__wrapp-row {
+    display: flex;
+    justify-content: space-between;
+    .select-checkbox-header {
+        padding: 9px;
+        min-height: 36px;
+        display: flex;
+        border: 1px solid #e6e6e6;
+        border-radius: 2px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #2c2c31;
+        background: url("../../assets/img/select-arrow.svg") no-repeat center right 16px, #fff;
+        span {
+            padding-left: 5px;
+        }
+    }
+    .select-checkbox-form {
+        margin-right: 4px;
+    }
+    .select-checkbox-list {
+        margin-right: 0px;
+        min-width: 140px;
+    }
+    .select-checkbox-body {
+        padding: 0;
+        height: 290px;
+    }
+    .select-checkbox {
+        padding: 0;
+    }
+    .choise__label-span {
+        padding-left: 27px;
+        padding-bottom: 0;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        color: #2c2c31;
+    }
+    .select-checkbox-btn {
+        width: 95%;
+        margin: 26px auto 5px;
+        display: block;
+    }
+
+    .select-checkbox-btn-dell {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #2c2c31;
+        background: none;
+        margin: 0 auto;
+        width: 95%;
+        transition: 0.4s;
+        padding: 12px;
+        display: block;
+        &:hover {
+            color: #fff;
+            background: #2c2c31;
+            border-radius: 2px;
+        }
+    }
+}

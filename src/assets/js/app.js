@@ -196,6 +196,7 @@ function accardion() {
     })
 };
 
+
 // checboc select
 function selectChecbox(inputChecbox, listHtml) {
     let selectChoiseLabel = document.querySelectorAll('.select__choise-label');
@@ -217,6 +218,241 @@ function selectChecbox(inputChecbox, listHtml) {
     })
 }
 
+
+// checkbox filter select
+
+function filterChecbox(inputChecbox, listHtmls, headNums) {
+    let selectChoiseLabel = document.querySelectorAll('.select__choise-label');
+    let selectChoiseCheckbox = document.querySelectorAll(inputChecbox);
+    let listHtml = document.querySelector(listHtmls);
+    let selectCheckboxBtnDell = document.querySelectorAll('.select-checkbox-btn-dell');
+    let headNum = document.querySelector(headNums);
+    selectChoiseLabel.forEach((item) => {
+        item.addEventListener('click', function () {
+
+            let sumSize = 0;
+            let sumMaterial = 0;
+            let sumColor = 0;
+            let sumPrice = 0;
+            let sumBrand = 0;
+            let sumSeason = 0;
+            let sumSale = 0;
+            let choise__list = [];
+            let x = 0;
+            for (let i = 0; i < selectChoiseCheckbox.length; i++) {
+                if (selectChoiseCheckbox[i].checked == true) {
+                    x += 1
+                    selectChoiseCheckbox[i].id = 'check_' + x;
+                    choise__list.push(selectChoiseCheckbox[i].value)
+
+
+                    if ('select__choise-size' == selectChoiseCheckbox[i].classList[1]) {
+                        sumSize += 1;
+                        headNum.innerHTML = sumSize;
+
+                    }
+                    if ('select__choise-material' == selectChoiseCheckbox[i].classList[1]) {
+                        sumMaterial += 1;
+                        document.querySelector('.select__choise-material-title').textContent += sumMaterial;
+
+                    }
+                    if ('select__choise-color' == selectChoiseCheckbox[i].classList[1]) {
+                        sumColor += 1;
+                        document.querySelector('.select__choise-color-title').textContent += sumColor;
+
+                    }
+                    if ('select__choise-price' == selectChoiseCheckbox[i].classList[1]) {
+                        sumPrice += 1;
+                        document.querySelector('.select__choise-price-title').textContent += sumPrice;
+
+                    }
+                    if ('select__choise-brand' == selectChoiseCheckbox[i].classList[1]) {
+                        sumBrand += 1;
+                        document.querySelector('.select__choise-brand-title').textContent += sumBrand;
+
+                    }
+                    if ('select__choise-season' == selectChoiseCheckbox[i].classList[1]) {
+                        sumSeason += 1;
+                        document.querySelector('.select__choise-season-title').textContent += sumSeason;
+
+                    } if ('select__choise-sale' == selectChoiseCheckbox[i].classList[1]) {
+                        sumSale += 1;
+                        document.querySelector('.select__choise-sale-title').textContent += sumSale;
+                    }
+                }
+            }
+            if (headNum.innerHTML.length > 0) {
+                headNum.innerHTML = '(' + sumSize + ')';
+            }
+            if (document.querySelector('.select__choise-material-title').innerHTML.length > 0) {
+                document.querySelector('.select__choise-material-title').textContent = '(' + sumMaterial + ')';
+            }
+
+
+
+            if (document.querySelector('.select__choise-color-title').innerHTML.length > 0) {
+                document.querySelector('.select__choise-color-title').textContent = '(' + sumColor + ')';
+            }
+
+            if (document.querySelector('.select__choise-price-title').innerHTML.length > 0) {
+                document.querySelector('.select__choise-price-title').textContent = '(' + sumPrice + ')';
+            }
+
+            if (document.querySelector('.select__choise-brand-title').innerHTML.length > 0) {
+                document.querySelector('.select__choise-brand-title').textContent = '(' + sumBrand + ')';
+            }
+
+            if (document.querySelector('.select__choise-season-title').innerHTML.length > 0) {
+                document.querySelector('.select__choise-season-title').textContent = '(' + sumSeason + ')';
+            }
+
+            if (document.querySelector('.select__choise-sale-title').innerHTML.length > 0) {
+                document.querySelector('.select__choise-sale-title').textContent = '(' + sumSale + ')';
+            }
+
+            listHtml.textContent = '';
+            let y = 0;
+            for (let i = 0; i < choise__list.length; i++) {
+                let cabinetInputContainer = document.createElement('div');
+                y += 1;
+                cabinetInputContainer.innerHTML = choise__list[i] + '<button class="filtr__list-close" data-check="check_' + y + '"></button>';
+                listHtml.appendChild(cabinetInputContainer);
+
+
+            }
+
+            function t() {
+                let filtrListClose = document.querySelectorAll('.filtr__list-close');
+                filtrListClose.forEach((item) => {
+                    item.addEventListener('click', () => {
+                        let tabId = item.getAttribute('data-check');
+                        let currentTab = document.getElementById(tabId);
+                        let filtrListClose = document.querySelectorAll('.filtr__list-close');
+                        currentTab.checked = false;
+                        item.parentElement.remove();
+                        if (filtrListClose.length <= 1) {
+                            document.querySelector('.filter__list').classList.remove('filter--active');
+                        }
+
+                        if (currentTab.classList[1] == 'select__choise-size') {
+                            let x = document.querySelector('.select__choise-size-title').textContent;
+                            let y = Number(x.replace(')', '').replace('(', '')) - 1;
+                            if (y <= 0) {
+                                document.querySelector('.select__choise-size-title').textContent = '';
+                            } else {
+                                document.querySelector('.select__choise-size-title').textContent = '(' + y + ')';
+                            }
+                        }
+                        if (currentTab.classList[1] == 'select__choise-material') {
+                            let x = document.querySelector('.select__choise-material-title').textContent;
+                            let y = Number(x.replace(')', '').replace('(', '')) - 1;
+                            if (y <= 0) {
+                                document.querySelector('.select__choise-material-title').textContent = '';
+                            } else {
+                                document.querySelector('.select__choise-material-title').textContent = '(' + y + ')';
+                            }
+                        }
+                        if (currentTab.classList[1] == 'select__choise-color') {
+                            let x = document.querySelector('.select__choise-color-title').textContent;
+                            let y = Number(x.replace(')', '').replace('(', '')) - 1;
+                            if (y <= 0) {
+                                document.querySelector('.select__choise-color-title').textContent = '';
+                            } else {
+                                document.querySelector('.select__choise-color-title').textContent = '(' + y + ')';
+                            }
+                        }
+                        if (currentTab.classList[1] == 'select__choise-price') {
+                            let x = document.querySelector('.select__choise-price-title').textContent;
+                            let y = Number(x.replace(')', '').replace('(', '')) - 1;
+                            if (y <= 0) {
+                                document.querySelector('.select__choise-price-title').textContent = '';
+                            } else {
+                                document.querySelector('.select__choise-price-title').textContent = '(' + y + ')';
+                            }
+                        }
+                        if (currentTab.classList[1] == 'select__choise-brand') {
+                            let x = document.querySelector('.select__choise-brand-title').textContent;
+                            let y = Number(x.replace(')', '').replace('(', '')) - 1;
+                            if (y <= 0) {
+                                document.querySelector('.select__choise-brand-title').textContent = '';
+                            } else {
+                                document.querySelector('.select__choise-brand-title').textContent = '(' + y + ')';
+                            }
+                        }
+                        if (currentTab.classList[1] == 'select__choise-season') {
+                            let x = document.querySelector('.select__choise-season-title').textContent;
+                            let y = Number(x.replace(')', '').replace('(', '')) - 1;
+                            if (y <= 0) {
+                                document.querySelector('.select__choise-season-title').textContent = '';
+                            } else {
+                                document.querySelector('.select__choise-season-title').textContent = '(' + y + ')';
+                            }
+                        }
+                        if (currentTab.classList[1] == 'select__choise-sale') {
+                            let x = document.querySelector('.select__choise-sale-title').textContent;
+                            let y = Number(x.replace(')', '').replace('(', '')) - 1;
+                            if (y <= 0) {
+                                document.querySelector('.select__choise-sale-title').textContent = '';
+                            } else {
+                                document.querySelector('.select__choise-sale-title').textContent = '(' + y + ')';
+                            }
+                        }
+
+                    })
+                })
+
+            }
+            t();
+
+
+        })
+
+        document.querySelectorAll('.select-checkbox-btn').forEach((item) => {
+            item.addEventListener('click', () => {
+                listHtml.classList.add('filter--active');
+            })
+        })
+        document.querySelector('.filter__btn-dell').addEventListener('click', () => {
+            listHtml.classList.remove('filter--active');
+            for (let i = 0; i < selectChoiseCheckbox.length; i++) {
+                if (selectChoiseCheckbox[i].checked == true) {
+                    selectChoiseCheckbox[i].checked = false;
+                }
+                headNum.textContent = '';
+                listHtml.textContent = '';
+                document.querySelector('.select__choise-material-title').textContent = '';
+                document.querySelector('.select__choise-color-title').textContent = '';
+                document.querySelector('.select__choise-price-title').textContent = '';
+                document.querySelector('.select__choise-brand-title').textContent = '';
+                document.querySelector('.select__choise-season-title').textContent = '';
+                document.querySelector('.select__choise-sale-title').textContent = '';
+            }
+        })
+
+        selectCheckboxBtnDell.forEach((item) => {
+            item.addEventListener('click', () => {
+
+                item.parentElement.parentElement.classList.remove('--active');
+                listHtml.classList.remove('filter--active');
+                headNum.textContent = '';
+                listHtml.textContent = '';
+                document.querySelector('.select__choise-material-title').textContent = '';
+                document.querySelector('.select__choise-color-title').textContent = '';
+                document.querySelector('.select__choise-price-title').textContent = '';
+                document.querySelector('.select__choise-brand-title').textContent = '';
+                document.querySelector('.select__choise-season-title').textContent = '';
+                document.querySelector('.select__choise-sale-title').textContent = '';
+                for (let i = 0; i < selectChoiseCheckbox.length; i++) {
+                    if (selectChoiseCheckbox[i].checked == true) {
+                        selectChoiseCheckbox[i].checked = false;
+                    }
+                }
+            })
+        })
+
+
+    })
+}
 
 
 
@@ -349,24 +585,27 @@ function saleTabs() {
 
 }
 
-accardion();
-selectCheckboxActive();
-selectChecbox('.select__choise-size', '.select__output-size');
-selectChecbox('.select__checkbox-color', '.select__output-color');
-select();
-showPassword();
-tabs();
-dataMenuHidden();
-productLike();
-productSize();
-myDataInsert();
-fileDell('.my__document-dell', 'data-document');
-fileDell('.foto-dell', 'data-foto');
-productCreation();
 
-creationPlacholer();
-saleTabs();
-openPromotion('.management__row-btn', '.product__management', '.product__promotion', '.product__promotion-btn');
-openPromotion('.salwsman__order-open', '.salesman__order-container', '.selesman__order-window ', '.order__return-btn');
-openPromotion('.salesman__sale-btn', '.salesman__sale', '.add__share', '.add__share-btn');
-openPromotion('.salesman__sale-btn-2', '.salesman__sale', '.add__share-2', '.add__share-btn-2');
+// accardion();
+// tabs();
+// selectCheckboxActive();
+// selectChecbox('.select__choise-size', '.select__output-size');
+// selectChecbox('.select__checkbox-color', '.select__output-color');
+// select();
+// showPassword();
+
+// dataMenuHidden();
+// productLike();
+// productSize();
+// myDataInsert();
+// fileDell('.my__document-dell', 'data-document');
+// fileDell('.foto-dell', 'data-foto');
+// productCreation();
+
+// creationPlacholer();
+// saleTabs();
+// openPromotion('.management__row-btn', '.product__management', '.product__promotion', '.product__promotion-btn');
+// openPromotion('.salwsman__order-open', '.salesman__order-container', '.selesman__order-window ', '.order__return-btn');
+// openPromotion('.salesman__sale-btn', '.salesman__sale', '.add__share', '.add__share-btn');
+// openPromotion('.salesman__sale-btn-2', '.salesman__sale', '.add__share-2', '.add__share-btn-2');
+// filterChecbox(".select__choise-checkbox", '.filter__list', '.select__choise-size-title');

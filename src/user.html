@@ -9,3 +9,32 @@ title: Кабинет пользователя
     {{>copyright}}
     {{>popup-subscriptions}}
     {{>popup-confirmation}}</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="assets/js/app.min.js"></script>
+<script>
+    window.onload = function () {
+        accardion();
+        tabs();
+        selectCheckboxActive();
+        selectChecbox('.select__choise-size', '.select__output-size');
+        selectChecbox('.select__checkbox-color', '.select__output-color');
+        select();
+        showPassword();
+
+        dataMenuHidden();
+        productLike();
+        productSize();
+
+        fileDell('.my__document-dell', 'data-document');
+        fileDell('.foto-dell', 'data-foto');
+
+
+        creationPlacholer();
+        saleTabs();
+
+
+    }
+
+
+</script>

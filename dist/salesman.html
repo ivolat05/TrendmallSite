@@ -4224,6 +4224,31 @@
         </div></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/js/app.min.js"></script>
+    <script>
+        window.onload = function () {
+            accardion();
+            tabs();
+            selectCheckboxActive();
+            selectChecbox('.select__choise-size', '.select__output-size');
+            selectChecbox('.select__checkbox-color', '.select__output-color');
+            select();
+            showPassword();
+            dataMenuHidden();
+            productLike();
+            productSize();
+            myDataInsert();
+            fileDell('.my__document-dell', 'data-document');
+            fileDell('.foto-dell', 'data-foto');
+            productCreation();
+            creationPlacholer();
+            saleTabs();
+            openPromotion('.management__row-btn', '.product__management', '.product__promotion', '.product__promotion-btn');
+            openPromotion('.salwsman__order-open', '.salesman__order-container', '.selesman__order-window ', '.order__return-btn');
+            openPromotion('.salesman__sale-btn', '.salesman__sale', '.add__share', '.add__share-btn');
+            openPromotion('.salesman__sale-btn-2', '.salesman__sale', '.add__share-2', '.add__share-btn-2');
+        }
+    </script>
+
 </body>
 
 
