@@ -8,6 +8,7 @@
 @import "../sass/vendor/jquery.mCustomScrollbar.scss";
 @import "../sass/vendor/datepicker.scss";
 @import "../sass/vendor/jquery.timepicker.min.scss";
+@import "../sass/vendor/slick.scss";
 
 * {
     box-sizing: border-box;
@@ -165,3 +166,7 @@ footer {
 @import "../sass/blocks/filter.scss";
 @import "../sass/blocks/filterbox.scss";
 @import "../sass/blocks/navigaiton-filter.scss";
+@import "../sass/blocks/sentence.scss";
+@import "../sass/blocks/firms.scss";
+@import "../sass/blocks/description.scss";
+@import "../sass/blocks/order.scss";

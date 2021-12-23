@@ -3,6 +3,7 @@
 //= components/jquery.magnific-popup.js
 //= components/datepicker.min.js
 //= components/jquery.timepicker.min.js
+//= components/slick.min.js
 
 $('.add__share-time').timepicker({
     timeFormat: 'H:mm',
@@ -11,6 +12,13 @@ $('.add__share-time').timepicker({
     maxTime: '23:59',
     startTime: '00:00',
 });
+$('.firms__slaider').slick({
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false
+});
+
 
 $('.add__share-date').datepicker();
 
@@ -281,32 +289,32 @@ function filterChecbox(inputChecbox, listHtmls, headNums) {
                     }
                 }
             }
-            if (headNum.innerHTML.length > 0) {
-                headNum.innerHTML = '(' + sumSize + ')';
+            if (headNum.textContent.length > 0) {
+                headNum.textContent = '(' + sumSize + ')';
             }
-            if (document.querySelector('.select__choise-material-title').innerHTML.length > 0) {
+            if (document.querySelector('.select__choise-material-title').textContent.length > 0) {
                 document.querySelector('.select__choise-material-title').textContent = '(' + sumMaterial + ')';
             }
 
 
 
-            if (document.querySelector('.select__choise-color-title').innerHTML.length > 0) {
+            if (document.querySelector('.select__choise-color-title').textContent.length > 0) {
                 document.querySelector('.select__choise-color-title').textContent = '(' + sumColor + ')';
             }
 
-            if (document.querySelector('.select__choise-price-title').innerHTML.length > 0) {
+            if (document.querySelector('.select__choise-price-title').textContent.length > 0) {
                 document.querySelector('.select__choise-price-title').textContent = '(' + sumPrice + ')';
             }
 
-            if (document.querySelector('.select__choise-brand-title').innerHTML.length > 0) {
+            if (document.querySelector('.select__choise-brand-title').textContent.length > 0) {
                 document.querySelector('.select__choise-brand-title').textContent = '(' + sumBrand + ')';
             }
 
-            if (document.querySelector('.select__choise-season-title').innerHTML.length > 0) {
+            if (document.querySelector('.select__choise-season-title').textContent.length > 0) {
                 document.querySelector('.select__choise-season-title').textContent = '(' + sumSeason + ')';
             }
 
-            if (document.querySelector('.select__choise-sale-title').innerHTML.length > 0) {
+            if (document.querySelector('.select__choise-sale-title').textContent.length > 0) {
                 document.querySelector('.select__choise-sale-title').textContent = '(' + sumSale + ')';
             }
 
@@ -335,68 +343,69 @@ function filterChecbox(inputChecbox, listHtmls, headNums) {
                         }
 
                         if (currentTab.classList[1] == 'select__choise-size') {
-                            let x = document.querySelector('.select__choise-size-title').textContent;
-                            let y = Number(x.replace(')', '').replace('(', '')) - 1;
-                            if (y <= 0) {
+                            let sizex = document.querySelector('.select__choise-size-title').textContent;
+                            let sizey = Number(sizex.replace(')', '').replace('(', '')) - 1;
+                            if (sizey <= 0) {
                                 document.querySelector('.select__choise-size-title').textContent = '';
                             } else {
-                                document.querySelector('.select__choise-size-title').textContent = '(' + y + ')';
+                                document.querySelector('.select__choise-size-title').textContent = '(' + sizey + ')';
                             }
                         }
                         if (currentTab.classList[1] == 'select__choise-material') {
-                            let x = document.querySelector('.select__choise-material-title').textContent;
-                            let y = Number(x.replace(')', '').replace('(', '')) - 1;
-                            if (y <= 0) {
+                            let materialx = document.querySelector('.select__choise-material-title').textContent;
+                            let materialy = Number(materialx.replace(')', '').replace('(', '')) - 1;
+                            if (materialy <= 0) {
                                 document.querySelector('.select__choise-material-title').textContent = '';
                             } else {
-                                document.querySelector('.select__choise-material-title').textContent = '(' + y + ')';
+                                document.querySelector('.select__choise-material-title').textContent = '(' + materialy + ')';
                             }
                         }
                         if (currentTab.classList[1] == 'select__choise-color') {
-                            let x = document.querySelector('.select__choise-color-title').textContent;
-                            let y = Number(x.replace(')', '').replace('(', '')) - 1;
-                            if (y <= 0) {
+                            let colorx = document.querySelector('.select__choise-color-title').textContent;
+                            let colory = Number(colorx.replace(')', '').replace('(', '')) - 1;
+                            if (colory <= 0) {
                                 document.querySelector('.select__choise-color-title').textContent = '';
                             } else {
-                                document.querySelector('.select__choise-color-title').textContent = '(' + y + ')';
+                                document.querySelector('.select__choise-color-title').textContent = '(' + colory + ')';
                             }
                         }
                         if (currentTab.classList[1] == 'select__choise-price') {
-                            let x = document.querySelector('.select__choise-price-title').textContent;
-                            let y = Number(x.replace(')', '').replace('(', '')) - 1;
-                            if (y <= 0) {
+                            let pricex = document.querySelector('.select__choise-price-title').textContent;
+                            let pricey = Number(pricex.replace(')', '').replace('(', '')) - 1;
+                            if (pricey <= 0) {
                                 document.querySelector('.select__choise-price-title').textContent = '';
                             } else {
-                                document.querySelector('.select__choise-price-title').textContent = '(' + y + ')';
+                                document.querySelector('.select__choise-price-title').textContent = '(' + pricey + ')';
                             }
                         }
                         if (currentTab.classList[1] == 'select__choise-brand') {
-                            let x = document.querySelector('.select__choise-brand-title').textContent;
-                            let y = Number(x.replace(')', '').replace('(', '')) - 1;
-                            if (y <= 0) {
+                            let brandx = document.querySelector('.select__choise-brand-title').textContent;
+                            let brandy = Number(brandx.replace(')', '').replace('(', '')) - 1;
+                            if (brandy <= 0) {
                                 document.querySelector('.select__choise-brand-title').textContent = '';
                             } else {
-                                document.querySelector('.select__choise-brand-title').textContent = '(' + y + ')';
+                                document.querySelector('.select__choise-brand-title').textContent = '(' + brandy + ')';
                             }
                         }
                         if (currentTab.classList[1] == 'select__choise-season') {
-                            let x = document.querySelector('.select__choise-season-title').textContent;
-                            let y = Number(x.replace(')', '').replace('(', '')) - 1;
-                            if (y <= 0) {
+                            let seasonx = document.querySelector('.select__choise-season-title').textContent;
+                            let seasony = Number(seasonx.replace(')', '').replace('(', '')) - 1;
+                            if (seasony <= 0) {
                                 document.querySelector('.select__choise-season-title').textContent = '';
                             } else {
-                                document.querySelector('.select__choise-season-title').textContent = '(' + y + ')';
+                                document.querySelector('.select__choise-season-title').textContent = '(' + seasony + ')';
                             }
                         }
                         if (currentTab.classList[1] == 'select__choise-sale') {
-                            let x = document.querySelector('.select__choise-sale-title').textContent;
-                            let y = Number(x.replace(')', '').replace('(', '')) - 1;
-                            if (y <= 0) {
+                            let salex = document.querySelector('.select__choise-sale-title').textContent;
+                            let saley = Number(salex.replace(')', '').replace('(', '')) - 1;
+                            if (saley <= 0) {
                                 document.querySelector('.select__choise-sale-title').textContent = '';
                             } else {
-                                document.querySelector('.select__choise-sale-title').textContent = '(' + y + ')';
+                                document.querySelector('.select__choise-sale-title').textContent = '(' + saley + ')';
                             }
                         }
+
 
                     })
                 })

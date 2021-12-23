@@ -1,0 +1,107 @@
+.sentence {
+    margin-bottom: 60px;
+}
+.sentence__wrapp-col {
+    display: flex;
+    justify-content: start;
+}
+
+.sentence__wrapp-registration {
+    position: relative;
+    height: 420px;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+
+    background: linear-gradient(94.43deg, #a464f1 -18.98%, #efbdd4 113.48%);
+}
+
+.sentence__wrapp-title {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 54px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: auto;
+    margin-bottom: 0;
+    color: #ffffff;
+    span {
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color: #ffffff;
+    }
+}
+
+.sentence__wrapp-subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+}
+
+.sentence__wrapp-btn {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-align: center;
+    display: block;
+    width: 262px;
+    height: 48px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto 50px;
+}
+
+.sentence__wrapp-choice {
+    max-width: 400px;
+    height: 420px;
+}
+
+.sentence__choice-img {
+    width: 400px;
+    height: 335px;
+}
+.sentence__wrapp-col {
+    display: flex;
+}
+
+.sentence__wrapp-choice {
+    margin-left: 20px;
+    background: linear-gradient(90deg, #e7e8ea 0%, #e0e0e0 48.44%, #e7e7e7 100%);
+}
+
+.sentence__choice-btn {
+    display: block;
+    width: 330px;
+    height: 36px;
+    background: linear-gradient(94.43deg, #ea469a -18.98%, #ed7f67 113.48%),
+        linear-gradient(90deg, #e7a86e -9.55%, #fdc795 109.55%);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 20px auto;
+}
+
+.sentence__wrapp {
+    display: flex;
+    justify-content: start;
+    max-width: 1190px;
+    margin: 0 auto;
+}
