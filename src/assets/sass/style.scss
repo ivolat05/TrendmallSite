@@ -9,7 +9,7 @@
 @import "../sass/vendor/datepicker.scss";
 @import "../sass/vendor/jquery.timepicker.min.scss";
 @import "../sass/vendor/slick.scss";
-
+@import "../sass/vendor/nouislider.min.scss";
 * {
     box-sizing: border-box;
     font-family: "Montserrat";
@@ -165,6 +165,7 @@ footer {
 @import "../sass/blocks/block__title.scss";
 @import "../sass/blocks/filter.scss";
 @import "../sass/blocks/filterbox.scss";
+@import "../sass/blocks/filter__price.scss";
 @import "../sass/blocks/navigaiton-filter.scss";
 @import "../sass/blocks/sentence.scss";
 @import "../sass/blocks/firms.scss";

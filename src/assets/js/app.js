@@ -5,6 +5,58 @@
 //= components/jquery.timepicker.min.js
 //= components/slick.min.js
 
+//= components/nouislider.min.js
+
+// ползунок выбора цен
+let filterSlaiderLine = document.getElementById('filter-slaider-line');
+if (filterSlaiderLine) {
+    noUiSlider.create(filterSlaiderLine, {
+        start: [209, 2090],
+        connect: true,
+        step: 1,
+        range: {
+            'min': 0,
+            'max': 3000
+
+        }
+    });
+
+    let filterSlaiderOne = document.getElementById('filter-slaider-1');
+    let filterSlaiderTwo = document.getElementById('filter-slaider-2');
+    let filterList = [filterSlaiderOne, filterSlaiderTwo];
+    let filterSlaiderLineRemove = document.querySelectorAll('.filter__line-remove')
+    let filterInfoBox = document.querySelectorAll('.filter__info-box');
+
+    filterSlaiderLine.noUiSlider.on('update', function (values, handle) {
+        filterList[handle].value = Math.round(values[handle]);
+    });
+
+    const setfilterSlaider = (i, value) => {
+        let arr = [null, null];
+        arr[i] = value;
+        filterSlaiderLine.noUiSlider.set(arr);
+    }
+
+    filterSlaiderLineRemove.forEach((item) => {
+        item.addEventListener('click', function () {
+            filterSlaiderLine.noUiSlider.set([209, 2090]);
+        });
+    });
+
+    filterList.forEach((item, index) => {
+        item.addEventListener('change', (e) => {
+            setfilterSlaider(index, e.currentTarget.value);
+        })
+    })
+
+    filterInfoBox.forEach((item) => {
+        item.addEventListener("click", function () {
+            document.querySelector('.filter__price-close').classList.remove('--active');
+        })
+    })
+
+}
+
 $('.add__share-time').timepicker({
     timeFormat: 'H:mm',
     interval: 10,

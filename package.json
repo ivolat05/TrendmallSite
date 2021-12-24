@@ -23,6 +23,7 @@
     },
     "dependencies": {
         "bootstrap": "^5.1.3",
+        "nouislider": "^15.5.0",
         "slick-carousel": "^1.8.1"
     }
 }

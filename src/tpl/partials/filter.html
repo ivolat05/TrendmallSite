@@ -287,63 +287,49 @@
                     </div>
                 </div>
 
-                <div class="select-checkbox-form">
+                <div class="select-checkbox-form filter__price-close">
                     <div class="select-checkbox-header">
-                        Цена<span class="select__choise-price-title"></span>
+                        Цена
                     </div>
-                    <div class="select-checkbox-body">
-                        <div class="select-checkbox">
-                            <div class="select-checkbox-wrapper">
-                                <ul class='select-checkbox-list'>
-                                    <li class='select-checkbox-inner'>
-                                        <label class="select__choise-label">
-                                            <input type="checkbox" class="select__choise-checkbox select__choise-price"
-                                                value="Материал">
-                                            <span class='choise__label-span'>Цена</span>
-                                        </label>
-                                    </li>
-                                    <li class='select-checkbox-inner'>
-                                        <label class="select__choise-label">
-                                            <input type="checkbox" class="select__choise-checkbox select__choise-price"
-                                                value="Материал">
-                                            <span class='choise__label-span'>Цена</span>
-                                        </label>
-                                    </li>
-                                    <li class='select-checkbox-inner'>
-                                        <label class="select__choise-label">
-                                            <input type="checkbox" class="select__choise-checkbox select__choise-price"
-                                                value="Материал">
-                                            <span class='choise__label-span'>Цена</span>
-                                        </label>
-                                    </li>
-                                    <li class='select-checkbox-inner'>
-                                        <label class="select__choise-label">
-                                            <input type="checkbox" class="select__choise-checkbox select__choise-price"
-                                                value="Материал">
-                                            <span class='choise__label-span'>Цена</span>
-                                        </label>
-                                    </li>
-                                    <li class='select-checkbox-inner'>
-                                        <label class="select__choise-label">
-                                            <input type="checkbox" class="select__choise-checkbox select__choise-price"
-                                                value="Материал">
-                                            <span class='choise__label-span'>Цена</span>
-                                        </label>
-                                    </li>
-                                    <li class='select-checkbox-inner'>
-                                        <label class="select__choise-label">
-                                            <input type="checkbox" class="select__choise-checkbox select__choise-price"
-                                                value="Материал">
-                                            <span class='choise__label-span'>Цена</span>
-                                        </label>
-                                    </li>
-                                </ul>
+                    <div class="select-checkbox-body filter__price-body">
+                        <div class="filter__price-select">
+                            <div class="filter__price">
+                                <div class="filter__price-title">
+                                    Цена
+                                </div>
+                                <div class="filter__price-box">
+                                    <div class="filter__price-wrapper">
+                                        <input class="filter__price-input" id='filter-slaider-1' type="number" min='0'
+                                            max='9999'>
+                                        <span class="filter__price-wrapper-span">грн</span>
+                                    </div>
+                                    <div class="filter__price-wrapper">
+                                        <input class="filter__price-input" id='filter-slaider-2' type="number" min='0'
+                                            max='9999'>
+                                        <span class="filter__price-wrapper-span">грн</span>
+                                    </div>
+
+                                </div>
+                                <div class="filter__slaider-box">
+                                    <div id='filter-slaider-line' class="filter-slaider"></div>
+                                </div>
+                                <label class="filter__label-check">
+                                    <input type="checkbox" class="filter__check-input">
+                                    <span class="filter__label-span">
+                                        Только sale %
+                                    </span>
+                                </label>
+
+                                <button class="btn filter__info-box">
+                                    Показать товары: <span class="filter__info-span">
+                                        324
+                                    </span>
+                                </button>
                             </div>
+
                         </div>
-                        <button class="btn select-checkbox-btn">
-                            Применить
-                        </button>
-                        <button class="btn select-checkbox-btn-dell">
+
+                        <button class="btn select-checkbox-btn-dell filter__line-remove">
                             Удалить
                         </button>
                     </div>
