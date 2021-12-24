@@ -242,6 +242,11 @@
     background: -webkit-linear-gradient(4.43deg, #630bcd -18.98%, #e54991 113.48%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    &:hover {
+        animation: gradient 2s ease infinite;
+        background-size: 150% 150%;
+    }
 }
 .header .navbar .container ul li.sale a {
     font-style: normal;
@@ -252,6 +257,10 @@
     background: -webkit-linear-gradient(4.43deg, #ea469a -18.98%, #ed7f67 113.48%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    &:hover {
+        animation: gradient 2s ease infinite;
+        background-size: 150% 150%;
+    }
 }
 .header .navbar .container .form input[type="text"] {
     background: #ffffff;
@@ -259,6 +268,11 @@
     height: 36px;
     margin: 7px 0;
     width: 344px;
+    padding-left: 15px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #2c2c31;
 }
 .header .navbar .container .form input[type="submit"] {
     background: url("../../assets/img/search_ico.svg") no-repeat;

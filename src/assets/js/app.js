@@ -632,6 +632,22 @@ function postoffice() {
     })
 };
 
+function orderBuyChek() {
+    const orderBuyChekOne = document.querySelector('.order__buy-chek-1');
+    const orderBuyChekTwo = document.querySelector('.order__buy-chek-2');
+
+    orderBuyChekOne.addEventListener('click', () => {
+        if (orderBuyChekTwo.checked) {
+            orderBuyChekTwo.checked = false;
+        }
+    })
+    orderBuyChekTwo.addEventListener('click', () => {
+        if (orderBuyChekOne.checked) {
+            orderBuyChekOne.checked = false;
+        }
+    })
+
+}
 // accardion();
 // tabs();
 // selectCheckboxActive();
