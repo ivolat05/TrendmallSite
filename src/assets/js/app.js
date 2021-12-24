@@ -70,6 +70,18 @@ $('.firms__slaider').slick({
     arrows: false,
     dots: false
 });
+$('.recommendations__slaider-1').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false
+});
+$('.recommendations__slaider-2').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false
+});
 
 
 $('.add__share-date').datepicker();

@@ -5,7 +5,9 @@ title: Оформление заказа
 <div class="page">
 
     {{>header}}
+    {{>breadcrumb-card}}
     {{>card}}
+    {{>recommendations}}
     {{>footer}}
     {{>copyright}}
 
@@ -14,8 +16,6 @@ title: Оформление заказа
 <script src="assets/js/app.min.js"></script>
 <script>
     window.onload = function () {
-        orderBuyChek();
-        postoffice();
         accardion();
         tabs();
         selectCheckboxActive();
@@ -24,17 +24,18 @@ title: Оформление заказа
         select();
         showPassword();
 
-
         productLike();
         productSize();
 
         fileDell('.my__document-dell', 'data-document');
         fileDell('.foto-dell', 'data-foto');
-
-
+        productCreation();
         creationPlacholer();
         saleTabs();
-
+        openPromotion('.management__row-btn', '.product__management', '.product__promotion', '.product__promotion-btn');
+        openPromotion('.salwsman__order-open', '.salesman__order-container', '.selesman__order-window ', '.order__return-btn');
+        openPromotion('.salesman__sale-btn', '.salesman__sale', '.add__share', '.add__share-btn');
+        openPromotion('.salesman__sale-btn-2', '.salesman__sale', '.add__share-2', '.add__share-btn-2');
 
     }
 
