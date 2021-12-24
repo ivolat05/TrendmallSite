@@ -83,6 +83,27 @@ $('.recommendations__slaider-2').slick({
     dots: false
 });
 
+// слайдер карточки ковара
+$('.card-slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: true,
+    prevArrow: $(".card-slick-prev"),
+    nextArrow: $(".card-slick-next"),
+    customPaging: function (slick, index) {
+        let image = $(slick.$slides[index]).find('.card-slider__img').attr('src');
+        return '<img src="' + image + '" alt="" /> '
+    }
+})
+// popup картинок в карточки товара
+$('.image-popup-zoom').magnificPopup({
+    type: 'image',
+    zoom: {
+        enabled: true,
+        duration: 300 // продолжительность анимации. Не меняйте данный параметр также и в CSS
+    }
+});
 
 $('.add__share-date').datepicker();
 
@@ -146,7 +167,7 @@ let select = function () {
 // показывать скрывать пароль
 function showPassword() {
     let btn = document.querySelectorAll('.cabinet__password-btn');
-    let inputPassword = document.querySelectorAll('.input-password');
+
     btn.forEach((item) => {
         item.addEventListener('click', function () {
             let passwordId = item.getAttribute('data-password');
