@@ -2769,7 +2769,7 @@ function filterChecbox(inputChecbox, listHtmls, headNums) {
             let sumSize = 0;
             let sumMaterial = 0;
             let sumColor = 0;
-            let sumPrice = 0;
+
             let sumBrand = 0;
             let sumSeason = 0;
             let sumSale = 0;
@@ -2797,11 +2797,7 @@ function filterChecbox(inputChecbox, listHtmls, headNums) {
                         document.querySelector('.select__choise-color-title').textContent += sumColor;
 
                     }
-                    if ('select__choise-price' == selectChoiseCheckbox[i].classList[1]) {
-                        sumPrice += 1;
-                        document.querySelector('.select__choise-price-title').textContent += sumPrice;
 
-                    }
                     if ('select__choise-brand' == selectChoiseCheckbox[i].classList[1]) {
                         sumBrand += 1;
                         document.querySelector('.select__choise-brand-title').textContent += sumBrand;
@@ -2830,9 +2826,7 @@ function filterChecbox(inputChecbox, listHtmls, headNums) {
                 document.querySelector('.select__choise-color-title').textContent = '(' + sumColor + ')';
             }
 
-            if (document.querySelector('.select__choise-price-title').textContent.length > 0) {
-                document.querySelector('.select__choise-price-title').textContent = '(' + sumPrice + ')';
-            }
+
 
             if (document.querySelector('.select__choise-brand-title').textContent.length > 0) {
                 document.querySelector('.select__choise-brand-title').textContent = '(' + sumBrand + ')';
@@ -2897,15 +2891,7 @@ function filterChecbox(inputChecbox, listHtmls, headNums) {
                                 document.querySelector('.select__choise-color-title').textContent = '(' + colory + ')';
                             }
                         }
-                        if (currentTab.classList[1] == 'select__choise-price') {
-                            let pricex = document.querySelector('.select__choise-price-title').textContent;
-                            let pricey = Number(pricex.replace(')', '').replace('(', '')) - 1;
-                            if (pricey <= 0) {
-                                document.querySelector('.select__choise-price-title').textContent = '';
-                            } else {
-                                document.querySelector('.select__choise-price-title').textContent = '(' + pricey + ')';
-                            }
-                        }
+
                         if (currentTab.classList[1] == 'select__choise-brand') {
                             let brandx = document.querySelector('.select__choise-brand-title').textContent;
                             let brandy = Number(brandx.replace(')', '').replace('(', '')) - 1;
@@ -2959,7 +2945,7 @@ function filterChecbox(inputChecbox, listHtmls, headNums) {
                 listHtml.textContent = '';
                 document.querySelector('.select__choise-material-title').textContent = '';
                 document.querySelector('.select__choise-color-title').textContent = '';
-                document.querySelector('.select__choise-price-title').textContent = '';
+
                 document.querySelector('.select__choise-brand-title').textContent = '';
                 document.querySelector('.select__choise-season-title').textContent = '';
                 document.querySelector('.select__choise-sale-title').textContent = '';
@@ -2975,7 +2961,7 @@ function filterChecbox(inputChecbox, listHtmls, headNums) {
                 listHtml.textContent = '';
                 document.querySelector('.select__choise-material-title').textContent = '';
                 document.querySelector('.select__choise-color-title').textContent = '';
-                document.querySelector('.select__choise-price-title').textContent = '';
+
                 document.querySelector('.select__choise-brand-title').textContent = '';
                 document.querySelector('.select__choise-season-title').textContent = '';
                 document.querySelector('.select__choise-sale-title').textContent = '';
