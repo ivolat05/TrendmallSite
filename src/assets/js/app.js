@@ -143,7 +143,43 @@ function closePopup() {
     $.magnificPopup.close();
 }
 
+// card-checkbox
 
+function cardCheckbox() {
+    let cardLabelInput = document.querySelectorAll('.card-label-input');
+
+    if (cardLabelInput) {
+        cardLabelInput.forEach((item) => {
+            item.addEventListener('click', () => {
+                let cardColorLine = document.querySelectorAll('.card-color-line');
+                for (i = 0; i < cardLabelInput.length; i++) {
+                    cardLabelInput[i].checked = false;
+                }
+                item.checked = true;
+                for (let i = 0; i < cardColorLine.length; i++) {
+                    cardColorLine[i].classList.remove('card-color-active');
+                }
+                document.getElementById(item.value).classList.add('card-color-active');
+
+            })
+        })
+    }
+}
+
+cardCheckbox();
+
+// card-heart active
+function cardHeart() {
+    let cardHeart = document.querySelectorAll('.card-heart');
+    if (cardHeart) {
+        cardHeart.forEach((item) => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('card-heart-active');
+            });
+        })
+    }
+};
+cardHeart();
 // select
 let select = function () {
     let selectHeader = document.querySelectorAll('.select__header');
