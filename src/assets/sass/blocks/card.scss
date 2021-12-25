@@ -8,6 +8,7 @@
             margin-bottom: 10px;
             margin-right: 10px;
             object-fit: cover;
+            cursor: pointer;
         }
     }
 
@@ -75,4 +76,132 @@
 
 .card {
     margin-top: 31px;
+}
+.card-name {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    color: #2c2c31;
+}
+
+.card-product {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #565656;
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #2c2c31;
+
+    opacity: 0.4;
+}
+
+.card-subtitle {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #2c2c31;
+}
+
+.card-price {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2c2c31;
+}
+
+.card-price-discount {
+    color: #f44e51;
+    span {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #2c2c31;
+        opacity: 0.8;
+        text-decoration: line-through;
+        padding-right: 5px;
+    }
+}
+
+.card-color-line {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+
+    color: #898888;
+}
+
+.select__output-size.card-select__output-size {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 233.4%;
+    color: #333333;
+}
+
+.card-choise__label-span {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #2c2c31;
+}
+
+.card__accordion-btn {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2c2c31;
+}
+
+.card__accordion-text,
+.card__accordion-text-list-inner,
+.card__accordion-text-title {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 152.4%;
+
+    color: #2c2c31;
+}
+
+.card__box-mess-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.card-message {
+    width: 31px;
+    height: 31px;
+    border: 0.5px solid #dbdbdb;
+    border-radius: 31px;
+    display: block;
+    transition: 0.5s;
+}
+
+.card-massate-f {
+    background: url("../../assets/img/facebook.svg") no-repeat center center;
+}
+.card-massate-f:hover {
+    background: url("../../assets/img/facebook-active.svg") no-repeat center center, #31b4d0;
+    border: 0.5px solid #31b4d0;
+}
+.card-massate-i {
+    background: url("../../assets/img/inst.svg") no-repeat center center;
+}
+.card-massate-i:hover {
+    background: url("../../assets/img/inst-active.svg") no-repeat center center, #31b4d0;
+    border: 0.5px solid #31b4d0;
+}
+
+.card-massate-t {
+    background: url("../../assets/img/telegramm.svg") no-repeat center center;
+}
+.card-massate-t:hover {
+    background: url("../../assets/img/telegramm-active.svg") no-repeat center center, #31b4d0;
+    border: 0.5px solid #31b4d0;
 }
