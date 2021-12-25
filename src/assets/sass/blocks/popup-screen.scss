@@ -1,0 +1,43 @@
+.popup-screen {
+    max-width: 337px;
+    margin: 0 auto;
+    position: relative;
+    background: #ffffff;
+    box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.21);
+    padding: 20px 20px 0 20px;
+    .popup-close {
+        top: 22px;
+        right: 18px;
+    }
+}
+
+.popup-screen-title {
+    width: 240px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2c2c31;
+    margin-bottom: 38px;
+}
+
+.popup-screen-subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #2c2c31;
+    margin-bottom: 5px;
+}
+
+.popup-screen-text {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #2c2c31;
+    margin-bottom: 20px;
+}
+
+.popup-screen-img {
+    margin: 0 auto 35px;
+    display: block;
+}

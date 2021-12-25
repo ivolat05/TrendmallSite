@@ -1,0 +1,51 @@
+<div id='popup-feedback' class="popup-feedback  mfp-hide">
+    <div class="popup-feedback-box-title">
+        <button class=" cabinet__btn feedback-btn-tab cabinet__btn-acive" data-tab="#tab_feedback-review">
+            Оставить отзыв
+        </button>
+        <button class="cabinet__btn feedback-btn-tab" data-tab="#tab_feedback-question">
+            Задать вопрос
+        </button>
+    </div>
+    <button class="popup-close" onClick="closePopup();">
+        <img src="./assets/img/close.svg" alt="">
+    </button>
+    <div id='tab_feedback-review' class=" cabinet__tab feedback__tab cabinet__tab-active">
+        <div class="popup-feedback-row popup-feedback-row-1">
+            Оцените товар
+            <div class="star-box">
+                <input id='star-5' class='star__box-input' type="radio" name='star' value='5'>
+                <label for='star-5' class='star__box-label'></label>
+                <input id='star-4' class='star__box-input' type="radio" name='star' value='4' checked>
+                <label for='star-4' class='star__box-label'></label>
+                <input id='star-3' class='star__box-input' type="radio" name='star' value='3'>
+                <label for='star-3' class='star__box-label'></label>
+                <input id='star-2' class='star__box-input' type="radio" name='star' value='2'>
+                <label for='star-2' class='star__box-label'></label>
+                <input id='star-1' class='star__box-input' type="radio" name='star' value='1'>
+                <label for='star-1' class='star__box-label'></label>
+            </div>
+        </div>
+        <div class="popup-feedback-row popup-feedback-row-2">
+            Ваш комментарий
+            <textarea class='popup-feedback-textarea'></textarea>
+        </div>
+        <div class="popup-feedback-row">
+            Ваше имя
+            <input class="popup-feedback-input" type="text">
+        </div>
+
+    </div>
+    <div id='tab_feedback-question' class=" cabinet__tab feedback__tab">
+
+    </div>
+    <div class="popup-feedback-row-3">
+        <button href="#popup-confirmation" class="button popup-feedback-btn-esc" onClick="closePopup();">
+            Отмена
+        </button>
+        <button class="btn popup-feedback-btn" onClick="closePopup();">
+            Оставить отзыв
+        </button>
+    </div>
+
+</div>
