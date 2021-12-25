@@ -1,0 +1,214 @@
+.popup-login-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.cabinet-input.popup-login-input {
+    margin: 0;
+}
+
+.login__wrapp-input {
+    margin-bottom: 7px;
+}
+
+.popup-login-subtitle {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #2c2c31;
+}
+
+.cabinet__box-password.popup__box-password {
+    margin-bottom: -7px;
+}
+
+.popup-login-red {
+    color: #e61445;
+}
+.login-text-hiden {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #e61445;
+    opacity: 0;
+}
+
+.popup__login-label-span {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+}
+
+.popup-login-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    margin-bottom: 21px;
+}
+
+.popup-login-btn {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 2px;
+    margin-bottom: 27px;
+}
+
+.login-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 133%;
+    letter-spacing: 0.01em;
+    color: #b1b1b1;
+    margin-bottom: 14px;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 40%;
+        height: 1px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        background: #b1b1b1;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 40%;
+        height: 1px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        background: #b1b1b1;
+    }
+}
+
+.login-popup-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 192px;
+    height: 47px;
+
+    border: 0.5px solid #dbdbdb;
+    border-radius: 30px;
+    padding-left: 15px;
+
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 133%;
+    letter-spacing: 0.01em;
+    color: #2c2c31;
+    img {
+        padding-right: 34px;
+    }
+}
+
+.popup-login-row-2 {
+    justify-content: center;
+    font-size: 14px;
+    line-height: 133%;
+    letter-spacing: 0.01em;
+    text-transform: lowercase;
+    color: #2c2c31;
+}
+
+.login-regist-link {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 133%;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+
+    color: #113e7d;
+    padding-left: 15px;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.popup-login {
+    padding-left: 97px;
+    padding-right: 97px;
+    padding-bottom: 17px;
+}
+
+.popup-login {
+    .popup-close {
+        top: 22px;
+        right: 17px;
+    }
+}
+
+.popup__login-label {
+    position: relative;
+    cursor: pointer;
+}
+
+.popup__login-checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.popup__login-label-span {
+    padding-left: 20px;
+    position: relative;
+    &::before {
+        content: "";
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #fff;
+        border: 1px solid #b1b1b1;
+        box-sizing: border-box;
+        border-radius: 2px;
+    }
+}
+
+.popup__login-checkbox:checked + .popup__login-label-span::before {
+    content: url("../../assets/img/Checkbox__2-active.svg");
+    background: #2c2c31;
+    border: 1px solid #2c2c31;
+
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup-login-input-red {
+    border: 1px solid red;
+    box-shadow: 0px 1px 4px #e61445;
+}
+.popup-login-input-red + .login-text-hiden {
+    opacity: 1;
+}
+
+.login__popup-password-btn--red {
+    background: url("../../assets/img/eye-red.svg") no-repeat center center;
+}
+.login__popup-password-btn--red.cabinet__password-btn--active {
+    background: url("../../assets/img/eye-active-red.svg") no-repeat center center;
+}

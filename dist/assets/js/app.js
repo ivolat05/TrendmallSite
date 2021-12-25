@@ -2604,6 +2604,38 @@ $(function () {
 
 
 });
+
+// popup login input
+function popupLogin() {
+    let popupLoginBtn = document.querySelectorAll('.popup-login-btn');
+    let popupLoginInput = document.querySelectorAll('.popup-login-input');
+
+    if (popupLoginBtn) {
+        popupLoginBtn.forEach((item) => {
+            item.addEventListener('click', () => {
+                for (let i = 0; i < popupLoginInput.length; i++) {
+                    if (popupLoginInput[i].value == '') {
+                        popupLoginInput[i].classList.add('popup-login-input-red')
+                        if (popupLoginInput[i].classList.contains('popup-login-pwd')) {
+                            document.querySelector('.popup-login-pwd-text').style.color = '#E61445';
+                            document.querySelector('.popup__login-label').style.opacity = '0';
+                            document.querySelector('.login__popup-password-btn').classList.add('login__popup-password-btn--red');
+                        } else {
+                            document.querySelector('.popup-login-email-text').style.color = '#E61445';
+                        }
+                    } else {
+                        popupLoginInput[i].classList.remove('popup-login-input-red')
+                        document.querySelector('.popup-login-pwd-text').style.color = ' #2C2C31';
+                        document.querySelector('.popup__login-label').style.opacity = '1';
+                        document.querySelector('.popup-login-email-text').style.color = '#2C2C31';
+                        document.querySelector('.login__popup-password-btn').classList.remove('login__popup-password-btn--red');
+                    }
+                }
+            })
+        })
+    }
+};
+popupLogin();
 $(window).on("load", function () {
     $(".chat__message-box").mCustomScrollbar({
     });
