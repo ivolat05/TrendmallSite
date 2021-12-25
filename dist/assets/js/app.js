@@ -2573,10 +2573,17 @@ $('.card-slider').slick({
 })
 // popup картинок в карточки товара
 $('.image-popup-zoom').magnificPopup({
+    delegate: 'a',
     type: 'image',
+    mainClass: 'mfp-fade',
     zoom: {
         enabled: true,
         duration: 300 // продолжительность анимации. Не меняйте данный параметр также и в CSS
+    },
+    gallery: {
+        enabled: true,
+        navigateByImgClick: true,
+        preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
     }
 });
 
@@ -2586,6 +2593,8 @@ $(function () {
     $("#telForm").mask("+3(999) 999-99-99");
     $(".telForm-2").mask("+3(999) 999-99-99");
     $(".order__tell").mask("+3(999) 999-99-99");
+
+    //popup
     $('.popup-content').magnificPopup({
         type: 'inline',
         mainClass: 'mfp-fade'
