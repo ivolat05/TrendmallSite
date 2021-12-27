@@ -16,11 +16,19 @@
     height: 488px;
     position: relative;
     overflow: hidden;
-
+    .product__row-coll:nth-child(2) {
+        transition: 0.4s;
+        opacity: 0;
+    }
     &:hover .product__wrapp {
         transform: translateY(-59px);
     }
+
+    &:hover .product__row-coll:nth-child(2) {
+        opacity: 1;
+    }
 }
+
 .product__wrapp {
     transition: 0.5s;
     background: #fff;

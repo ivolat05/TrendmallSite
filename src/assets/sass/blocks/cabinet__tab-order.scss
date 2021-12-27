@@ -96,40 +96,75 @@
     color: #2c2c31;
 }
 
+.cabinet-heade .cabinet-order-col:nth-child(1) {
+    width: 96px;
+}
+
+.cabinet-heade .cabinet-order-col:nth-child(2) {
+    width: 156px;
+}
+
+.cabinet-heade .cabinet-order-col:nth-child(3) {
+    width: 107px;
+}
+
+.cabinet-heade .cabinet-order-col:nth-child(4) {
+    width: 100px;
+}
+
+.cabinet-heade .cabinet-order-col:nth-child(5) {
+    width: 108px;
+}
+
+.cabinet-heade .cabinet-order-col:nth-child(6) {
+    width: 90px;
+}
+
+.cabinet-heade .cabinet-order-col:nth-child(7) {
+    width: 128px;
+}
+
+.cabinet-heade .cabinet-order-col:nth-child(8) {
+    width: 100px;
+}
+
 .cabinet-order-col:nth-child(1) {
     width: 96px;
 }
 
-.cabinet-order-col:nth-child(2) {
-    width: 156px;
+.cabinet-order-row-box .cabinet-order-col:nth-child(1) {
+    width: 98px;
 }
 
-.cabinet-order-col:nth-child(3) {
-    width: 107px;
-}
-
-.cabinet-order-col:nth-child(4) {
+.cabinet-order-row-box-2 .cabinet-order-col:nth-child(1) {
     width: 100px;
 }
 
-.cabinet-order-col:nth-child(5) {
+.cabinet-order-row-box .cabinet-order-col:nth-child(2) {
     width: 108px;
 }
 
-.cabinet-order-col:nth-child(6) {
-    width: 90px;
+.cabinet-order-row-box-2 .cabinet-order-col:nth-child(2) {
+    width: 0;
 }
 
-.cabinet-order-col:nth-child(7) {
-    width: 128px;
+.cabinet-order-col:nth-child(2) {
+    width: 157px;
 }
 
-.cabinet-order-col:nth-child(8) {
-    width: 100px;
+.cabinet-order-col:nth-child(3) {
+    width: 106px;
 }
 
-.cabinet-order-col:nth-child(9) {
-    width: 146px;
+.cabinet-order-row-box .cabinet-order-col:nth-child(3) {
+    width: 88px;
+}
+.cabinet-order-col:nth-child(4) {
+    width: 127px;
+}
+
+.cabinet-order-col:nth-child(5) {
+    width: 129px;
 }
 
 .cabinet-body {
@@ -152,4 +187,23 @@
         right: 83px;
         top: -19px;
     }
+}
+
+.cabinet-order-col-title {
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #6f6e6e;
+    display: none;
+}
+
+.cabinet-order-row-box {
+    display: flex;
+    justify-content: start;
+}
+.cabinet-order-row-box-2 {
+    display: flex;
+    justify-content: start;
 }

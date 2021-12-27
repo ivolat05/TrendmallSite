@@ -29,11 +29,6 @@ ul {
     padding-right: 0;
 }
 
-@media (min-width: 1400px) {
-    .container {
-        max-width: 1400px;
-    }
-}
 .gradient-btn:hover {
     animation: gradient 2s ease infinite;
     background-size: 150% 150%;
@@ -177,3 +172,5 @@ footer {
 @import "../sass/blocks/popup-login.scss";
 @import "../sass/blocks/popup-feedback.scss";
 @import "../sass/blocks/popup-screen.scss";
+@import "../sass/blocks/burger.scss";
+@import "../sass/blocks/adaptive.scss";

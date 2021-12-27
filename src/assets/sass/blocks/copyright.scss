@@ -17,8 +17,9 @@
 .copyright__wrapp {
     display: flex;
     justify-content: space-between;
-    padding-left: 95px;
-    padding-right: 70px;
+    max-width: 1150px;
+    margin: 0 auto;
+    margin-left: 150px;
 }
 .copyright__wrapp-coll {
     font-weight: normal;

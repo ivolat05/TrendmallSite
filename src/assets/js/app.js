@@ -4,8 +4,98 @@
 //= components/datepicker.min.js
 //= components/jquery.timepicker.min.js
 //= components/slick.min.js
-
 //= components/nouislider.min.js
+
+// menu burger
+
+
+let cabinetTabMobil = document.querySelectorAll('.cabinet__tab-mobil');
+let cabinetMobilBtn = document.querySelectorAll('.cabinet__mobil-btn');
+
+
+if (cabinetMobilBtn) {
+    if (document.body.clientWidth < 992) {
+        cabinetMobilBtn.forEach((item) => {
+            item.addEventListener('click', () => {
+                let cabinetWrappMobil = document.querySelector('.cabinet__wrapp-mobil');
+                cabinetWrappMobil.classList.add('cabinet__wrapp-mobil-active');
+            })
+        })
+    }
+}
+
+
+window.addEventListener("resize", function () {
+    if (cabinetMobilBtn) {
+        if (document.body.clientWidth < 992) {
+            cabinetMobilBtn.forEach((item) => {
+                item.addEventListener('click', () => {
+                    let cabinetWrappMobil = document.querySelector('.cabinet__wrapp-mobil');
+                    cabinetWrappMobil.classList.add('cabinet__wrapp-mobil-active');
+                })
+            })
+        }
+    }
+});
+
+
+
+
+// закрытие боковой панели мобильной версии
+function tabClose(cabinetMobilBtn) {
+    let cabinetTabTitle = document.querySelectorAll('.cabinet__tab-title');
+    if (cabinetTabTitle) {
+
+        cabinetTabTitle.forEach((item) => {
+            item.addEventListener('click', () => {
+                if (document.body.clientWidth < 992) {
+                    item.parentElement.parentElement.classList.remove('cabinet__tab-active')
+                    let cabinetWrappMobil = document.querySelector('.cabinet__wrapp-mobil');
+                    for (let i = 0; i < cabinetMobilBtn.length; i++) {
+                        cabinetMobilBtn[i].classList.remove('cabinet__btn-acive');
+
+                    }
+                    cabinetWrappMobil.classList.remove('cabinet__wrapp-mobil-active')
+                }
+            })
+        })
+
+    }
+}
+tabClose(cabinetMobilBtn);
+
+
+
+$('.menu__burger').click((event) => {
+    $('.menu__burger').toggleClass('burger__active'),
+        $('body').toggleClass('stop'),
+        $('.black-panel').toggleClass('black-panel-active'),
+        $('.top-panel').toggleClass('top-panel-active'),
+        $('.links').toggleClass('links-active'),
+        $('.navbar').toggleClass('navbar-active'),
+        $('.account').toggleClass('account-active'),
+        $('.navigation').toggleClass('navigation-active'),
+        $('.mobil__menu').toggleClass('mobil__menu-active')
+});
+//form search header
+$('.mobil-search').click((event) => {
+    $('.form').toggleClass('form-active')
+
+});
+
+
+// footer accordion
+function footerBottom() {
+    let footerHead = document.querySelectorAll('.footer-head');
+    if (footerHead) {
+        footerHead.forEach((item) => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('footer-head-active')
+            })
+        })
+    }
+}
+footerBottom();
 
 // ползунок выбора цен
 let filterSlaiderLine = document.getElementById('filter-slaider-line');
@@ -168,6 +258,8 @@ $(window).on("load", function () {
     });
     $(".select-checkbox").mCustomScrollbar({
     });
+
+
 });
 
 
@@ -278,6 +370,7 @@ function tabs() {
             })
             item.classList.add('cabinet__btn-acive');
             currentTab.classList.add('cabinet__tab-active');
+
         });
     });
 
@@ -289,17 +382,22 @@ function dataMenuHidden() {
     let cabinetBtnChange = document.querySelector('.cabinet__btn-change');
     let cabinetDataBox = document.querySelector('.cabinet__data-box ');
     let cabinetDataInner = document.querySelector('.cabinet__data-inner');
+    let cabinetDataOne = document.querySelector('.cabinet__data-1');
+    if (cabinetBtnChange) {
+        cabinetBtnChange.addEventListener('click', function () {
+            cabinetBtnChange.classList.add('cabinet__tab-data--hidden');
+            cabinetDataInner.classList.add('cabinet__tab-data--hidden');
+            cabinetDataBox.classList.remove('cabinet__tab-data--hidden');
+            cabinetDataOne.classList.add('cabinet__tab-data--hidden');
 
-    cabinetBtnChange.addEventListener('click', function () {
-        cabinetBtnChange.classList.add('cabinet__tab-data--hidden');
-        cabinetDataInner.classList.add('cabinet__tab-data--hidden');
-        cabinetDataBox.classList.remove('cabinet__tab-data--hidden');
-    })
-    cabinetBtnSave.addEventListener('click', function () {
-        cabinetBtnChange.classList.remove('cabinet__tab-data--hidden');
-        cabinetDataInner.classList.remove('cabinet__tab-data--hidden');
-        cabinetDataBox.classList.add('cabinet__tab-data--hidden');
-    })
+        })
+        cabinetBtnSave.addEventListener('click', function () {
+            cabinetBtnChange.classList.remove('cabinet__tab-data--hidden');
+            cabinetDataInner.classList.remove('cabinet__tab-data--hidden');
+            cabinetDataBox.classList.add('cabinet__tab-data--hidden');
+            cabinetDataOne.classList.remove('cabinet__tab-data--hidden');
+        })
+    }
 };
 
 
@@ -742,6 +840,35 @@ function saleTabs() {
     });
 
 }
+
+
+// feedback tabs
+function feedbackTabs() {
+    const cabinetBtn = document.querySelectorAll('.feedback-btn-tab');
+    const cabinetTab = document.querySelectorAll('.feedback__tab');
+    if (cabinetBtn) {
+        cabinetBtn.forEach((item) => {
+            item.addEventListener('click', function () {
+                let tabId = item.getAttribute('data-feedback');
+                let currentTab = document.querySelector(tabId);
+
+                cabinetBtn.forEach(function (item) {
+                    item.classList.remove('feedback__btn-acive')
+                })
+
+                cabinetTab.forEach(function (item) {
+                    item.classList.remove('feedback__tab-active')
+                })
+                item.classList.add('feedback__btn-acive');
+                currentTab.classList.add('feedback__tab-active');
+
+            });
+        });
+    }
+}
+
+feedbackTabs();
+
 
 function postoffice() {
     let newPostoffice = document.querySelector('.new-postoffice');

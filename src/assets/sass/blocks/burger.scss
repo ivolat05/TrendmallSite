@@ -1,0 +1,82 @@
+/*-----------menu__burger------------*/
+.menu__burger {
+    height: 21px;
+    position: relative;
+
+    cursor: pointer;
+
+    display: none;
+}
+
+.menu__burger::before,
+.menu__burger::after {
+    content: "";
+    background-color: #2c2c31;
+    position: absolute;
+    width: 21px;
+    height: 2px;
+
+    left: 0;
+    transition: 0.4s;
+}
+
+.menu__burger::before {
+    top: 4px;
+}
+
+.menu__burger-line {
+    background-color: #2c2c31;
+    position: absolute;
+    width: 21px;
+    height: 2px;
+
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu__burger::after {
+    bottom: 4px;
+}
+
+.burger__active {
+    position: relative;
+    z-index: 8;
+}
+
+.burger__active::before {
+    transform: rotate(45deg);
+    top: 10px;
+    transition: 0.4s;
+    background-color: #2c2c31;
+}
+
+.burger__active .menu__burger-line {
+    transform: scale(0);
+}
+
+.burger__active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+    background-color: #2c2c31;
+}
+
+.mobil-search {
+    display: block;
+    height: 17px;
+    width: 17px;
+    margin-left: 41px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: url("../../assets/img/search_ico.svg") no-repeat center center;
+}
+
+.mobil__block {
+    display: none;
+    align-items: center;
+    justify-content: start;
+}
+.stop {
+    overflow: hidden;
+}

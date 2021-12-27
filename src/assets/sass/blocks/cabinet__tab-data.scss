@@ -182,3 +182,9 @@
 .cabinet__password-btn--active {
     background: url("../../assets/img/eye-active.svg") no-repeat center center;
 }
+.cabinet__data-2 {
+    display: none;
+}
+.cabinet__tab-data--hidden + .cabinet__data-2 {
+    display: block;
+}
