@@ -38,14 +38,46 @@ window.addEventListener("resize", function () {
     }
 });
 
+let helpBtn = document.querySelectorAll('.help-btn');
+let helpCollOne = document.querySelector('.help__col-1');
+if (helpBtn) {
+    if (document.body.clientWidth < 992) {
+        for (let i = 0; i < helpBtn.length; i++) {
+            if (helpBtn[i].classList.contains('cabinet__btn-acive')) {
+                helpBtn[i].classList.remove('cabinet__btn-acive');
+            }
 
+        }
+        for (let i = 0; i < cabinetTabMobil.length; i++) {
+            if (cabinetTabMobil[i].classList.contains('cabinet__tab-active')) {
+                cabinetTabMobil[i].classList.remove('cabinet__tab-active');
+            }
+        }
+        helpCollOne.classList.remove('cabinet__wrapp-mobil-active');
+    }
+}
 
 
 // закрытие боковой панели мобильной версии
 function tabClose(cabinetMobilBtn) {
     let cabinetTabTitle = document.querySelectorAll('.cabinet__tab-title');
+    let reg = document.querySelectorAll('.help__tab-btn');
     if (cabinetTabTitle) {
 
+        if (reg) {
+            reg.forEach((item) => {
+                item.addEventListener('click', () => {
+                    item.parentElement.classList.remove('cabinet__tab-active');
+                    item.parentElement.parentElement.classList.remove('cabinet__tab-active')
+                    let cabinetWrappMobil = document.querySelector('.cabinet__wrapp-mobil');
+                    for (let i = 0; i < cabinetMobilBtn.length; i++) {
+                        cabinetMobilBtn[i].classList.remove('cabinet__btn-acive');
+
+                    }
+                    cabinetWrappMobil.classList.remove('cabinet__wrapp-mobil-active')
+                })
+            })
+        }
         cabinetTabTitle.forEach((item) => {
             item.addEventListener('click', () => {
                 if (document.body.clientWidth < 992) {

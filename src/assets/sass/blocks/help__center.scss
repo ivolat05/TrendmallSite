@@ -31,9 +31,39 @@
 
 .help__col-1 {
     width: 28%;
+}
+.help__col-1.cabinet__wrapp-inner {
+    border: none;
+}
+.help__tab-btn {
+    display: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #2c2c31;
+    margin-bottom: 32px;
+    &::before {
+        content: url("../../assets/img/halp-arroe.svg");
+        padding-right: 10px;
+        position: relative;
+        top: 3px;
+    }
+}
+.help__wrapp {
+    margin-left: 10px;
+}
+.help__document {
+    margin-top: 108px;
+}
+
+.help__col-1-wrapp {
     border-right: 1px solid #ededed;
 }
-.help__col-2 {
+.help__document {
     width: 67%;
     padding-bottom: 200px;
 }
@@ -60,6 +90,10 @@
 
 .help__accordion {
     padding-bottom: 35px;
+}
+
+.help-btn.cabinet__btn:hover {
+    background: none;
 }
 
 .help-accordion-btn-line {
