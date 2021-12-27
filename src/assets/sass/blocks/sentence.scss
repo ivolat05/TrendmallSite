@@ -105,3 +105,98 @@
     max-width: 1190px;
     margin: 0 auto;
 }
+
+.sentence__wrapp-col-2 {
+    max-width: 400px;
+    display: none;
+}
+
+.sentence-head {
+    position: relative;
+    width: 400px;
+}
+
+.sentence-head-wrapp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    img {
+        margin: 0 auto;
+        display: block;
+        margin-top: 10px;
+    }
+}
+.sentence-head-img {
+    width: 100%;
+}
+
+.sentence-head-title {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 40px;
+    letter-spacing: 0.075em;
+    text-transform: lowercase;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+}
+
+.sentence-head-subtitle {
+    width: 200px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+.sentence-head-title--subt {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    top: 3px;
+    left: 14px;
+    position: absolute;
+}
+
+.sentence-body-title {
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    background: linear-gradient(94.43deg, #9248ec -18.98%, #d65e95 113.48%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    &::before {
+        content: url("../../assets/img/calendar.svg");
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+    }
+}
+
+.sentence-body-text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2c2c31;
+    margin-bottom: 25px;
+}
+
+.sentence-body-link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ffffff;
+    width: 175px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

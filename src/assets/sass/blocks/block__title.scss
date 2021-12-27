@@ -1,16 +1,23 @@
 .title__wrapp {
     max-width: 1200px;
+    margin: 10px auto 22px;
+}
+
+.title-btn {
     display: flex;
     align-items: baseline;
-    margin: 10px auto 22px;
+
     justify-content: start;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #2c2c31;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
 }
-
 .title-span {
     font-weight: 500;
     font-size: 12px;

@@ -3,16 +3,21 @@
     height: 88px;
     display: block;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-
+    width: 137px;
+    height: 88px;
     img {
+        width: 137px;
+        height: 80px;
         display: block;
+        object-fit: contain;
     }
 }
 
 .firms {
     margin-bottom: 68px;
+    overflow: hidden;
 }
 
 .firms .slick-list {
