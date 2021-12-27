@@ -255,13 +255,46 @@ $('.recommendations__slaider-1').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
-    dots: false
+    dots: false,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 3
+
+            }
+        },
+        {
+            breakpoint: 770,
+            settings: {
+                slidesToShow: 2
+
+            }
+        }
+    ]
 });
 $('.recommendations__slaider-2').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
-    dots: false
+    dots: false,
+
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 3
+
+            }
+        },
+        {
+            breakpoint: 770,
+            settings: {
+                slidesToShow: 2
+
+            }
+        }
+    ]
 });
 
 // слайдер карточки ковара
@@ -275,7 +308,31 @@ $('.card-slider').slick({
     customPaging: function (slick, index) {
         let image = $(slick.$slides[index]).find('.card-slider__img').attr('src');
         return '<img src="' + image + '" alt="" /> '
-    }
+    },
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 1
+
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2
+
+            }
+        }
+        ,
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                arrows: false
+
+            }
+        }]
 })
 // popup картинок в карточки товара
 $('.image-popup-zoom').magnificPopup({

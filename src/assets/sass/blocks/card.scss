@@ -188,15 +188,14 @@
     background: url("../../assets/img/facebook.svg") no-repeat center center;
 }
 .card-massate-f:hover {
-    background: url("../../assets/img/facebook-active.svg") no-repeat center center, #31b4d0;
-    border: 0.5px solid #31b4d0;
+    background: url("../../assets/img/facebook-active.svg") no-repeat center center, #1877f2;
 }
 .card-massate-i {
     background: url("../../assets/img/inst.svg") no-repeat center center;
 }
 .card-massate-i:hover {
-    background: url("../../assets/img/inst-active.svg") no-repeat center center, #31b4d0;
-    border: 0.5px solid #31b4d0;
+    background: url("../../assets/img/inst-active.svg") no-repeat center center,
+        radial-gradient(99.11% 99.11% at 26.56% 107.7%, #ffdd55 0%, #ffdd55 10%, #ff543e 50%, #c837ab 100%);
 }
 
 .card-massate-t {
@@ -453,4 +452,16 @@
     &::before {
         content: "-";
     }
+}
+
+.card__wrapp-inner {
+    position: relative;
+}
+
+.card-btn {
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    z-index: 3;
+    background: red;
 }
