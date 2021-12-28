@@ -76,9 +76,22 @@
 }
 /*--------------------------------------*/
 @media (max-width: 1400px) {
+    .order__basket {
+        width: 409px;
+    }
+    .order__registration-body {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .card-col-1 {
         max-width: 745px;
         margin-left: 0;
+    }
+    .basket__btn-box {
+        margin-right: 0;
+    }
+    .basket__wrapp-row-inner {
+        width: 75%;
     }
     .card-col-2 {
         width: 370px;
@@ -352,6 +365,54 @@
     }
 }
 @media (max-width: 992px) {
+    .order {
+        margin-bottom: 21px;
+    }
+    .order__registration-subtitle {
+        padding-left: 0;
+    }
+    .order-postoffice {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .order__basket-info {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .basket__wrapp-row-inner {
+        width: 85%;
+    }
+    .order__wrapp {
+        flex-direction: column;
+    }
+    .order__basket-body {
+        background: #ffffff;
+
+        box-shadow: 2px 6px 16px rgba(174, 182, 202, 0.31);
+    }
+    .order__basket {
+        box-shadow: none;
+    }
+    .order__basket-box {
+        border-bottom: 1px solid rgba(177, 177, 177, 0.5);
+    }
+    .order__basket-box:nth-last-child(1) {
+        border-bottom: none;
+    }
+
+    .order__registration {
+        width: 95%;
+        margin: 0 auto 29px;
+        box-shadow: none;
+    }
+    .order__registration-title {
+        text-align: center;
+    }
+
+    .order__basket {
+        width: 95%;
+        margin: 0 auto;
+    }
     .review {
         margin-bottom: 42px;
     }
@@ -1047,6 +1108,21 @@
     }
 }
 @media (max-width: 768px) {
+    .order__registration-title {
+        font-size: 20px;
+        line-height: 24px;
+
+        padding: 0;
+        padding-top: 36px;
+    }
+    .order__registration-body {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 39px;
+    }
+    .basket__wrapp-row-inner {
+        width: 75%;
+    }
     .recommendations__slaider-box {
         .product {
             height: 320px;
@@ -1205,6 +1281,9 @@
     .card-slick-prev {
         right: 0;
     }
+    .order__row-buy .order__registration-col:nth-child(1) {
+        width: 35%;
+    }
 }
 @media (max-width: 600px) {
     .popup-subscriptions,
@@ -1223,6 +1302,73 @@
 }
 
 @media (max-width: 576px) {
+    .basket-balls {
+        margin-top: 25px;
+    }
+    .order__registration-row {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .order__registration-row {
+        margin-bottom: 4px;
+    }
+    .order__registration-box {
+        margin-bottom: 27px;
+    }
+    .order__registration-box.order-postoffice {
+        margin-bottom: 17px;
+    }
+    .order__basdet-title {
+        padding-bottom: 0;
+    }
+    .basket__box-title {
+        font-size: 12px;
+        line-height: 15px;
+        padding-bottom: 11px;
+    }
+    .basket-old-price.old-price {
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .order__basket-body {
+        margin-bottom: 40px;
+    }
+
+    .order-postoffice .order__registration-row {
+        margin-bottom: 0px;
+    }
+    .order-postoffice .order__registration-row:nth-child(2) {
+        margin-bottom: 2px;
+    }
+    .order__registration-col {
+        width: 100%;
+        margin-bottom: 22px;
+    }
+
+    .basket__row-col {
+        position: relative;
+    }
+    .basket__btn-product {
+        opacity: 1;
+    }
+    .basket__wrapp-row-inner {
+        width: 66%;
+    }
+    .basket__wrapp-col-1 {
+        height: 64px;
+    }
+    .basket__row-col-bottom {
+        justify-content: flex-end;
+    }
+    .basket__wrapp-row-inner {
+        flex-direction: column;
+    }
+    .basket-name-score {
+        display: none;
+    }
+    .basket__wrapp-size {
+        display: none;
+    }
     .recommendations-title {
         font-size: 18px;
         line-height: 22px;
@@ -1703,6 +1849,15 @@
         width: 225px;
         &::before {
             right: 67px;
+        }
+    }
+    .basket-ball-price {
+        padding-left: 0;
+        &::before {
+            left: -10px;
+        }
+        &::after {
+            left: -20px;
         }
     }
 }

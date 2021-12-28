@@ -196,8 +196,6 @@
 }
 
 .order__basket {
-    max-width: 524px;
-
     background: #ffffff;
     box-shadow: 2px 6px 16px rgba(174, 182, 202, 0.31);
 }
@@ -400,6 +398,7 @@
 }
 .basket__wrapp-row {
     display: flex;
+    justify-content: space-between;
 }
 .basket__wrapp {
     width: 100%;
@@ -488,8 +487,7 @@
         content: url("../../assets/img/alert.svg");
         position: absolute;
         left: 0;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 0;
     }
 }
 
