@@ -16,8 +16,22 @@
     margin-top: 35px;
     margin-left: 37px;
     max-width: 996px;
+    position: relative;
+}
+.chat__right-head {
+    position: relative;
 }
 
+.chat__left-return {
+    position: absolute;
+    top: -33px;
+    left: 14px;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: none;
+    display: none;
+}
 .cabinet__chat-search {
     position: relative;
     width: 100%;

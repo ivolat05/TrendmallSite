@@ -67,11 +67,13 @@ function helptTabsHidden() {
 function tabClose(cabinetMobilBtn) {
     let cabinetTabTitle = document.querySelectorAll('.cabinet__tab-title');
     let reg = document.querySelectorAll('.help__tab-btn');
+    let cabinetFonBtn = document.querySelectorAll('.cabinet__fon-btn');
     if (cabinetTabTitle) {
 
         if (reg) {
             reg.forEach((item) => {
                 item.addEventListener('click', () => {
+
                     item.parentElement.classList.remove('cabinet__tab-active');
                     item.parentElement.parentElement.classList.remove('cabinet__tab-active')
                     let cabinetWrappMobil = document.querySelector('.cabinet__wrapp-mobil');
@@ -97,6 +99,28 @@ function tabClose(cabinetMobilBtn) {
             })
         })
 
+    }
+
+    if (cabinetFonBtn) {
+        cabinetFonBtn.forEach((item) => {
+            item.addEventListener('click', () => {
+                if (document.body.clientWidth < 992) {
+                    let cabinetTabMobil = document.querySelectorAll('.cabinet__tab-mobil');
+                    for (let i = 0; i < cabinetTabMobil.length; i++) {
+                        if (cabinetTabMobil[i].classList.contains('cabinet__tab-active')) {
+                            cabinetTabMobil[i].classList.remove('cabinet__tab-active');
+                        }
+                    }
+
+                    let cabinetWrappMobil = document.querySelector('.cabinet__wrapp-mobil');
+                    for (let i = 0; i < cabinetMobilBtn.length; i++) {
+                        cabinetMobilBtn[i].classList.remove('cabinet__btn-acive');
+
+                    }
+                    cabinetWrappMobil.classList.remove('cabinet__wrapp-mobil-active');
+                }
+            })
+        })
     }
 }
 tabClose(cabinetMobilBtn);
@@ -508,7 +532,15 @@ function tabs() {
         item.addEventListener('click', function () {
             let tabId = item.getAttribute('data-tab');
             let currentTab = document.querySelector(tabId);
-
+            let cabinetUserBalance = document.querySelector('.cabinet__user-balance');
+            let cabinetSalesBox = document.querySelector('.cabinet__sales-box');
+            if (item.classList.contains('cabinet__btn-balance')) {
+                cabinetUserBalance.classList.add('cabinet__user-balance--active');
+                cabinetSalesBox.classList.add('cabinet__sales-box-balance');
+            } else {
+                cabinetUserBalance.classList.remove('cabinet__user-balance--active');
+                cabinetSalesBox.classList.remove('cabinet__sales-box-balance');
+            }
             cabinetBtn.forEach(function (item) {
                 item.classList.remove('cabinet__btn-acive')
             })
@@ -960,7 +992,7 @@ function myDataInsert() {
 
 
 // sale tabs 
-function saleTabs() {
+function productSaleTabs() {
     const cabinetBtn = document.querySelectorAll('.sale__tab-btn');
     const cabinetTab = document.querySelectorAll('.sale__tab-wrapp');
 
@@ -1111,6 +1143,35 @@ function filterMobil() {
 
 }
 filterMobil();
+//open chat
+function openChat() {
+    let chatLeftUser = document.querySelectorAll('.chat__left-user');
+    let chatLeftReturn = document.querySelectorAll('.chat__left-return');
+    let chatPanelRight = document.querySelectorAll('.chat__panel-right');
+    if (chatLeftUser) {
+        chatLeftUser.forEach((item) => {
+            item.addEventListener('click', function () {
+                let dataChatid = item.getAttribute('data-chat');
+                let dataChatTab = document.querySelector(dataChatid);
+                for (let i = 0; i < chatPanelRight.length; i++) {
+                    if (chatPanelRight[i].classList.contains('chat__panel-active')) {
+                        chatPanelRight[i].classList.remove('chat__panel-active');
+                    }
+                }
+                dataChatTab.classList.add('chat__panel-active');
+            })
+        })
+    }
+    if (chatLeftReturn) {
+        chatLeftReturn.forEach((item) => {
+            item.addEventListener('click', function () {
+                item.parentElement.parentElement.classList.remove('chat__panel-active');
+            })
+        })
+    }
+
+}
+openChat();
 // accardion();
 // tabs();
 // selectCheckboxActive();

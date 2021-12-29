@@ -197,18 +197,42 @@
             <div class="container">
                 <div class="cabinet__wrapp ">
                     <div class="cabinet__wrapp-inner cabinet__wrapp-mobil cabinet__wrapp-mobil-active">
-                        <div class="cabinet__wrapp-box  cabinet__sales-box">
+                        <div class="cabinet__wrapp-box   cabinet__sales-box ">
                             <div class="cabinet__avatar">
                                 <img src="./assets/img/mango.jpg" alt="">
                             </div>
                             <div class="cabinet__user">
-                                <div class="cabiner__user-title">
-                                    Ваш аккаунт
+                                <div class="cabinet__user-balance">
+                                    <div class="cabiner__user-balance-name">
+                                        Mango Company
+                                    </div>
+                                    <div class="cabinet__user-balance-wrapp">
+        
+                                        <div class="cabinet__user-balance-head">
+                                            <div class="cabinet__user-balance-title">
+                                                Баланс
+                                            </div>
+                                            <div class="cabinet__user-balance-subtitle">
+                                                1267 грн
+                                            </div>
+                                        </div>
+                                        <button class="button cabinet__user-balance-btn">
+                                            Пополнить
+                                        </button>
+                                    </div>
+        
                                 </div>
-                                <div class="cabiner__user-name cabinet__sales-name">
-                                    Mango
+                                <div class="cabinet__user-name-box">
+                                    <div class="cabiner__user-title">
+                                        Ваш аккаунт
+                                    </div>
+                                    <div class="cabiner__user-name cabinet__sales-name">
+                                        Mango
+                                    </div>
                                 </div>
+        
                             </div>
+        
                         </div>
         
                         <div class="cabiner__box-btn cabinet__sales-box-btn">
@@ -221,7 +245,8 @@
                             <button class="cabinet__mobil-btn cabinet__btn cabinet__btn-3" data-tab="#tab_3">
                                 Мои документы
                             </button>
-                            <button class="cabinet__mobil-btn cabinet__btn cabinet__btn-4" data-tab="#tab_4">
+                            <button class="cabinet__btn-balance cabinet__mobil-btn cabinet__btn cabinet__btn-4"
+                                data-tab="#tab_4">
                                 Мой баланс
                             </button>
                             <button class="cabinet__mobil-btn cabinet__btn cabinet__btn-5" data-tab="#tab_5">
@@ -251,7 +276,7 @@
                             <a href='#' class="cabinet__mobil-btn cabinet__link cabinet__btn-13">
                                 Справочный центр
                             </a>
-                            <a href='#popup-screen' cabinet__mobil-btn class="popup-content cabinet__link cabinet__btn-14">
+                            <a href='#popup-screen' class=" popup-content cabinet__link cabinet__btn-14">
                                 Как добавить сайт на главный экран
                             </a>
                         </div>
@@ -394,14 +419,16 @@
                     
                                     <div class="my__data-row">
                                         <div class="my__data-row-box">
-                                            <div class="my__data-row-title">
-                                                Логотип*
-                                            </div>
-                                            <div class="my__data-row-subtitle">
-                                                не более 3 мб
-                                            </div>
-                                            <div class="my__datw-row-box-img">
-                                                <img src="./assets/img/default1.png" alt="">
+                                            <div class="my__data-row-box-wrapper">
+                                                <div class="my__data-row-title">
+                                                    Логотип*
+                                                </div>
+                                                <div class="my__data-row-subtitle">
+                                                    не более 3 мб
+                                                </div>
+                                                <div class="my__datw-row-box-img">
+                                                    <img src="./assets/img/default1.png" alt="">
+                                                </div>
                                             </div>
                                             <label class="btn my__data-btn">
                                                 <input class='cabinet__label-input' type="file">
@@ -409,15 +436,16 @@
                                             </label>
                                         </div>
                                         <div class="my__data-row-box">
-                                            <div class="my__data-row-title">
-                                                Обложка профиля*
-                    
-                                            </div>
-                                            <div class="my__data-row-subtitle">
-                                                638 px /368 px,не более 3 мб
-                                            </div>
-                                            <div class="my__datw-row-box-img">
-                                                <img src="./assets/img/RTLAAH424101_14131859_1_v1.png" alt="">
+                                            <div class="my__data-row-box-wrapper">
+                                                <div class="my__data-row-title">
+                                                    Обложка профиля*
+                                                </div>
+                                                <div class="my__data-row-subtitle">
+                                                    638 px /368 px,не более 3 мб
+                                                </div>
+                                                <div class="my__datw-row-box-img">
+                                                    <img src="./assets/img/RTLAAH424101_14131859_1_v1.png" alt="">
+                                                </div>
                                             </div>
                                             <label class="btn my__data-btn">
                                                 <input class='cabinet__label-input' type="file">
@@ -688,7 +716,7 @@
                                     </button>
                                 </div>
                                 <div class="chat__user-box">
-                                    <div class="chat__left-user">
+                                    <div class="chat__left-user" data-chat='#chat__1'>
                                         <div class="chat__user-img">
                                             <img src="./assets/img/chat-1.jpg" alt="">
                                         </div>
@@ -713,7 +741,7 @@
                                         </div>
                                     </div>
                     
-                                    <div class="chat__left-user">
+                                    <div class="chat__left-user" data-chat='#chat__1'>
                                         <div class="chat__user-img">
                                             <img src="./assets/img/chat-2.jpg" alt="">
                                         </div>
@@ -736,7 +764,7 @@
                                         </div>
                                     </div>
                     
-                                    <div class="chat__left-user">
+                                    <div class="chat__left-user" data-chat='#chat__1'>
                                         <div class="chat__user-img">
                                             <img src="./assets/img/chat-3.jpg" alt="">
                                         </div>
@@ -758,7 +786,7 @@
                                         </div>
                                     </div>
                     
-                                    <div class="chat__left-user">
+                                    <div class="chat__left-user" data-chat='#chat__1'>
                                         <div class="chat__user-img">
                                             <img src="./assets/img/chat-4.jpg" alt="">
                                         </div>
@@ -780,7 +808,7 @@
                                         </div>
                                     </div>
                     
-                                    <div class="chat__left-user">
+                                    <div class="chat__left-user" data-chat='#chat__1'>
                                         <div class="chat__user-img">
                                             <img src="./assets/img/chat-5.jpg" alt="">
                                         </div>
@@ -803,7 +831,7 @@
                                         </div>
                                     </div>
                     
-                                    <div class="chat__left-user">
+                                    <div class="chat__left-user" data-chat='#chat__1'>
                                         <div class="chat__user-img">
                                             <img src="./assets/img/chat-6.jpg" alt="">
                                         </div>
@@ -826,7 +854,7 @@
                                         </div>
                                     </div>
                     
-                                    <div class="chat__left-user">
+                                    <div class="chat__left-user" data-chat='#chat__1'>
                                         <div class="chat__user-img">
                                             <img src="./assets/img/chat-7.jpg" alt="">
                                         </div>
@@ -849,7 +877,7 @@
                                         </div>
                                     </div>
                     
-                                    <div class="chat__left-user">
+                                    <div class="chat__left-user" data-chat='#chat__1'>
                                         <div class="chat__user-img">
                                             <img src="./assets/img/chat-8.jpg" alt="">
                                         </div>
@@ -872,7 +900,7 @@
                                         </div>
                                     </div>
                     
-                                    <div class="chat__left-user">
+                                    <div class="chat__left-user" data-chat='#chat__1'>
                                         <div class="chat__user-img">
                                             <img src="./assets/img/chat-9.jpg" alt="">
                                         </div>
@@ -895,7 +923,7 @@
                                         </div>
                                     </div>
                     
-                                    <div class="chat__left-user">
+                                    <div class="chat__left-user" data-chat='#chat__1'>
                                         <div class="chat__user-img">
                                             <img src="./assets/img/chat-10.jpg" alt="">
                                         </div>
@@ -918,7 +946,7 @@
                                         </div>
                                     </div>
                     
-                                    <div class="chat__left-user">
+                                    <div class="chat__left-user" data-chat='#chat__1'>
                                         <div class="chat__user-img">
                                             <img src="./assets/img/chat-11.jpg" alt="">
                                         </div>
@@ -941,9 +969,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="chat__panel-right">
+                            <div id='chat__1' class="chat__panel-right">
                                 <div class="chat__right-head">
+                                    <button class="chat__left-return">
+                                        <img src="./assets/img/title-arrow.svg" alt="">
+                                    </button>
                                     <div class="chat__right-user">
+                    
                                         <div class="chat__user-img">
                                             <img src="./assets/img/chat-12.jpg" alt="">
                                         </div>
@@ -1090,14 +1122,35 @@
                         </div>
                     
                     
-                    </div>            <div id='tab_4' class="cabinet__tab cabinet__tab-mobil">
+                    </div>            <div id='tab_4' class="cabinet__tab-mobil cabinet__tab">
                         <div class="cabinet__tab-fon">
                             <div class="cabinet__tab-title">
-                                Мой баланс
+                                Мой Баланс
                             </div>
                         </div>
+                        <div class="salesman__balance-wrapp">
+                            <div class="salesman__balance-head">
+                                <div class="salesman__balance-box">
+                                    <img src="./assets/img/cart-many.png" alt="" class="">
+                                    <div class="salesman__balance-box-wrapper">
+                                        <div class="salesman__balance-box-title">
+                                            Ваш баланс
+                                        </div>
+                                        <div class="salesman__balance-box-title-many">
+                                            1267 грн
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                    
+                    
+                    
+                        </div>
+                    
                     </div>            <div id='tab_10' class="cabinet__tab-mobil cabinet__tab">
                         <div class="cabinet__tab-fon">
+                    
                             <div class="cabinet__tab-title">
                                 Импорт
                             </div>
@@ -1186,7 +1239,7 @@
                         <div class="salesman__payment-wrapp">
                             <div class="salesman__payment-row">
                                 <div class="salesman__payment-title">
-                                    дата оплаты Личного кабинета
+                                    Дата оплаты Личного кабинета
                                 </div>
                                 <div class="salesman__payment-data">
                                     20.08.2021
@@ -1195,7 +1248,7 @@
                             <div class="salesman__payment-inner">
                                 <div class="salesman__payment-row">
                                     <div class="salesman__payment-title">
-                                        дата окончания срока Личного кабинета
+                                        Дата окончания срока Личного кабинета
                     
                                     </div>
                                     <div class="salesman__payment-data">
@@ -1215,9 +1268,12 @@
                     </div>            <div id='tab_7' class="cabinet__tab-mobil cabinet__tab">
                         <div class="salesman__sale">
                             <div class="cabinet__tab-fon">
-                                <div class="cabinet__tab-title product__tab-title">
-                                    <div class="sale__hidden">Sale</div>
-                                    <div class="sale__hidden-2">Акции</div>
+                                <div class="cabinet__tab-fon-wrapp product__tab-title">
+                                    <button class='cabinet__fon-btn'>
+                                        <div class="sale__hidden">Sale</div>
+                                        <div class="sale__hidden-2">Акции</div>
+                                    </button>
+                    
                                     <button class="btn salesman__sale-btn-2 ">
                                         Создать Акцию
                                     </button>
@@ -1226,6 +1282,7 @@
                                     </button>
                                 </div>
                             </div>
+                    
                     
                             <div class="sale__box-btn">
                                 <div class="sale__box-btn-fon"></div>
@@ -1559,58 +1616,66 @@
                                         Удалить
                                     </button>
                                 </div>
-                                <div class="sale__wrapper">
-                                    <div class="sale__wrapper-row">
-                                        <div class="sale__wrapper-img">
-                                            <img src="./assets/img/Rectangle360.jpg" alt="">
-                                            <div class="sale__wrapper-img-inner">
-                                                обувь
+                                <div class="sale__wrapper-container">
+                                    <div class="sale__wrapper">
+                                        <div class="sale__wrapper-row">
+                                            <div class="sale__wrapper-img">
+                                                <img src="./assets/img/Rectangle360.jpg" alt="">
+                                                <div class="sale__wrapper-img-inner">
+                                                    обувь
+                                                </div>
+                                            </div>
+                                            <div class="sale__wrapper-inner">
+                                                <img src="../assets/img/333.svg" alt="">
+                                                <div class="sale__wrapper-inner-title">
+                                                    -60%
+                                                </div>
+                                                <div class="sale__wrapper-inner-subtitle">
+                                                    на осенюю обувь
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="sale__wrapper-inner">
-                                            <img src="../assets/img/333.svg" alt="">
-                                            <div class="sale__wrapper-inner-title">
-                                                -60%
+                                        <div class="sale__wrapper-row sale__wrapper-row-2">
+                                            <div class="sale__wrapper-row-coll">
+                                                <div class="sale__coll-title">
+                                                    Обувь
+                                                </div>
+                                                <div class="sale__coll-text">
+                                                    Скидка -60% на всю осенюю обувь бренда MNGL
+                                                </div>
                                             </div>
-                                            <div class="sale__wrapper-inner-subtitle">
-                                                на осенюю обувь
+                                            <div class="sale__wrapper-row-coll">
+                                                <div class="sale__time-wrapper">
+                                                    <div class="sale__time-text">
+                                                        До кінця акції:
+                                                    </div>
+                    
+                                                    <div class="sale__time-info">
+                                                        2 дні 14:45:01
+                                                    </div>
+                                                </div>
+                                                <button class="btn sale__time-wrapper-btn">Перейти к акции</button>
+                    
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="sale__wrapper-row">
-                                        <div class="sale__wrapper-row-coll">
-                                            <div class="sale__coll-title">
-                                                Обувь
-                                            </div>
-                                            <div class="sale__coll-text">
-                                                Скидка -60% на всю осенюю обувь бренда MNGL
-                                            </div>
-                                        </div>
-                                        <div class="sale__wrapper-row-coll">
-                                            <div class="sale__time-text">
-                                                До кінця акції:
-                                            </div>
-                                            <div class="sale__time-info">
-                                                2 дні 14:45:01
-                                            </div>
-                                        </div>
-                                    </div>
-                    
-                    
                                 </div>
-                    
                             </div>
                     
                     
                         </div>
                         <div class="add__share product__creation-hidden">
                             <div class="salesman__sale">
+                            
                                 <div class="cabinet__tab-fon">
-                                    <div class="cabinet__tab-title product__tab-title">
-                                        Создать Акцию
+                                    <div class="cabinet__tab-fon-wrapp product__tab-title">
+                                        <button class='cabinet__fon-btn'>
+                                            Создать Акцию
+                                        </button>
                                         <button class="btn add__share-btn">
                                             Сохранить
                                         </button>
+                            
                                     </div>
                                 </div>
                             
@@ -1691,8 +1756,11 @@
                         <div class="add__share-2 product__creation-hidden">
                             <div class="salesman__sale">
                                 <div class="cabinet__tab-fon">
-                                    <div class="cabinet__tab-title product__tab-title">
-                                        Добавить Акционный товар
+                                    <div class="cabinet__tab-fon-wrapp  product__tab-title">
+                                        <button class='cabinet__fon-btn'>
+                                            Добавить Акционный товар
+                                        </button>
+                            
                                         <button class="btn add__share-btn-2">
                                             Сохранить
                                         </button>
@@ -1855,7 +1923,7 @@
                             </div>
                         </div>
                         <div class="product__promotion-wrapp salesman__tarif-wrapp">
-                            <div class="promotion__tarif-box">
+                            <div class="promotion__tarif-box promotion__tarif-box-visible">
                                 <div class="promotion__tarif-subtitle">
                                     Тариф
                                 </div>
@@ -1881,12 +1949,12 @@
                                         </span>
                                     </div>
                                     <button class="btn promotion__tarif-btn">
-                                        Заказать
+                                        Подробнее
                                     </button>
                                 </div>
                             </div>
                     
-                            <div class="promotion__tarif-box promotion__tarif-box--premium">
+                            <div class="promotion__tarif-box promotion__tarif-box-visible promotion__tarif-box--premium">
                                 <div class="promotion__tarif-subtitle">
                                     Тариф
                                 </div>
@@ -1912,7 +1980,7 @@
                                         </span>
                                     </div>
                                     <button class="btn promotion__tarif-btn">
-                                        Заказать
+                                        Подробнее
                                     </button>
                                 </div>
                             </div>
@@ -1923,12 +1991,16 @@
                     
                     </div>            <div id='tab_6' class="cabinet__tab-mobil cabinet__tab">
                         <div class="salesman__order-container">
+                    
                             <div class="cabinet__tab-fon">
-                                <div class="cabinet__tab-title">
-                                    Мои заказы
+                                <div class="cabinet__tab-fon-wrapp">
+                                    <button class='cabinet__fon-btn'>
+                                        Мои заказы
+                                    </button>
+                    
+                    
                                 </div>
                             </div>
-                    
                     
                     
                             <div class="salesman__reviews-wrapp salesman__order-fix">
@@ -1993,12 +2065,17 @@
                                                     </div>
                                                 </div>
                                                 <div class="salesman__order-col salesman__order-col-4">
+                                                    <div class="salesman__order-col-title">
+                                                        Дата и время/ завершения заказа
+                                                    </div>
                                                     06.09.2021
                                                 </div>
                                                 <div class="salesman__order-col salesman__order-col-5">
+                                                    <div class="salesman__order-col-title">Статус доставки</div>
                                                     ТТН 2345 6789 123456
                                                 </div>
                                                 <div class="salesman__order-col salesman__order-col-6">
+                                                    <div class="salesman__order-col-title">Товар</div>
                                                     <div class="salesman__order-img">
                                                         <img src="./assets/img/MP002XW06IDQ_13894399_1_v.jpg" alt="">
                                                     </div>
@@ -2006,6 +2083,7 @@
                                             </div>
                                             <div class="salesman__order-col salesman__order-col-7">
                                                 <div class="salesman__col-box">
+                                                    <div class="salesman__order-col-title">Покупатель</div>
                                                     <div class="salesman__order-avatar">
                                                         ВТ
                                                     </div>
@@ -2033,12 +2111,17 @@
                                                     </div>
                                                 </div>
                                                 <div class="salesman__order-col salesman__order-col-4">
+                                                    <div class="salesman__order-col-title">
+                                                        Дата и время/ завершения заказа
+                                                    </div>
                                                     06.09.2021
                                                 </div>
                                                 <div class="salesman__order-col salesman__order-col-5">
+                                                    <div class="salesman__order-col-title">Статус доставки</div>
                                                     ТТН 2345 6789 123456
                                                 </div>
                                                 <div class="salesman__order-col salesman__order-col-6">
+                                                    <div class="salesman__order-col-title">Товар</div>
                                                     <div class="salesman__order-img">
                                                         <img src="./assets/img/1.jpg" alt="">
                                                     </div>
@@ -2046,6 +2129,7 @@
                                             </div>
                                             <div class="salesman__order-col salesman__order-col-7">
                                                 <div class="salesman__col-box">
+                                                    <div class="salesman__order-col-title">Покупатель</div>
                                                     <div class="salesman__order-avatar">
                                                         <img src="./assets/img/2.jpg" alt="">
                                                     </div>
@@ -2073,12 +2157,17 @@
                                                     </div>
                                                 </div>
                                                 <div class="salesman__order-col salesman__order-col-4">
+                                                    <div class="salesman__order-col-title">
+                                                        Дата и время/ завершения заказа
+                                                    </div>
                                                     06.09.2021
                                                 </div>
                                                 <div class="salesman__order-col salesman__order-col-5">
+                                                    <div class="salesman__order-col-title">Статус доставки</div>
                                                     ТТН 2345 6789 123456
                                                 </div>
                                                 <div class="salesman__order-col salesman__order-col-6">
+                                                    <div class="salesman__order-col-title">Товар</div>
                                                     <div class="salesman__order-img">
                                                         <img src="./assets/img/1.jpg" alt="">
                                                     </div>
@@ -2086,6 +2175,7 @@
                                             </div>
                                             <div class="salesman__order-col salesman__order-col-7">
                                                 <div class="salesman__col-box">
+                                                    <div class="salesman__order-col-title">Покупатель</div>
                                                     <div class="salesman__order-avatar">
                                                         <img src="./assets/img/2.jpg" alt="">
                                                     </div>
@@ -2113,12 +2203,17 @@
                                                     </div>
                                                 </div>
                                                 <div class="salesman__order-col salesman__order-col-4">
+                                                    <div class="salesman__order-col-title">
+                                                        Дата и время/ завершения заказа
+                                                    </div>
                                                     06.09.2021
                                                 </div>
                                                 <div class="salesman__order-col salesman__order-col-5 salesman-order--none">
+                                                    <div class="salesman__order-col-title">Статус доставки</div>
                                                     Eще не сформирован
                                                 </div>
                                                 <div class="salesman__order-col salesman__order-col-6">
+                                                    <div class="salesman__order-col-title">Товар</div>
                                                     <div class="salesman__order-img">
                                                         <img src="./assets/img/MP002XW06IDQ_13894399_1_v.jpg" alt="">
                                                     </div>
@@ -2126,6 +2221,7 @@
                                             </div>
                                             <div class="salesman__order-col salesman__order-col-7">
                                                 <div class="salesman__col-box">
+                                                    <div class="salesman__order-col-title">Покупатель</div>
                                                     <div class="salesman__order-avatar">
                                                         ВТ
                                                     </div>
@@ -2153,12 +2249,17 @@
                                                     </div>
                                                 </div>
                                                 <div class="salesman__order-col salesman__order-col-4">
+                                                    <div class="salesman__order-col-title">
+                                                        Дата и время/ завершения заказа
+                                                    </div>
                                                     06.09.2021
                                                 </div>
                                                 <div class="salesman__order-col salesman__order-col-5">
+                                                    <div class="salesman__order-col-title">Статус доставки</div>
                                                     ТТН 2345 6789 123456
                                                 </div>
                                                 <div class="salesman__order-col salesman__order-col-6">
+                                                    <div class="salesman__order-col-title">Товар</div>
                                                     <div class="salesman__order-img">
                                                         <img src="./assets/img/1.jpg" alt="">
                                                     </div>
@@ -2166,6 +2267,7 @@
                                             </div>
                                             <div class="salesman__order-col salesman__order-col-7">
                                                 <div class="salesman__col-box">
+                                                    <div class="salesman__order-col-title">Покупатель</div>
                                                     <div class="salesman__order-avatar">
                                                         <img src="./assets/img/2.jpg" alt="">
                                                     </div>
@@ -2193,19 +2295,26 @@
                                                     </div>
                                                 </div>
                                                 <div class="salesman__order-col salesman__order-col-4">
+                                                    <div class="salesman__order-col-title">
+                                                        Дата и время/ завершения заказа
+                                                    </div>
                                                     06.09.2021
                                                 </div>
                                                 <div class="salesman__order-col salesman__order-col-5">
+                                                    <div class="salesman__order-col-title">Статус доставки</div>
                                                     ТТН 2345 6789 123456
                                                 </div>
                                                 <div class="salesman__order-col salesman__order-col-6">
+                                                    <div class="salesman__order-col-title">Товар</div>
                                                     <div class="salesman__order-img">
+                    
                                                         <img src="./assets/img/1.jpg" alt="">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="salesman__order-col salesman__order-col-7">
                                                 <div class="salesman__col-box">
+                                                    <div class="salesman__order-col-title">Покупатель</div>
                                                     <div class="salesman__order-avatar">
                                                         <img src="./assets/img/2.jpg" alt="">
                                                     </div>
@@ -2233,12 +2342,17 @@
                                                     </div>
                                                 </div>
                                                 <div class="salesman__order-col salesman__order-col-4">
+                                                    <div class="salesman__order-col-title">
+                                                        Дата и время/ завершения заказа
+                                                    </div>
                                                     06.09.2021
                                                 </div>
                                                 <div class="salesman__order-col salesman__order-col-5">
+                                                    <div class="salesman__order-col-title">Статус доставки</div>
                                                     ТТН 2345 6789 123456
                                                 </div>
                                                 <div class="salesman__order-col salesman__order-col-6">
+                                                    <div class="salesman__order-col-title">Товар</div>
                                                     <div class="salesman__order-img">
                                                         <img src="./assets/img/1.jpg" alt="">
                                                     </div>
@@ -2246,6 +2360,7 @@
                                             </div>
                                             <div class="salesman__order-col salesman__order-col-7">
                                                 <div class="salesman__col-box">
+                                                    <div class="salesman__order-col-title">Покупатель</div>
                                                     <div class="salesman__order-avatar">
                                                         <img src="./assets/img/2.jpg" alt="">
                                                     </div>
@@ -2273,12 +2388,17 @@
                                                     </div>
                                                 </div>
                                                 <div class="salesman__order-col salesman__order-col-4">
+                                                    <div class="salesman__order-col-title">
+                                                        Дата и время/ завершения заказа
+                                                    </div>
                                                     06.09.2021
                                                 </div>
                                                 <div class="salesman__order-col salesman__order-col-5">
+                                                    <div class="salesman__order-col-title">Статус доставки</div>
                                                     ТТН 2345 6789 123456
                                                 </div>
                                                 <div class="salesman__order-col salesman__order-col-6">
+                                                    <div class="salesman__order-col-title">Товар</div>
                                                     <div class="salesman__order-img">
                                                         <img src="./assets/img/1.jpg" alt="">
                                                     </div>
@@ -2286,6 +2406,7 @@
                                             </div>
                                             <div class="salesman__order-col salesman__order-col-7">
                                                 <div class="salesman__col-box">
+                                                    <div class="salesman__order-col-title">Покупатель</div>
                                                     <div class="salesman__order-avatar">
                                                         <img src="./assets/img/2.jpg" alt="">
                                                     </div>
@@ -2336,8 +2457,11 @@
                         </div>
                         <div class="selesman__order-window product__creation-hidden">
                             <div class="cabinet__tab-fon">
-                                <div class="cabinet__tab-title order__window-tab ">
-                                    Заказ №2345678
+                                <div class="cabinet__tab-fon-wrapp">
+                                    <button class='cabinet__fon-btn'>
+                                        Управление товарами
+                                    </button>
+                            
                                     <button class='button order__window-btn'>
                                         Изменить статус заказа
                                     </button>
@@ -2488,10 +2612,13 @@
                     </div>            <div id='tab_5' class="cabinet__tab-mobil cabinet__tab">
                         <div class="product__management">
                             <div class="cabinet__tab-fon">
-                                <div class="cabinet__tab-title product__tab-title">
-                                    Управление товарами
+                                <div class="cabinet__tab-fon-wrapp">
+                                    <button class='cabinet__fon-btn'>
+                                        Управление товарами
+                                    </button>
+                    
                                     <button class="btn product__creation-btn">
-                                        Создать товар
+                                        Создать
                                     </button>
                                 </div>
                             </div>
@@ -2518,24 +2645,26 @@
                                     <div class="product__management-row-title">
                                         Показать:
                                     </div>
-                                    <label class='product__management-label'>
-                                        <input class="product__management-label-checkbox" type="checkbox">
-                                        <span class='product__management-label-span --green'>
-                                            Активные
-                                        </span>
-                                    </label>
-                                    <label class='product__management-label'>
-                                        <input class="product__management-label-checkbox" type="checkbox">
-                                        <span class='product__management-label-span --red'>
-                                            Неактивные
-                                        </span>
-                                    </label>
-                                    <label class='product__management-label'>
-                                        <input class="product__management-label-checkbox" type="checkbox">
-                                        <span class='product__management-label-span --grey'>
-                                            Все
-                                        </span>
-                                    </label>
+                                    <div class="product__management-row-wrapper">
+                                        <label class='product__management-label'>
+                                            <input class="product__management-label-checkbox" type="checkbox">
+                                            <span class='product__management-label-span --green'>
+                                                Активные
+                                            </span>
+                                        </label>
+                                        <label class='product__management-label'>
+                                            <input class="product__management-label-checkbox" type="checkbox">
+                                            <span class='product__management-label-span --red'>
+                                                Неактивные
+                                            </span>
+                                        </label>
+                                        <label class='product__management-label'>
+                                            <input class="product__management-label-checkbox" type="checkbox">
+                                            <span class='product__management-label-span --grey'>
+                                                Все
+                                            </span>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="product__management-wrapp">
@@ -2599,6 +2728,9 @@
                                                 </div>
                                             </div>
                                             <div class="management__row-coll management__body-col-3">
+                                                <div class="management__row-data-name">
+                                                    Дата публикации
+                                                </div>
                                                 <div class="management__row-data">
                                                     20.08.2021
                                                 </div>
@@ -2609,12 +2741,15 @@
                                                 </div>
                                             </div>
                                             <div class="management__row-coll management__body-col-5">
+                                                <div class="management__row-tarif-name">
+                                                    тариф
+                                                </div>
                                                 <div class="management__row-tarif">
                                                     до 20.08.2021
                                                 </div>
                                             </div>
                                             <div class="management__row-coll management__body-col-6">
-                                                <button class="btn management__row-btn">
+                                                <button class="button management__row-btn">
                                                     Продвигать
                                                 </button>
                                             </div>
@@ -2656,22 +2791,27 @@
                                                 </div>
                                             </div>
                                             <div class="management__row-coll management__body-col-3">
+                                                <div class="management__row-data-name">
+                                                    Дата публикации
+                                                </div>
                                                 <div class="management__row-data">
                                                     20.08.2021
                                                 </div>
                                             </div>
                                             <div class="management__row-coll management__body-col-4">
+                            
                                                 <div class="management__row-satus --green">
                                                     Активный
                                                 </div>
                                             </div>
                                             <div class="management__row-coll management__body-col-5">
+                                                <div class="management__row-tarif-name">тариф</div>
                                                 <div class="management__row-tarif">
                                                     до 20.08.2021
                                                 </div>
                                             </div>
                                             <div class="management__row-coll management__body-col-6">
-                                                <button class="btn management__row-btn">
+                                                <button class="button management__row-btn">
                                                     Продвигать
                                                 </button>
                                             </div>
@@ -2713,6 +2853,9 @@
                                                 </div>
                                             </div>
                                             <div class="management__row-coll management__body-col-3">
+                                                <div class="management__row-data-name">
+                                                    Дата публикации
+                                                </div>
                                                 <div class="management__row-data">
                                                     20.08.2021
                                                 </div>
@@ -2723,12 +2866,15 @@
                                                 </div>
                                             </div>
                                             <div class="management__row-coll management__body-col-5">
+                                                <div class="management__row-tarif-name">
+                                                    тариф
+                                                </div>
                                                 <div class="management__row-tarif">
                                                     до 20.08.2021
                                                 </div>
                                             </div>
                                             <div class="management__row-coll management__body-col-6">
-                                                <button class="btn management__row-btn">
+                                                <button class="button management__row-btn">
                                                     Продвигать
                                                 </button>
                                             </div>
@@ -2770,6 +2916,9 @@
                                                 </div>
                                             </div>
                                             <div class="management__row-coll management__body-col-3">
+                                                <div class="management__row-data-name">
+                                                    Дата публикации
+                                                </div>
                                                 <div class="management__row-data">
                                                     20.08.2021
                                                 </div>
@@ -2780,12 +2929,15 @@
                                                 </div>
                                             </div>
                                             <div class="management__row-coll management__body-col-5">
+                                                <div class="management__row-tarif-name">
+                                                    тариф
+                                                </div>
                                                 <div class="management__row-tarif">
                                                     до 20.08.2021
                                                 </div>
                                             </div>
                                             <div class="management__row-coll management__body-col-6">
-                                                <button class="btn management__row-btn">
+                                                <button class="button management__row-btn">
                                                     Продвигать
                                                 </button>
                                             </div>
@@ -2827,6 +2979,9 @@
                                                 </div>
                                             </div>
                                             <div class="management__row-coll management__body-col-3">
+                                                <div class="management__row-data-name">
+                                                    Дата публикации
+                                                </div>
                                                 <div class="management__row-data">
                                                     20.08.2021
                                                 </div>
@@ -2837,12 +2992,15 @@
                                                 </div>
                                             </div>
                                             <div class="management__row-coll management__body-col-5">
+                                                <div class="management__row-tarif-name">
+                                                    тариф
+                                                </div>
                                                 <div class="management__row-tarif">
                                                     до 20.08.2021
                                                 </div>
                                             </div>
                                             <div class="management__row-coll management__body-col-6">
-                                                <button class="btn management__row-btn">
+                                                <button class="button management__row-btn">
                                                     Продвигать
                                                 </button>
                                             </div>
@@ -2884,6 +3042,9 @@
                                                 </div>
                                             </div>
                                             <div class="management__row-coll management__body-col-3">
+                                                <div class="management__row-data-name">
+                                                    Дата публикации
+                                                </div>
                                                 <div class="management__row-data">
                                                     20.08.2021
                                                 </div>
@@ -2894,12 +3055,15 @@
                                                 </div>
                                             </div>
                                             <div class="management__row-coll management__body-col-5">
+                                                <div class="management__row-tarif-name">
+                                                    тариф
+                                                </div>
                                                 <div class="management__row-tarif">
                                                     до 20.08.2021
                                                 </div>
                                             </div>
                                             <div class="management__row-coll management__body-col-6">
-                                                <button class="btn management__row-btn">
+                                                <button class="button management__row-btn">
                                                     Продвигать
                                                 </button>
                                             </div>
@@ -2941,6 +3105,9 @@
                                                 </div>
                                             </div>
                                             <div class="management__row-coll management__body-col-3">
+                                                <div class="management__row-data-name">
+                                                    Дата публикации
+                                                </div>
                                                 <div class="management__row-data">
                                                     20.08.2021
                                                 </div>
@@ -2951,12 +3118,15 @@
                                                 </div>
                                             </div>
                                             <div class="management__row-coll management__body-col-5">
+                                                <div class="management__row-tarif-name">
+                                                    тариф
+                                                </div>
                                                 <div class="management__row-tarif">
                                                     до 20.08.2021
                                                 </div>
                                             </div>
                                             <div class="management__row-coll management__body-col-6">
-                                                <button class="btn management__row-btn">
+                                                <button class="button management__row-btn">
                                                     Продвигать
                                                 </button>
                                             </div>
@@ -2998,6 +3168,9 @@
                                                 </div>
                                             </div>
                                             <div class="management__row-coll management__body-col-3">
+                                                <div class="management__row-data-name">
+                                                    Дата публикации
+                                                </div>
                                                 <div class="management__row-data">
                                                     20.08.2021
                                                 </div>
@@ -3008,12 +3181,15 @@
                                                 </div>
                                             </div>
                                             <div class="management__row-coll management__body-col-5">
+                                                <div class="management__row-tarif-name">
+                                                    тариф
+                                                </div>
                                                 <div class="management__row-tarif">
                                                     до 20.08.2021
                                                 </div>
                                             </div>
                                             <div class="management__row-coll management__body-col-6">
-                                                <button class="btn management__row-btn">
+                                                <button class="button management__row-btn">
                                                     Продвигать
                                                 </button>
                                             </div>
@@ -3053,11 +3229,16 @@
                                     </div>
                                 </div></div>    </div>
                         <div class="product__creation product__creation-hidden">
-                            <div class="cabinet__tab-title product__tab-title">
-                                Создать товар
-                                <button class="btn product__publish-btn">
-                                    Опубликовать
-                                </button>
+                            <div class="cabinet__tab-fon">
+                                <div class="cabinet__tab-fon-wrapp product__tab-title">
+                                    <button class='cabinet__fon-btn'>
+                                        Создать товар
+                                    </button>
+                            
+                                    <button class="btn product__publish-btn">
+                                        Опубликовать
+                                    </button>
+                                </div>
                             </div>
                             <div class="product__creation-wrapp">
                                 <div class="cabinet__data-box-title">
@@ -3580,8 +3761,12 @@
                                 </div>
                             </div>    </div>
                         <div class="product__promotion product__creation-hidden">
-                            <div class="cabinet__tab-title product__tab-title">
-                                Выбора рекламы для объявления
+                            <div class="cabinet__tab-fon">
+                                <div class="cabinet__tab-fon-wrapp">
+                                    <button class='cabinet__fon-btn'>
+                                        Выбора рекламы для объявления
+                                    </button>
+                                </div>
                             </div>
                             <button class="product__promotion-btn">
                                 Вернуться к товарам
@@ -3603,6 +3788,8 @@
                                 <div class="promotion__tarif-box">
                                     <div class="promotion__tarif-subtitle">
                                         Тариф
+                                        <img src="./assets/img/top.svg" alt="" class="promotion-img-top">
+                                        <img src="./assets/img/bottom.svg" alt="" class="promotion-img-bottom">
                                     </div>
                                     <div class="promotion__tarif-title">
                                         Стандарт
@@ -3634,6 +3821,8 @@
                                 <div class="promotion__tarif-box promotion__tarif-box--premium">
                                     <div class="promotion__tarif-subtitle">
                                         Тариф
+                                        <img src="./assets/img/top.svg" alt="" class="promotion-img-top">
+                                        <img src="./assets/img/bottom.svg" alt="" class="promotion-img-bottom">
                                     </div>
                                     <div class="promotion__tarif-title">
                                         Premium
@@ -3660,17 +3849,24 @@
                                             Заказать
                                         </button>
                                     </div>
+                            
                                 </div>
                             
                             
                             
-                            </div>    </div>
+                            </div> <button class="promotion-btn btn">
+                                Сохранить
+                            </button>    </div>
                     </div>            <div id='tab_11' class="cabinet__tab-mobil cabinet__tab">
                         <div class="cabinet__tab-fon">
-                            <div class="cabinet__tab-title">
-                                Отзывы о моих товарах
+                            <div class="cabinet__tab-fon-wrapp">
+                                <button class='cabinet__fon-btn'>
+                                    Отзывы о моих товарах
+                                </button>
+                    
                             </div>
                         </div>
+                    
                         <div class="salesman__reviews-container">
                             <div class="salesman__reviews-wrapp">
                                 <div class="product__management-serch">
@@ -3754,69 +3950,77 @@
                                     </div>
                                 </div>
                     
-                                <div class="corr__wrapp">
-                                    <div class="cabinet__reviews-box">
-                                        <img class='cabinet__reviews-img' src="./assets/img/MP002XW06IDQ_138.jpg" alt="">
-                                        <div class="cabinet__reviews-coll">
-                                            <div class="reviews-coll-head">
-                                                <div class="reviews__head-inner">
-                                                    <div class="product__name">
-                                                        <div class="procuct__name-score">
-                                                            Suzie
+                                <div class="salesman__reives-wrapper-btn">
+                                    <div class="corr__wrapp">
+                                        <div class="cabinet__reviews-box">
+                                            <img class='cabinet__reviews-img' src="./assets/img/MP002XW06IDQ_138.jpg" alt="">
+                                            <div class="cabinet__reviews-coll">
+                                                <div class="reviews-coll-head">
+                                                    <div class="reviews__head-inner">
+                                                        <div class="product__name">
+                                                            <div class="procuct__name-score">
+                                                                Suzie
+                                                            </div>
+                                                            <div class="procuct__name-product">
+                                                                Летнее платье
+                                                            </div>
                                                         </div>
-                                                        <div class="procuct__name-product">
-                                                            Летнее платье
+                                                        <div class="product__row-coll">
+                                                            <div class="product__name-title">
+                                                                Магазин:
+                                                            </div>
+                                                            <div class="procuct__name-score">
+                                                                Suzie
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="product__row-coll">
-                                                        <div class="product__name-title">
-                                                            Магазин:
-                                                        </div>
-                                                        <div class="procuct__name-score">
-                                                            Suzie
-                                                        </div>
+                                                    <div class="reviews-data">
+                                                        06.09.2021
                                                     </div>
                                                 </div>
-                                                <div class="reviews-data">
-                                                    06.09.2021
+                                                <div class="sellers__box-stars">
+                                                    <img class='sellers__stars-good' src="./assets/img/Star.svg" alt="">
+                                                    <img class="sellers__stars-good" src="./assets/img/Star.svg" alt="">
+                                                    <img class="sellers__stars-good" src="./assets/img/Star.svg" alt="">
+                                                    <img class="sellers__stars-good" src="./assets/img/Star.svg" alt="">
+                                                    <img class="sellers__stars-bad" src="./assets/img/Star-bad.svg" alt="">
                                                 </div>
-                                            </div>
-                                            <div class="sellers__box-stars">
-                                                <img class='sellers__stars-good' src="./assets/img/Star.svg" alt="">
-                                                <img class="sellers__stars-good" src="./assets/img/Star.svg" alt="">
-                                                <img class="sellers__stars-good" src="./assets/img/Star.svg" alt="">
-                                                <img class="sellers__stars-good" src="./assets/img/Star.svg" alt="">
-                                                <img class="sellers__stars-bad" src="./assets/img/Star-bad.svg" alt="">
-                                            </div>
-                                            <div class="reviews-text">
-                                                Стильное платье в стили "сафари", не согласна, что большемерит, это такой фасон. Не
-                                                выкупила, т
-                                                к. бежевый очень светлый, моя кожа с ним просто сливалась. Классное, берите! Стильное платье
-                                                в
-                                                стили "сафари", не согласна, что большемерит, это такой фасон. Не выкупила, т к. бежевый
-                                                очень
-                                                светлый, моя кожа с ним просто сливалась. Классное, берите!
-                                            </div>
+                                                <div class="reviews-text">
+                                                    Стильное платье в стили "сафари", не согласна, что большемерит, это такой фасон. Не
+                                                    выкупила, т
+                                                    к. бежевый очень светлый, моя кожа с ним просто сливалась. Классное, берите! Стильное
+                                                    платье
+                                                    в
+                                                    стили "сафари", не согласна, что большемерит, это такой фасон. Не выкупила, т к. бежевый
+                                                    очень
+                                                    светлый, моя кожа с ним просто сливалась. Классное, берите!
+                                                </div>
                     
+                                            </div>
                                         </div>
+                    
                                     </div>
+                                    <button class="btn salesman__reives-btn">
+                                        Ответить
+                                    </button>
                                 </div>
-                    
-                    
                     
                     
                             </div>
                     
-                            <button class="btn salesman__reives-btn">
-                                Ответить
-                            </button>
+                    
                         </div>
                     </div>            <div id='tab_12' class="cabinet__tab-mobil cabinet__tab">
+                    
                         <div class="cabinet__tab-fon">
-                            <div class="cabinet__tab-title">
-                                Отзывы о моих товарах
+                            <div class="cabinet__tab-fon-wrapp">
+                                <button class='cabinet__fon-btn'>
+                                    Отзывы о моих товарах
+                                </button>
                             </div>
                         </div>
+                    
+                    
                         <div class="salesman__reviews-container">
                             <div class="salesman__reviews-wrapp">
                                 <div class="product__management-serch">
@@ -3900,62 +4104,64 @@
                                     </div>
                                 </div>
                     
-                                <div class="corr__wrapp">
-                                    <div class="cabinet__reviews-box">
-                                        <img class='cabinet__reviews-img' src="./assets/img/MP002XW06IDQ_138.jpg" alt="">
-                                        <div class="cabinet__reviews-coll">
-                                            <div class="reviews-coll-head">
-                                                <div class="reviews__head-inner">
-                                                    <div class="product__name">
-                                                        <div class="procuct__name-score">
-                                                            Suzie
+                                <div class="salesman__reives-wrapper-btn">
+                                    <div class="corr__wrapp">
+                                        <div class="cabinet__reviews-box">
+                                            <img class='cabinet__reviews-img' src="./assets/img/MP002XW06IDQ_138.jpg" alt="">
+                                            <div class="cabinet__reviews-coll">
+                                                <div class="reviews-coll-head">
+                                                    <div class="reviews__head-inner">
+                                                        <div class="product__name">
+                                                            <div class="procuct__name-score">
+                                                                Suzie
+                                                            </div>
+                                                            <div class="procuct__name-product">
+                                                                Летнее платье
+                                                            </div>
                                                         </div>
-                                                        <div class="procuct__name-product">
-                                                            Летнее платье
+                                                        <div class="product__row-coll">
+                                                            <div class="product__name-title">
+                                                                Магазин:
+                                                            </div>
+                                                            <div class="procuct__name-score">
+                                                                Suzie
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="product__row-coll">
-                                                        <div class="product__name-title">
-                                                            Магазин:
-                                                        </div>
-                                                        <div class="procuct__name-score">
-                                                            Suzie
-                                                        </div>
+                                                    <div class="reviews-data">
+                                                        06.09.2021
                                                     </div>
                                                 </div>
-                                                <div class="reviews-data">
-                                                    06.09.2021
+                                                <div class="sellers__box-stars">
+                                                    <img class='sellers__stars-good' src="./assets/img/Star.svg" alt="">
+                                                    <img class="sellers__stars-good" src="./assets/img/Star.svg" alt="">
+                                                    <img class="sellers__stars-good" src="./assets/img/Star.svg" alt="">
+                                                    <img class="sellers__stars-good" src="./assets/img/Star.svg" alt="">
+                                                    <img class="sellers__stars-bad" src="./assets/img/Star-bad.svg" alt="">
                                                 </div>
-                                            </div>
-                                            <div class="sellers__box-stars">
-                                                <img class='sellers__stars-good' src="./assets/img/Star.svg" alt="">
-                                                <img class="sellers__stars-good" src="./assets/img/Star.svg" alt="">
-                                                <img class="sellers__stars-good" src="./assets/img/Star.svg" alt="">
-                                                <img class="sellers__stars-good" src="./assets/img/Star.svg" alt="">
-                                                <img class="sellers__stars-bad" src="./assets/img/Star-bad.svg" alt="">
-                                            </div>
-                                            <div class="reviews-text">
-                                                Стильное платье в стили "сафари", не согласна, что большемерит, это такой фасон. Не
-                                                выкупила, т
-                                                к. бежевый очень светлый, моя кожа с ним просто сливалась. Классное, берите! Стильное платье
-                                                в
-                                                стили "сафари", не согласна, что большемерит, это такой фасон. Не выкупила, т к. бежевый
-                                                очень
-                                                светлый, моя кожа с ним просто сливалась. Классное, берите!
-                                            </div>
+                                                <div class="reviews-text">
+                                                    Стильное платье в стили "сафари", не согласна, что большемерит, это такой фасон. Не
+                                                    выкупила, т
+                                                    к. бежевый очень светлый, моя кожа с ним просто сливалась. Классное, берите! Стильное
+                                                    платье
+                                                    в
+                                                    стили "сафари", не согласна, что большемерит, это такой фасон. Не выкупила, т к. бежевый
+                                                    очень
+                                                    светлый, моя кожа с ним просто сливалась. Классное, берите!
+                                                </div>
                     
+                                            </div>
                                         </div>
                                     </div>
+                                    <button class="btn salesman__reives-btn">
+                                        Ответить
+                                    </button>
                                 </div>
-                    
-                    
                     
                     
                             </div>
                     
-                            <button class="btn salesman__reives-btn">
-                                Ответить
-                            </button>
+                    
                         </div>
                     </div>
         
@@ -4334,6 +4540,7 @@
     <script src="assets/js/app.min.js"></script>
     <script>
         window.onload = function () {
+    
             accardion();
             tabs();
             selectCheckboxActive();
@@ -4350,6 +4557,7 @@
             productCreation();
             creationPlacholer();
             saleTabs();
+            productSaleTabs();
             openPromotion('.management__row-btn', '.product__management', '.product__promotion', '.product__promotion-btn');
             openPromotion('.salwsman__order-open', '.salesman__order-container', '.selesman__order-window ', '.order__return-btn');
             openPromotion('.salesman__sale-btn', '.salesman__sale', '.add__share', '.add__share-btn');

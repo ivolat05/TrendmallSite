@@ -342,7 +342,7 @@
 }
 
 .sale__wrapper {
-    width: 60%;
+    max-width: 610px;
     background: #ffffff;
     padding-bottom: 19px;
 }
@@ -382,4 +382,15 @@
     font-size: 20px;
     line-height: 136.02%;
     color: #2c2c31;
+}
+.sale__time-wrapper-btn {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ffffff;
+    width: 154px;
+    min-height: 34px;
+    display: none;
+    align-items: center;
+    justify-content: center;
 }

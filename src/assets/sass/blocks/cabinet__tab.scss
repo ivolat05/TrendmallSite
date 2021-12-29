@@ -29,3 +29,27 @@
 .cabinet__tab-banner {
     background: linear-gradient(180deg, #e8e7e3 0%, #e4e3df 47.76%, #dcdbd7 100%);
 }
+
+.cabinet__fon-btn {
+    border: none;
+    outline: none;
+    position: relative;
+    background: none;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 136.02%;
+
+    color: #2c2c31;
+    cursor: pointer;
+}
+
+.cabinet__tab-fon-wrapp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1072px;
+    padding: 35px;
+    padding-top: 30px;
+
+    color: #2c2c31;
+}

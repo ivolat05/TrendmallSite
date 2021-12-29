@@ -15,3 +15,14 @@
         color: #fff;
     }
 }
+
+.promotion__tarif-box.promotion__tarif-box-visible {
+    .promotion__tarif-btn {
+        background: #fff;
+        color: #000;
+        &:hover {
+            background: #2c2c31;
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.cabinet__user-balance-title {
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 13px;
+    text-transform: capitalize;
+    color: #27ae60;
+    position: relative;
+    padding-left: 21px;
+    margin-bottom: 4px;
+    &::before {
+        content: url("../../assets/img/balance.svg");
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+}
+.cabiner__user-balance-name {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2c2c31;
+    margin-bottom: 17px;
+}
+.cabinet__user-balance {
+    display: none;
+}
+.cabinet__user-balance.cabinet__user-balance--active {
+    display: block;
+}
+.cabinet__user-balance--active + .cabinet__user-name-box {
+    display: none;
+}
+
+.cabinet__user-balance-subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2c2c31;
+}
+
+.cabinet__user-balance-btn {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: -0.005em;
+    color: #16192c;
+    border: 1px solid #edf2f7;
+    border-radius: 4px;
+    width: 98px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 32px;
+    cursor: pointer;
+}
+
+.cabinet__user-balance-wrapp {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.cabinet__user-balance {
+    margin-top: 15px;
+}
+.cabinet__sales-box-balance {
+    align-items: flex-start;
+    padding-top: 23px;
+    padding-left: 21px;
+    padding-bottom: 25px;
+}
