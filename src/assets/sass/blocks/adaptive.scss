@@ -76,6 +76,9 @@
 }
 /*--------------------------------------------1400-------------------------------------*/
 @media (max-width: 1400px) {
+    .sentence__slaider-1 {
+        width: 723px;
+    }
     .add__share-row {
         width: 55%;
     }
@@ -327,9 +330,71 @@
         padding-bottom: 20px;
         padding-top: 17px;
     }
+    .balance-row-col-3 {
+        width: 210px;
+    }
+    .balance-row-col-5 {
+        max-width: 184px;
+    }
+    .salesman__table-head-col-3 {
+        width: 201px;
+    }
 }
 /*---------------------------------------------------------12000----------------------*/
 @media (max-width: 1200px) {
+    .sentence__slaider-1 {
+        width: 542px;
+    }
+    .salesman__balance-table-head {
+        display: none;
+    }
+    .balance-row-col-1 {
+        width: 100%;
+    }
+    .balance-row-col-2 {
+        width: 100%;
+    }
+    .balance-row-col-3 {
+        width: 100%;
+    }
+    .balance-row-col-4 {
+        width: 100%;
+    }
+    .balance-row-col {
+        margin-bottom: 15px;
+    }
+    .balance-row-col-5 {
+        max-width: 100%;
+        flex-direction: column;
+        margin-bottom: 0;
+        .balance-table-title {
+            margin-bottom: 10px;
+        }
+    }
+
+    .salesman__balance-table-row {
+        margin-bottom: 20px;
+        padding: 15px;
+        display: block;
+        width: 100%;
+    }
+    .balance-table-title {
+        display: block;
+    }
+
+    .balance-table-comment {
+        width: 100%;
+    }
+    .balance-row-col {
+        display: flex;
+        justify-content: space-between;
+    }
+    .salesman__balance-wrapp {
+        margin-left: 15px;
+    }
+    .salesman__balance-enter-row {
+        width: 235px;
+    }
     .import__head-input {
         width: 300px;
     }
@@ -665,6 +730,9 @@
     .management__body-col-4 .management__row-satus {
         display: none;
     }
+    .balance-table-appointment {
+        max-width: 185px;
+    }
 }
 
 @media (max-width: 1080px) {
@@ -678,6 +746,33 @@
 /*--------------------------------------------------------- 992 -----------------------------*/
 
 @media (max-width: 992px) {
+    .sentence__slaider-1 {
+        width: 400px;
+        margin-right: 0;
+    }
+    .sentence__wrapp {
+        margin-bottom: 60px;
+    }
+    .salesman__balance-table {
+        background: none;
+        border: none;
+        border-radius: 0;
+    }
+
+    .salesman__balance-table-row {
+        background: #fff;
+        margin-bottom: 15px;
+    }
+    .salesman__balance-body-title {
+        padding-left: 15px;
+    }
+    .salesman__balance-wrapp {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .salesman__balance-enter-row {
+        width: 267px;
+    }
     .salesman__reives-wrapper-btn {
         background: #fff;
         margin-bottom: 20px;
@@ -882,6 +977,9 @@
     .promotion__tarif-box.promotion__tarif-box-visible {
         .promotion__tarif-list {
             display: block;
+        }
+        .promotion__tarif-btn {
+            opacity: 1;
         }
     }
     .promotion__tarif-list {
@@ -1175,10 +1273,6 @@
     }
     .filter__price-title {
         padding-top: 7px;
-    }
-
-    .filter__label-check {
-        padding-bottom: 160px;
     }
 
     .filter__list {
@@ -1729,6 +1823,21 @@
 /*----------------------------------------------- 768 ---------------------------*/
 
 @media (max-width: 768px) {
+    .navigation-balance {
+        margin-top: 10px;
+        margin-right: 0;
+        .navigation-btn {
+        }
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .navigation__box {
+            position: relative;
+            top: 0;
+            left: 0;
+            margin-top: 20px;
+        }
+    }
     .sale__row-wrapp {
         width: 100%;
         justify-content: space-between;
@@ -1739,6 +1848,14 @@
                 padding-right: 5px;
             }
         }
+    }
+    .salesman__balance-head {
+        flex-direction: column;
+    }
+    .salesman__balance-enter {
+        margin-left: 0;
+        border-radius: 8px;
+        margin-top: 20px;
     }
     .sale__row-wrapp:nth-child(1) {
         justify-content: start;
@@ -2947,6 +3064,10 @@
     }
 
     @media (max-width: 400px) {
+        .sentence__slaider-1,
+        .sentence__slaider-2 {
+            width: 290px;
+        }
         .product__publish-btn {
             padding-left: 15px;
             padding-right: 15px;
@@ -3045,6 +3166,16 @@
         .message__box-incoming .message__box-inner,
         .message__box-inner {
             max-width: 216px;
+        }
+        .salesman__balance-box {
+            width: 290px;
+            img {
+                width: 100%;
+            }
+        }
+        .salesman__balance-enter {
+            padding-left: 15px;
+            padding-right: 15px;
         }
         .cabinet__banner-coll {
             margin-left: 15px;

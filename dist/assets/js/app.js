@@ -2795,6 +2795,18 @@ $('.recommendations__slaider-2').slick({
         }
     ]
 });
+$('.sentence__slaider-2').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false
+});
+$('.sentence__slaider-1').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false
+});
 
 // слайдер карточки ковара
 $('.card-slider').slick({
@@ -3009,12 +3021,14 @@ function tabs() {
             let currentTab = document.querySelector(tabId);
             let cabinetUserBalance = document.querySelector('.cabinet__user-balance');
             let cabinetSalesBox = document.querySelector('.cabinet__sales-box');
-            if (item.classList.contains('cabinet__btn-balance')) {
-                cabinetUserBalance.classList.add('cabinet__user-balance--active');
-                cabinetSalesBox.classList.add('cabinet__sales-box-balance');
-            } else {
-                cabinetUserBalance.classList.remove('cabinet__user-balance--active');
-                cabinetSalesBox.classList.remove('cabinet__sales-box-balance');
+            if (cabinetUserBalance) {
+                if (item.classList.contains('cabinet__btn-balance')) {
+                    cabinetUserBalance.classList.add('cabinet__user-balance--active');
+                    cabinetSalesBox.classList.add('cabinet__sales-box-balance');
+                } else {
+                    cabinetUserBalance.classList.remove('cabinet__user-balance--active');
+                    cabinetSalesBox.classList.remove('cabinet__sales-box-balance');
+                }
             }
             cabinetBtn.forEach(function (item) {
                 item.classList.remove('cabinet__btn-acive')

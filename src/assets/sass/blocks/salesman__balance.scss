@@ -58,7 +58,7 @@
 
 .cabinet__user-balance-wrapp {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: start;
 }
 
@@ -70,4 +70,342 @@
     padding-top: 23px;
     padding-left: 21px;
     padding-bottom: 25px;
+}
+.salesman__balance-box {
+    position: relative;
+}
+
+.salesman__balance-box-wrapper {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    left: 27px;
+}
+
+.salesman__balance-box-title {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+
+    opacity: 0.8;
+    position: relative;
+    margin-bottom: 10px;
+    &::before {
+        content: url("../../assets/img/many-2.svg");
+        position: relative;
+        top: 3px;
+        padding-right: 4px;
+    }
+}
+
+.salesman__balance-box-title-many {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #ffffff;
+}
+
+.salesman__balance-enter-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 136.02%;
+    color: #2c2c31;
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 19px;
+    margin-bottom: 15px;
+}
+
+.salesman__balance-enter-title-btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    right: -5px;
+}
+
+.salesman__balance-enter-row-title {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(44, 44, 49, 0.5);
+}
+
+.salesman__balance-enter-input {
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    padding: 15px 11px;
+    margin-bottom: 15px;
+}
+
+.salesman__balance-enter-btn {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.salesman__balance-enter-row {
+    width: 267px;
+}
+
+.salesman__balance-enter {
+    background: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 8px 8px 0;
+    padding-left: 36px;
+    padding-right: 39px;
+    min-height: 210px;
+    margin-left: -5px;
+}
+
+.salesman__balance-head {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.salesman__balance-wrapp {
+    margin-top: 34px;
+    margin-left: 40px;
+}
+
+.balance-table-title {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #6f6e6e;
+}
+
+.balance-table-date {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #999999;
+}
+
+.balance-table-title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #6f6e6e;
+    opacity: 0.6;
+}
+
+.balance-table-maney {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #121111;
+}
+
+.balance-table-appointment {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #1d1d1c;
+}
+
+.balance-table-consumption {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+    position: relative;
+}
+
+.balance-table-consumption.--top {
+    padding-left: 21px;
+    color: #27ae60;
+    &::before {
+        content: url("../../assets/img/top02.svg");
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.balance-table-consumption.--bottom {
+    padding-left: 21px;
+    color: #ff4a55;
+    &::before {
+        content: url("../../assets/img/bottt.svg");
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.balance-table-comment {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: capitalize;
+
+    color: #000000;
+
+    opacity: 0.6;
+}
+
+.balance-table-title {
+    display: none;
+}
+
+.balance-table-appointment.--replenishment {
+    position: relative;
+    padding-left: 35px;
+    &::before {
+        content: url("../../assets/img/replenishment.png");
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.balance-table-appointment.--write-off {
+    position: relative;
+    padding-left: 35px;
+    &::before {
+        content: url("../../assets/img/write-off.png");
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.balance-table-appointment.--holding {
+    position: relative;
+    padding-left: 35px;
+    &::before {
+        content: url("../../assets/img/holding.png");
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.balance-table-appointment.--period {
+    position: relative;
+    padding-left: 35px;
+    &::before {
+        content: url("../../assets/img/period.png");
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.salesman__balance-table-row {
+    display: flex;
+    justify-content: start;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.salesman__table-head-col {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7d7d7d;
+
+    opacity: 0.8;
+}
+
+.salesman__balance-table-head {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.salesman__balance-table {
+    border: 1px solid #edf2f7;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.salesman__balance-body-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 136.02%;
+
+    color: #2c2c31;
+    margin-bottom: 11px;
+}
+
+.salesman__balance-head {
+    margin-bottom: 30px;
+}
+
+.salesman__balance-table-head {
+    padding-top: 34px;
+    padding-left: 17px;
+    padding-bottom: 26px;
+}
+
+.salesman__table-head-col-1 {
+    width: 113px;
+}
+.salesman__table-head-col-2 {
+    width: 109px;
+}
+.salesman__table-head-col-3 {
+    width: 306px;
+}
+.salesman__table-head-col-4 {
+    width: 165px;
+}
+.salesman__table-head-col-5 {
+    width: 160px;
+}
+.balance-row-col-1 {
+    width: 113px;
+}
+.balance-row-col-2 {
+    width: 109px;
+}
+.balance-row-col-3 {
+    width: 306px;
+}
+.balance-row-col-4 {
+    width: 165px;
+}
+.balance-row-col-5 {
+    max-width: 275px;
+}
+.salesman__balance-table-row {
+    padding-top: 23px;
+    padding-left: 17px;
+    padding-bottom: 14px;
+}
+
+.navigation-balance {
+    margin-top: 49px;
+    margin-right: 20px;
+}
+.salesman__balance-table {
+    padding-bottom: 33px;
+    margin-bottom: 20px;
 }
